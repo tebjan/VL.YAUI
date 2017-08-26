@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.56">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
+  <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
+  <NugetDependency Id="Q18ZLENm9gzPhBnFnztPMP" Location="VL.Core" Version="0.35.21" />
+  <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
+    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Value">
+      <!--
+
+    ************************ UITest ************************
+
+-->
+      <Node Name="UITest" Bounds="153,200" Id="TSttkfeJHQSN5gkEF54G9o">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Patch" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="CzjSvRY5dvXQDxmAOA8mZj">
+          <Patch Id="ESJZDDS0I02LAWDOx9RJVV" Name="Create" />
+          <Patch Id="OkqGvJfa3PDOppp4PFQghD" Name="Update">
+            <Pin Id="G7Wf7QECtEtLPKuDaMF1xU" Name="Draw Description Layer" Kind="OutputPin" />
+          </Patch>
+          <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi">
+            <Node Bounds="228,307,67,13" Id="AI6I0KTY3udMK4c7CAsgFq">
+              <p:NodeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="UI" />
+                <Choice Kind="ProcessAppFlag" Name="TestRoot" />
+              </p:NodeReference>
+              <Pin Id="A7DbsPm89E9NWjkrPeJ2oG" Name="Add Button" Kind="InputPin" />
+              <Pin Id="DgG2hXU28q3NwgJJRALwsp" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="N2tml1SitHrLaM3TAUhWtG" Comment="Add Button" Bounds="222,194,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="232,413" Id="Ezwm4Mp4A90PIIdErkUnjl">
+              <p:NodeReference LastCategoryFullName="CraftLie" LastSymbolSource="CraftLie.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Renderer" />
+              </p:NodeReference>
+              <Pin Id="PkdO1tESMb9NFWh1VSw26I" Name="Layer" Kind="InputPin" />
+              <Pin Id="VyXxkD1vjgHLqFCKX1QKTm" Name="Draw Description Layer" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="Jog8h49oahWLZG0YiZI68V" Bounds="233,482" />
+          </Canvas>
+          <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
+            <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
+            <Fragment Id="PulIQZQ5YLtPp6C2yvbTNE" Patch="OkqGvJfa3PDOppp4PFQghD" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="OroQ5MviOm8MuPla2bygDg" Ids="N2tml1SitHrLaM3TAUhWtG,A7DbsPm89E9NWjkrPeJ2oG" />
+          <Link Id="O2o6RT5h4lGP3CBbrGX3Qt" Ids="DgG2hXU28q3NwgJJRALwsp,PkdO1tESMb9NFWh1VSw26I" />
+          <Link Id="ULXhJsxT1TmOtb12HO8ID5" Ids="VyXxkD1vjgHLqFCKX1QKTm,Jog8h49oahWLZG0YiZI68V" />
+          <Link Id="AbTaeZU9qtGMym0ID32dSU" Ids="Jog8h49oahWLZG0YiZI68V,G7Wf7QECtEtLPKuDaMF1xU" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
+  </Patch>
+  <DocumentDependency Id="JGGbSqtLN9OOZP219YsDvc" Location="..\..\..\VL.UI.CraftLie.vl" />
+  <NugetDependency Id="HB3KsA0VJfPMJQjS8l6rnu" Location="CraftLie" Version="1.0.2" />
+</Document>
