@@ -16,11 +16,17 @@ namespace VL.Lib.UI
         List<IUIElement> FSelectedElements = new List<IUIElement>();
 
         public IReadOnlyList<IUIElement> GetElements() => FElements;
+        public IReadOnlyList<IUIElement> GetFocusedElements() => FFocusedElements;
+        public IReadOnlyList<IUIElement> GetSelectedElements() => FSelectedElements;
+
+        public UIController()
+        {
+            FFallbackHandler = new BasicUIHandler(this);
+        }  
 
         public void AddElement(IUIElement element)
         {
             FElements.Add(element);
-            FFallbackHandler = new BasicUIHandler(this);
         }
 
         public bool RemoveElement(IUIElement element)
@@ -34,20 +40,45 @@ namespace VL.Lib.UI
         IReadOnlyList<IUIElement> FPickPath = new List<IUIElement>();
         public IReadOnlyList<IUIElement> GetPickPath() => FPickPath;
 
+        Vector2 FOffset;
+        public void Layout(Vector2 offset)
+        {
+            FOffset = offset;
+            foreach (var elem in FElements)
+            {
+                elem.Layout(offset);
+            }
+        } 
+
+        public void Update()
+        {
+            foreach (var elem in FElements)
+            {
+                elem.Update();
+            }
+        }
 
         public void ProcessInput(object eventArgs)
         {
-            //get pick path 
-            FPickPath = NotificationHelpers.PositionEvent(eventArgs, FPickPath, GetPickPath);
+            if (FCurrentHandler == null)
+            {
+                //get pick path 
+                FPickPath = NotificationHelpers.PositionEvent(eventArgs, FPickPath, GetPickPath);
 
-            //calc hover, active, selected
-            NotificationHelpers.MouseKeyboardSwitch(eventArgs, this, OnMouseDown, OnMouseMove, OnMouseUp);
+                //calc hover, active, selected
+                FCurrentHandler = NotificationHelpers.MouseKeyboardSwitch(eventArgs, null, OnMouseDown, OnMouseMove, OnMouseUp);
+            }
+            else
+            {
+                //calc unhover
+                NotificationHelpers.MouseKeyboardSwitch(eventArgs, null, null, OnMouseMoveUnhover, null);
+            }
 
             //do handler
-            FCurrentHandler = FCurrentHandler?.ProcessInput(eventArgs) ?? FFallbackHandler.ProcessInput(eventArgs);
+            FCurrentHandler = FCurrentHandler?.ProcessInput(eventArgs);
         }
 
-        object OnMouseDown(MouseDownNotification mn)
+        IUIHandler OnMouseDown(MouseDownNotification mn)
         {
             //focus
             foreach (var elem in FFocusedElements)
@@ -55,12 +86,12 @@ namespace VL.Lib.UI
 
             FFocusedElements.Clear();           
 
-            var first = FPickPath.FirstOrDefault();
+            var last = FPickPath.LastOrDefault();
 
-            if (first != null)
+            if (last != null)
             {
-                FFocusedElements.Add(first);
-                first.Focus();
+                FFocusedElements.Add(last);
+                last.Focus();
             }
 
             //selection
@@ -72,23 +103,28 @@ namespace VL.Lib.UI
                 FSelectedElements.Clear();
             }
 
-            if (first != null)
+            if (last != null)
             {
-                FSelectedElements.Add(first);
-                first.Select();
+                FSelectedElements.Add(last);
+                last.Select();
             }
 
-            return null;
+            return FFallbackHandler;
         }
 
-        object OnMouseMove(MouseMoveNotification mn)
+        IUIHandler OnMouseMove(MouseMoveNotification mn)
         {
-            CalculateEnterLeaveEvent(mn);
-
+            CalculateEnterLeaveEvent(mn, FPickPath);
             return null;
         }
 
-        object OnMouseUp(MouseUpNotification mn)
+        IUIHandler OnMouseMoveUnhover(MouseMoveNotification mn)
+        {
+            CalculateEnterLeaveEvent(mn, FHoveredViews.Where(elem => elem.HitTest(mn.Position)).ToList());
+            return null;
+        }
+
+        IUIHandler OnMouseUp(MouseUpNotification mn)
         {
             return null;
         }
@@ -106,8 +142,8 @@ namespace VL.Lib.UI
             {
                 if(element.HitTest(position))
                 {
-                    GetPickPathRecursive(position, element.GetChildren(), pickPath);
                     pickPath.Add(element);
+                    GetPickPathRecursive(position, element.GetChildren(), pickPath);
                 }
             }
         }
@@ -115,10 +151,8 @@ namespace VL.Lib.UI
         List<IUIElement> FEnteredViews = new List<IUIElement>();
         List<IUIElement> FLeftViews = new List<IUIElement>();
 
-        void CalculateEnterLeaveEvent(MouseMoveNotification arg)
+        void CalculateEnterLeaveEvent(MouseMoveNotification arg, IReadOnlyList<IUIElement> pickedViews)
         {
-            var pickedViews = FPickPath;
-
             FEnteredViews.Clear();
             FLeftViews = FHoveredViews.ToList();
             FHoveredViews.Clear();
@@ -176,23 +210,34 @@ namespace VL.Lib.UI
 
         public IUIHandler ProcessInput(object eventArgs)
         {
-            return NotificationHelpers.MouseKeyboardSwitch(eventArgs, this, OnMouseDown, OnMouseMove, OnMouseUp);
+            return NotificationHelpers.MouseKeyboardSwitch(eventArgs, null, OnMouseDown, OnMouseMove, OnMouseUp);
         }
+
+        IUIElement ActiveElement;
 
         IUIHandler OnMouseDown(MouseDownNotification mn)
         {
-            var picks = FController.GetPickPath();
-            return this;
+            var activeLast = FController.GetFocusedElements().LastOrDefault();
+            if (activeLast != null)
+            {
+                ActiveElement = activeLast;
+                return ActiveElement.ProcessInput(mn) ?? this;
+            }
+
+            return null;
         }
 
         IUIHandler OnMouseMove(MouseMoveNotification mn)
         {
-            return this;
+            if (ActiveElement != null)
+                return ActiveElement.ProcessInput(mn) ?? this;
+
+            return null;
         }
 
         IUIHandler OnMouseUp(MouseUpNotification mn)
         {
-            return this;
+            return ActiveElement?.ProcessInput(mn) ?? null;
         }
     }
 }

@@ -1,35 +1,205 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug35.8.dtd" >
    <PATCH nodename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="3435" top="6645" width="9000" height="6000">
+   <BOUNDS type="Window" left="1305" top="3975" width="9000" height="6000">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.9.0">
    </PACK>
-   <NODE systemname="UITest (Value)" filename="vl\VVVV.2d.UITest.vl" nodename="UITest (Value)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="2415" top="1530" width="100" height="100">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="2">
+   <BOUNDS type="Node" left="1980" top="4170" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Draw Description Layer" visible="1">
+   <BOUNDS type="Box" left="1980" top="4170" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20790" top="660" width="7695" height="7965">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Show Cursor" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (CraftLie)" filename="%VVVV%\packs\CraftLie.1.0.2\vvvv\nodes\modules\Renderer (CraftLie).v4p" nodename="Renderer (CraftLie)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="2385" top="2805" width="100" height="100">
+   <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1980" top="855" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1980" top="855" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Device" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Keyboard (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Window)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="3840" top="810" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3840" top="810" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Device" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="19" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input Value" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="4020" top="1380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Display Channel" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="(ROUTER DON&apos;T USE)" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Receive String" pintype="Input" visible="1" slicecount="1" values="|UI Size|">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="18" systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Send String" slicecount="1" pintype="Input" visible="1" values="|UI Size|">
+   </PIN>
+   <BOUNDS type="Node" left="3045" top="4980" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Display Channel" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="(ROUTER DON&apos;T USE)" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Actual BackBuffer SizeXY" dstnodeid="18" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="27">
+   <BOUNDS type="Box" left="4725" top="2850" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4725" top="2850" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="None">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Height">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="29">
+   <BOUNDS type="Box" left="4980" top="2325" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4980" top="2325" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Left">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Center">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (CraftLie)" filename="%VVVV%\packs\CraftLie.1.0.2\vvvv\nodes\modules\Renderer (CraftLie).v4p" nodename="Renderer (CraftLie)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="2130" top="3285" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1635" top="5370" width="22830" height="13830">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="Layer" dstnodeid="2" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output Enum" dstnodeid="46" dstpinname="Normalize">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Output Enum" dstnodeid="46" dstpinname="Horizontal Align">
+   </LINK>
+   <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="49">
+   <BOUNDS type="Node" left="5190" top="1230" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5190" top="1230" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Key Match" slicecount="1" values="Space">
+   </PIN>
+   <PIN pinname="Space" visible="1">
+   </PIN>
+   <PIN pinname="Keyboard" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="50">
+   <BOUNDS type="Node" left="5190" top="1665" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Layer" visible="1">
+   <PIN pinname="Up Edge" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Draw Description Layer" dstnodeid="1" dstpinname="Input">
+   <LINK srcnodeid="49" srcpinname="Space" dstnodeid="50" dstpinname="Input">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="2">
-   <BOUNDS type="Node" left="2460" top="3750" width="100" height="100">
+   <NODE systemname="Keyboard (Devices Desktop)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Desktop)" componentmode="Hidden" id="51">
+   <BOUNDS type="Node" left="5205" top="720" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2460" top="3750" width="6000" height="4500">
+   <BOUNDS type="Box" left="5205" top="720" width="3000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="20565" top="11820" width="6240" height="5085">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="Device" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="2" dstpinname="Layers">
+   <LINK srcnodeid="51" srcpinname="Device" dstnodeid="49" dstpinname="Keyboard">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="52">
+   <BOUNDS type="Node" left="6150" top="1140" width="1140" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6150" top="1140" width="1140" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|space to reset|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="53">
+   <BOUNDS type="Node" left="3945" top="1965" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Simulate" visible="1">
+   </PIN>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="Up Edge" dstnodeid="53" dstpinname="Simulate">
+   </LINK>
+   <NODE systemname="UITest (Value)" filename="vl\VVVV.2d.UITest.vl" nodename="UITest (Value)" componentmode="Hidden" id="55">
+   <BOUNDS type="Node" left="2625" top="2355" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Last Button Pressed" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Device" dstnodeid="55" dstpinname="Mouse">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Device" dstnodeid="55" dstpinname="Keyboard">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="55" dstpinname="UI ResolutionXY">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Draw Description Layer" dstnodeid="46" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Bang" dstnodeid="55" dstpinname="Initialize">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56">
+   <BOUNDS type="Box" left="4785" top="3510" width="1725" height="1560">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4785" top="3510" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Last Button Pressed|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Last Button Pressed" dstnodeid="56" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

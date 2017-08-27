@@ -1,77 +1,12 @@
 ﻿using SharpDX;
 using System;
-using VL.Lib.UI.Notifications;
+using VVVV.Utils.IO;
 
-namespace VL.Lib.UI
+namespace VL.Lib.UI.VVVV
 {
-    public class NotificationTransformer
+    public static class VVVVNotificationHelpers
     {
-        readonly Vector2 Offset;
-        readonly Vector2 Scaling;
-
-        public NotificationTransformer(Vector2 offset, Vector2 scaling)
-        {
-            Offset = offset;
-            Scaling = scaling;
-        }
-
-        public Vector2 Transform(Vector2 point)
-        {
-            return new Vector2(point.X * Scaling.X + Offset.X, point.Y * Scaling.Y + Offset.Y);
-        }      
-    }
-
-    public static class NotificationHelpers
-    {
-        public static TResult MouseKeyboardSwitch<TResult>(object eventArg, TResult defaultResult,
-            Func<MouseDownNotification, TResult> onMouseDown = null,
-            Func<MouseMoveNotification, TResult> onMouseMove = null,
-            Func<MouseUpNotification, TResult> onMouseUp = null,
-            Func<KeyDownNotification, TResult> onKeyDown = null,
-            Func<KeyUpNotification, TResult> onKeyUp = null,
-            Func<KeyPressNotification, TResult> onKeyPress = null)
-            where TResult : class
-        {
-            return NotificationSwitch(eventArg, defaultResult,
-                mn => MouseNotificationSwitch(mn, defaultResult, onMouseDown, onMouseMove, onMouseUp),
-                kn => KeyNotificationSwitch(kn, defaultResult, onKeyDown, onKeyUp, onKeyPress));
-        }
-
-        public static object TransformNotification(object notification, NotificationTransformer transformer)
-        {
-            return NotificationSwitch(notification, null,
-
-                //mouse
-                mn => MouseNotificationSwitch<object>(mn, null,
-                    n => new MouseDownNotification(
-                        transformer.Transform(n.Position),
-                        transformer.Transform(n.ClientArea),
-                        n.Buttons),
-
-                    n => new MouseMoveNotification(
-                        transformer.Transform(n.Position),
-                        transformer.Transform(n.ClientArea)),
-
-                    n => new MouseUpNotification(
-                        transformer.Transform(n.Position),
-                        transformer.Transform(n.ClientArea),
-                        n.Buttons)
-                ),
-                null, //keyboard
-                null, //touch
-                null); //gesture
-        }
-
-    public static TResult PositionEvent<TResult>(object eventArg, TResult defaultResult,
-            Func<Vector2, TResult> onPositionEvent = null)
-            where TResult : class
-        {
-            return NotificationSwitch(eventArg, defaultResult,
-                mn => onPositionEvent(mn.Position),
-                null,
-                tn => onPositionEvent(tn.Position),
-                gn => onPositionEvent(gn.Position));
-        }
+        //TODO: add touch/gesture switch, first implement for VL then copy here
 
         public static TResult NotificationSwitch<TResult>(object eventArg, TResult defaultResult, 
             Func<MouseNotification, TResult> mouseFunc = null,
@@ -167,22 +102,6 @@ namespace VL.Lib.UI
                 default:
                     return defaultResult;
             }
-        }
-
-        static bool SafeCall<TIn, TCast>(TIn value, Action<TCast> action)
-            where TCast : class
-        {
-            if (action != null)
-            {
-                var cast = value as TCast;
-                if (cast != null)
-                {
-                    action(cast);
-                    return true;
-                }
-            }
-
-            return false;
         }
     }
 }

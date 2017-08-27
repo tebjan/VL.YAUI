@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 
-
 namespace VL.Lib.UI.Notifications
 {
     public enum KeyNotificationKind
