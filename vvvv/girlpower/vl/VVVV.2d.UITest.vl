@@ -30,7 +30,7 @@
             <Pin Id="PlhD0bBxBnmPYhJsndXF4G" Name="Last Button Pressed" Kind="OutputPin" />
           </Patch>
           <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi">
-            <ControlPoint Id="LYjsLkyXoxdMV1uCkhcaEZ" Bounds="268,199" />
+            <ControlPoint Id="LYjsLkyXoxdMV1uCkhcaEZ" Bounds="268,198" />
             <ControlPoint Id="BpqoTe5DnE4NqvpLxSkTCi" Bounds="371,198" />
             <Node Bounds="277,302,185,13" Id="AesECQP8guQMGOAL0XhgEV">
               <p:NodeReference LastCategoryFullName="VVVV.Value" LastSymbolSource="VVVV.2d.UITest.vl">
@@ -44,9 +44,9 @@
               <Pin Id="PlKBi4uEe15NDKhSFdu6cC" Name="Last Button Pressed" Kind="OutputPin" />
               <Pin Id="VjEXDpLesPOQME1tHYeTYQ" Name="Draw Description Layer" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="KAewV0k8GpkOuJpu3u5fpk" Bounds="479,204" />
+            <ControlPoint Id="KAewV0k8GpkOuJpu3u5fpk" Bounds="479,198" />
             <ControlPoint Id="QDeg171RUqnQH9fWQZ1fsX" Bounds="457,374" />
-            <ControlPoint Id="J0obOxokbCZOwsoFHHMWO4" Bounds="611,202" />
+            <ControlPoint Id="J0obOxokbCZOwsoFHHMWO4" Bounds="611,198" />
             <Pad Id="O45Z7up7rSNPtIEhcy6bMw" Comment="Last Button Pressed" Bounds="278,367,40,19" ShowValueBox="true" isIOBox="true" />
             <ControlPoint Id="NxroqlBmMmoQKDP862xgoA" Bounds="231,406" />
           </Canvas>
@@ -418,7 +418,7 @@
                   </p:NodeReference>
                   <Pin Id="TKAgHMOLErAK9VcecN34iy" Name="Input" Kind="StateInputPin" />
                   <Pin Id="NBpoDnSgoXSMPuSXRvNcJb" Name="New Element" Kind="InputPin" />
-                  <Pin Id="DZLtBYm80RVMhaJYiX0U21" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="AcAndQZmvevLOS51Ui3ckr" Name="Output" Kind="StateOutputPin" />
                 </Node>
               </Patch>
               <Patch Id="NzxfKPxXPCcQQrpIUuN9b6" Name="Remover" ManuallySortedPins="true">
@@ -431,9 +431,9 @@
                     <CategoryReference Kind="MutableInterfaceType" Name="IUIElement" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="AunBhEiMDZoNHi5TRehUXV" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="F78IruujihBLWEqD5WQYcY" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="RCvM32d8PQ8OuaetnM8Eyt" Name="Old Element" Kind="InputPin" />
-                  <Pin Id="PwZLMOpWsUkNmNqKlYlKMW" Name="Result" Kind="OutputPin" />
+                  <Pin Id="Azsx6eaaOlNLjxa4OYo7B4" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="OBbnPoG3bcnNFbnuVLy0Ip" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
             </Node>

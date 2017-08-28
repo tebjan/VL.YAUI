@@ -37,15 +37,10 @@ namespace VL.Lib.UI.Notifications
 
     public class KeyDownNotification : KeyCodeNotification
     {
-        public KeyDownNotification(Keys keyCode) : this(new KeyEventArgs(keyCode)) { }
-        public KeyDownNotification(KeyEventArgs args)
-            : base(KeyNotificationKind.KeyDown, args.KeyCode)
+        public KeyDownNotification(Keys keyCode)
+            : base(KeyNotificationKind.KeyDown, keyCode)
         {
-            origArgs = args;
         }
-        KeyEventArgs origArgs;
-
-        public bool Handled { get { return origArgs.Handled; } set { origArgs.Handled = value; } } 
     }
 
     public class KeyPressNotification : KeyNotification

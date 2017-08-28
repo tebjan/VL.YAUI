@@ -54,7 +54,6 @@ namespace VL.Lib.UI
             Func<KeyDownNotification, TResult> onKeyDown = null,
             Func<KeyUpNotification, TResult> onKeyUp = null,
             Func<KeyPressNotification, TResult> onKeyPress = null)
-            where TResult : class
         {
             return NotificationSwitch(eventArg, defaultResult,
                 mn => MouseNotificationSwitch(mn, defaultResult, onMouseDown, onMouseMove, onMouseUp),
@@ -119,7 +118,6 @@ namespace VL.Lib.UI
             Func<KeyNotification, TResult> keyFunc = null,
             Func<TouchNotification, TResult> touchFunc = null,
             Func<GestureNotification, TResult> gestureFunc = null)
-            where TResult : class
         {
             if (mouseFunc != null)
             {
@@ -167,22 +165,21 @@ namespace VL.Lib.UI
             Func<MouseClickNotification, TResult> onClick = null,
             Func<MouseWheelNotification, TResult> onWheel = null,
             Func<MouseHorizontalWheelNotification, TResult> onHorizontalWheel = null)
-            where TResult : class
         {
             switch (notification.Kind)
             {
                 case MouseNotificationKind.MouseDown:
-                    return onDown?.Invoke((MouseDownNotification)notification) ?? defaultResult;
+                    return onDown != null ? onDown((MouseDownNotification)notification) : defaultResult;
                 case MouseNotificationKind.MouseUp:
-                    return onUp?.Invoke((MouseUpNotification)notification) ?? defaultResult;
+                    return onUp != null ? onUp((MouseUpNotification)notification) : defaultResult;
                 case MouseNotificationKind.MouseMove:
-                    return onMove?.Invoke((MouseMoveNotification)notification) ?? defaultResult;
+                    return onMove != null ? onMove((MouseMoveNotification)notification) : defaultResult;
                 case MouseNotificationKind.MouseWheel:
-                    return onWheel?.Invoke((MouseWheelNotification)notification) ?? defaultResult;
+                    return onWheel != null? onWheel((MouseWheelNotification)notification) : defaultResult;
                 case MouseNotificationKind.MouseHorizontalWheel:
-                    return onHorizontalWheel?.Invoke((MouseHorizontalWheelNotification)notification) ?? defaultResult;
+                    return onHorizontalWheel != null ? onHorizontalWheel((MouseHorizontalWheelNotification)notification) : defaultResult;
                 case MouseNotificationKind.MouseClick:
-                    return onClick?.Invoke((MouseClickNotification)notification) ?? defaultResult;
+                    return onClick != null ? onClick((MouseClickNotification)notification) : defaultResult;
                 default:
                     return defaultResult;
             }
@@ -193,18 +190,17 @@ namespace VL.Lib.UI
             Func<KeyUpNotification, TResult> onUp = null,
             Func<KeyPressNotification, TResult> onPress = null,
             Func<KeyboardLostNotification, TResult> onDeviceLost = null)
-            where TResult : class
         {
             switch (notification.Kind)
             {
                 case KeyNotificationKind.KeyDown:
-                    return onDown?.Invoke((KeyDownNotification)notification) ?? defaultResult;
+                    return onDown != null ? onDown((KeyDownNotification)notification) : defaultResult;
                 case KeyNotificationKind.KeyPress:
-                    return onPress?.Invoke((KeyPressNotification)notification) ?? defaultResult;
+                    return onPress != null ? onPress((KeyPressNotification)notification) : defaultResult;
                 case KeyNotificationKind.KeyUp:
-                    return onUp?.Invoke((KeyUpNotification)notification) ?? defaultResult;
+                    return onUp != null ? onUp((KeyUpNotification)notification) : defaultResult;
                 case KeyNotificationKind.DeviceLost:
-                    return onDeviceLost?.Invoke((KeyboardLostNotification)notification) ?? defaultResult;
+                    return onDeviceLost != null ? onDeviceLost((KeyboardLostNotification)notification) : defaultResult;
                 default:
                     return defaultResult;
             }

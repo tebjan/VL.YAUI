@@ -96,7 +96,7 @@ namespace VL.Lib.UI
                 FPickPath = NotificationHelpers.PositionEvent(eventArgs, FPickPath, pos => GetPickPath(pos.GetUnitRect()));
 
                 //calc hover, active, selected
-                FCurrentHandler = NotificationHelpers.MouseKeyboardSwitch(eventArgs, null, OnMouseDown, OnMouseMove);
+                FCurrentHandler = NotificationHelpers.MouseKeyboardSwitch(eventArgs, FCurrentHandler, OnMouseDown, OnMouseMove);
             }
             else
             {
@@ -107,8 +107,8 @@ namespace VL.Lib.UI
             //do handler
             FCurrentHandler = FCurrentHandler?.ProcessInput(eventArgs);
 
-            System.Diagnostics.Debug.WriteLine("Notification: " + eventArgs?.ToString());
-            System.Diagnostics.Debug.WriteLine("FCurrentHandler: " + FCurrentHandler?.ToString());
+            //System.Diagnostics.Debug.WriteLine("Notification: " + eventArgs?.ToString());
+            //System.Diagnostics.Debug.WriteLine("FCurrentHandler: " + FCurrentHandler?.ToString());
         }
 
         void OnSelectionDown(MouseDownNotification mn)
@@ -126,8 +126,16 @@ namespace VL.Lib.UI
 
             if (last != null)
             {
-                FSelectedElements.Add(last);
-                last.Select();
+                if (!last.GetSelected())
+                {
+                    FSelectedElements.Add(last);
+                    last.Select();
+                }
+                else
+                {
+                    last.Deselect();
+                    FSelectedElements.Remove(last);
+                }
             }
         }
 
@@ -284,7 +292,12 @@ namespace VL.Lib.UI
 
         public IUIHandler ProcessInput(object eventArgs)
         {
-            return NotificationHelpers.MouseKeyboardSwitch(eventArgs, null, OnMouseDown, OnMouseMove, OnMouseUp);
+            var active = NotificationHelpers.MouseKeyboardSwitch(eventArgs, this, OnMouseDown, OnMouseMove, OnMouseUp);
+
+            if (ActiveElement != null)
+                return ActiveElement.ProcessInput(eventArgs) ?? active;
+
+            return active;
         }
 
         IUIElement ActiveElement;
@@ -295,23 +308,19 @@ namespace VL.Lib.UI
             if (activeLast != null)
             {
                 ActiveElement = activeLast;
-                return ActiveElement.ProcessInput(mn) ?? this;
             }
 
-            return null;
+            return this;
         }
 
         IUIHandler OnMouseMove(MouseMoveNotification mn)
         {
-            if (ActiveElement != null)
-                return ActiveElement.ProcessInput(mn) ?? this;
-
-            return null;
+            return this;
         }
 
         IUIHandler OnMouseUp(MouseUpNotification mn)
         {
-            return ActiveElement?.ProcessInput(mn) ?? null;
+            return null;
         }
     }
 }
