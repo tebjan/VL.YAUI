@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VL.Lib.UI</name>
+    </assembly>
+    <members>
+        <member name="T:VL.Lib.UI.IMouseHandler">
+            <summary>
+            Mouse event handler interface
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.EndWith(VL.Lib.UI.IMouseHandler,System.Action{VL.Lib.UI.Notifications.MouseNotification})">
+            <summary>
+            Calls the given action once the handler is finished.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.ContinueWith(VL.Lib.UI.IMouseHandler,VL.Lib.UI.IMouseHandler)">
+            <summary>
+            Creates a handler which will return the second handler once the first one is finished.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.ContinueWith(VL.Lib.UI.IMouseHandler,System.Func{VL.Lib.UI.Notifications.MouseNotification,VL.Lib.UI.IMouseHandler})">
+            <summary>
+            Creates a handler which will call and return the handler of the given continuation once the first handler is finished.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.InParallelWith(VL.Lib.UI.IMouseHandler,VL.Lib.UI.IMouseHandler)">
+            <summary>
+            Creates a handler which runs both given handlers in parallel.
+            As soon as one of them is finished the other one will be returned.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.InSyncWith(VL.Lib.UI.IMouseHandler,VL.Lib.UI.IMouseHandler)">
+            <summary>
+            Creates a handler which runs both given handlers in parallel.
+            As soon as one of them changes, the changed one will be returned. left has priority of both change on the same event.
+            Is any of the handlers finishes, the other is returned.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.OnDown(System.Func{VL.Lib.UI.Notifications.MouseDownNotification,VL.Lib.UI.IMouseHandler})">
+            <summary>
+            Creates a handler which will call the given continuation once a mouse down was observed.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.OnMove(System.Func{VL.Lib.UI.Notifications.MouseMoveNotification,VL.Lib.UI.IMouseHandler})">
+            <summary>
+            Creates a handler which will call the given continuation once a mouse move was observed.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.OnUp(System.Func{VL.Lib.UI.Notifications.MouseUpNotification,VL.Lib.UI.IMouseHandler})">
+            <summary>
+            Creates a handler which will call the given continuation once a mouse up was observed.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.WhileAny(System.Func{VL.Lib.UI.IMouseHandler,VL.Lib.UI.Notifications.MouseNotification,VL.Lib.UI.IMouseHandler})">
+            <summary>
+            Create a handler which will call the given continuation as long as any mouse actions are observed.
+            In order to stay in the loop the continuation needs to return the given handler.
+            In order to exit the loop the continuation needs to return null.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.WhileMove(System.Func{VL.Lib.UI.IMouseHandler,VL.Lib.UI.Notifications.MouseMoveNotification,VL.Lib.UI.IMouseHandler})">
+            <summary>
+            Create a handler which will call the given continuation as long as mouse moves are observed.
+            In order to stay in the move loop the continuation needs to return the given handler.
+            In order to exit the move loop the continuation needs to return null.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.OnClick(System.Func{VL.Lib.UI.Notifications.MouseClickNotification,VL.Lib.UI.IMouseHandler})">
+            <summary>
+            Creates a handler which will call the given continuation once a mouse click was observed.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.OnDoubleClick(System.Func{VL.Lib.UI.Notifications.MouseClickNotification,VL.Lib.UI.IMouseHandler})">
+            <summary>
+            Creates a handler which will call the given continuation once a mouse double click was observed.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.OnDragStart(System.Func{VL.Lib.UI.Notifications.MouseDownNotification,VL.Lib.UI.IMouseHandler})">
+            <summary>
+            Creates a handler which will call the given continuation once the start of a mouse drag was observed.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.Drag(System.Action{VL.Lib.UI.Notifications.MouseMoveNotification,SharpDX.Vector2})">
+            <summary>
+            Creates a handler which will call the given action as long as the mouse moves. 
+            Use together with OnDragStart and EndWith in order to setup proper initialization and finalization code.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.Handler.Select(VL.Lib.UI.Notifications.MouseDownNotification,System.Action{VL.Lib.UI.Notifications.MouseMoveNotification,SharpDX.RectangleF})">
+            <summary>
+            Creates a handler which will call the given action as long as the mouse moves.
+            Use together with OnDragStart and EndWith in order to setup proper initialization and finalization code.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.UI.RectangleExtensions.GetUnitRect(SharpDX.Vector2)">
+            <summary>
+            Gets a unit rect from a center position.
+            </summary>
+            <param name="center">The center.</param>
+            <returns></returns>
+        </member>
+        <member name="M:VL.Lib.UI.RectangleExtensions.GetRect(SharpDX.Vector2,SharpDX.Vector2)">
+            <summary>
+            Gets a rect with from given center and size
+            </summary>
+            <param name="center">The center.</param>
+            <param name="size">The size.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

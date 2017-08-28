@@ -19,9 +19,17 @@ namespace VL.Lib.UI
         public IReadOnlyList<IUIElement> GetFocusedElements() => FFocusedElements;
         public IReadOnlyList<IUIElement> GetSelectedElements() => FSelectedElements;
 
+        IUIHandler FFallbackHandler;
+        IUIHandler FDefaultHandler;
+        IUIHandler FCurrentHandler;
+
+        RectangleF? FSelectionRect;
+        public RectangleF? GetSelectionRect() => FSelectionRect;
+
         public UIController()
         {
             FFallbackHandler = new BasicUIHandler(this);
+            FDefaultHandler = FFallbackHandler;           
         }  
 
         public void AddElement(IUIElement element)
@@ -34,8 +42,15 @@ namespace VL.Lib.UI
             return FElements.Remove(element);
         }
 
-        IUIHandler FFallbackHandler;
-        IUIHandler FCurrentHandler;
+        public void OverrideDefaultHandler(IUIHandler defaultInteraction)
+        {
+            FDefaultHandler = defaultInteraction;
+        }
+
+        public void ResetDefaultHandler()
+        {
+            FDefaultHandler = FFallbackHandler;
+        }
 
         IReadOnlyList<IUIElement> FPickPath = new List<IUIElement>();
         public IReadOnlyList<IUIElement> GetPickPath() => FPickPath;
@@ -58,15 +73,30 @@ namespace VL.Lib.UI
             }
         }
 
+        IUIHandler SetupSelectionHandler()
+        {
+            return NotificationHelpers.SelectionRectHandler(
+                OnSelectionDown,
+                null,
+                OnSelection,
+                OnEndSelection
+                );
+        }
+
+        void OnEndSelection(MouseNotification mn)
+        {
+            FSelectionRect = null;
+        }
+
         public void ProcessInput(object eventArgs)
         {
             if (FCurrentHandler == null)
             {
                 //get pick path 
-                FPickPath = NotificationHelpers.PositionEvent(eventArgs, FPickPath, GetPickPath);
+                FPickPath = NotificationHelpers.PositionEvent(eventArgs, FPickPath, pos => GetPickPath(pos.GetUnitRect()));
 
                 //calc hover, active, selected
-                FCurrentHandler = NotificationHelpers.MouseKeyboardSwitch(eventArgs, null, OnMouseDown, OnMouseMove, OnMouseUp);
+                FCurrentHandler = NotificationHelpers.MouseKeyboardSwitch(eventArgs, null, OnMouseDown, OnMouseMove);
             }
             else
             {
@@ -76,24 +106,13 @@ namespace VL.Lib.UI
 
             //do handler
             FCurrentHandler = FCurrentHandler?.ProcessInput(eventArgs);
+
+            System.Diagnostics.Debug.WriteLine("Notification: " + eventArgs?.ToString());
+            System.Diagnostics.Debug.WriteLine("FCurrentHandler: " + FCurrentHandler?.ToString());
         }
 
-        IUIHandler OnMouseDown(MouseDownNotification mn)
+        void OnSelectionDown(MouseDownNotification mn)
         {
-            //focus
-            foreach (var elem in FFocusedElements)
-                elem.Unfocus();        
-
-            FFocusedElements.Clear();           
-
-            var last = FPickPath.LastOrDefault();
-
-            if (last != null)
-            {
-                FFocusedElements.Add(last);
-                last.Focus();
-            }
-
             //selection
             if (!mn.CtrlKey)
             {
@@ -103,13 +122,68 @@ namespace VL.Lib.UI
                 FSelectedElements.Clear();
             }
 
+            var last = FPickPath.LastOrDefault();
+
             if (last != null)
             {
                 FSelectedElements.Add(last);
                 last.Select();
             }
+        }
 
-            return FFallbackHandler;
+        void OnSelection(MouseMoveNotification mn, RectangleF selection)
+        {
+            FSelectionRect = selection;
+            var leftovers = FSelectedElements.ToList();
+            var picks = GetPickPath(selection);
+
+            foreach (var pick in picks)
+            {
+                if (!FSelectedElements.Contains(pick))
+                {
+                    FSelectedElements.Add(pick);
+                    pick.Select();                   
+                }
+
+                leftovers.Remove(pick);
+            }
+
+            if (!mn.CtrlKey)
+            {
+                foreach (var item in leftovers)
+                {
+                    item.Deselect();
+                    FSelectedElements.Remove(item);
+                } 
+            }
+        }
+
+        IUIHandler OnMouseDown(MouseDownNotification mn)
+        {
+            if (FPickPath.Any())
+            {
+                //focus
+                foreach (var elem in FFocusedElements)
+                    elem.Unfocus();
+
+                FFocusedElements.Clear();
+
+                var last = FPickPath.LastOrDefault();
+
+                if (last != null)
+                {
+                    FFocusedElements.Add(last);
+                    last.Focus();
+                }
+
+                OnSelectionDown(mn);
+
+                return FDefaultHandler;
+            }
+            else //marquee selection when no element hit
+            {
+                return SetupSelectionHandler();
+            }
         }
 
         IUIHandler OnMouseMove(MouseMoveNotification mn)
@@ -120,30 +194,25 @@ namespace VL.Lib.UI
 
         IUIHandler OnMouseMoveUnhover(MouseMoveNotification mn)
         {
-            CalculateEnterLeaveEvent(mn, FHoveredViews.Where(elem => elem.HitTest(mn.Position)).ToList());
+            CalculateEnterLeaveEvent(mn, FHoveredViews.Where(elem => elem.HitTest(mn.Position.GetUnitRect())).ToList());
             return null;
         }
 
-        IUIHandler OnMouseUp(MouseUpNotification mn)
-        {
-            return null;
-        }
-
-        IReadOnlyList<IUIElement> GetPickPath(Vector2 position)
+        IReadOnlyList<IUIElement> GetPickPath(RectangleF pickArea)
         {
             var pickPath = new List<IUIElement>();
-            GetPickPathRecursive(position, FElements, pickPath);
+            GetPickPathRecursive(pickArea, FElements, pickPath);
             return pickPath;
         }
 
-        static void GetPickPathRecursive(Vector2 position, IEnumerable<IUIElement> elements, List<IUIElement> pickPath)
+        static void GetPickPathRecursive(RectangleF pickArea, IEnumerable<IUIElement> elements, List<IUIElement> pickPath)
         {
             foreach (var element in elements)
             {
-                if(element.HitTest(position))
+                if(element.HitTest(pickArea))
                 {
                     pickPath.Add(element);
-                    GetPickPathRecursive(position, element.GetChildren(), pickPath);
+                    GetPickPathRecursive(pickArea, element.GetChildren(), pickPath);
                 }
             }
         }
@@ -206,6 +275,11 @@ namespace VL.Lib.UI
         public BasicUIHandler(UIController controller)
         {
             FController = controller;
+        }
+
+        public void SetElement<T>(T element) where T : IUIElement
+        {
+            throw new NotImplementedException();
         }
 
         public IUIHandler ProcessInput(object eventArgs)

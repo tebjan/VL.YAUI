@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug35.8.dtd" >
    <PATCH nodename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="1305" top="3975" width="9000" height="6000">
+   <BOUNDS type="Window" left="240" top="975" width="10080" height="8565">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.9.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1980" top="4170" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="20790" top="660" width="7695" height="7965">
+   <BOUNDS type="Window" left="14325" top="1020" width="12450" height="12360">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -100,18 +100,6 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (CraftLie)" filename="%VVVV%\packs\CraftLie.1.0.2\vvvv\nodes\modules\Renderer (CraftLie).v4p" nodename="Renderer (CraftLie)" componentmode="Hidden" id="46">
-   <BOUNDS type="Node" left="2130" top="3285" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="1635" top="5370" width="22830" height="13830">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="46" srcpinname="Layer" dstnodeid="2" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="27" srcpinname="Output Enum" dstnodeid="46" dstpinname="Normalize">
-   </LINK>
-   <LINK srcnodeid="29" srcpinname="Output Enum" dstnodeid="46" dstpinname="Horizontal Align">
-   </LINK>
    <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="49">
    <BOUNDS type="Node" left="5190" top="1230" width="100" height="100">
    </BOUNDS>
@@ -180,8 +168,6 @@
    </LINK>
    <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="55" dstpinname="UI ResolutionXY">
    </LINK>
-   <LINK srcnodeid="55" srcpinname="Draw Description Layer" dstnodeid="46" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="53" srcpinname="Bang" dstnodeid="55" dstpinname="Initialize">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56">
@@ -201,5 +187,19 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="55" srcpinname="Last Button Pressed" dstnodeid="56" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Renderer (CraftLie)" filename="%VVVV%\packs\CraftLie.1.0.2\vvvv\nodes\modules\Renderer (CraftLie).v4p" nodename="Renderer (CraftLie)" componentmode="Hidden" id="63">
+   <BOUNDS type="Node" left="2130" top="3285" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1635" top="5370" width="22830" height="13830">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="63" srcpinname="Layer" dstnodeid="2" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output Enum" dstnodeid="63" dstpinname="Normalize">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Output Enum" dstnodeid="63" dstpinname="Horizontal Align">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Draw Description Layer" dstnodeid="63" dstpinname="Input">
    </LINK>
    </PATCH>

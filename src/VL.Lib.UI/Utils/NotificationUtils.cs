@@ -21,6 +21,30 @@ namespace VL.Lib.UI
         }      
     }
 
+    public class MouseHandlerDriver : IUIHandler
+    {
+        IMouseHandler FHandler;
+
+        public MouseHandlerDriver(IMouseHandler handler)
+        {
+            FHandler = handler;
+        }
+
+        public IUIHandler ProcessInput(object eventArgs)
+        {
+            FHandler = NotificationHelpers.NotificationSwitch(eventArgs, FHandler,
+                mn => NotificationHelpers.MouseNotificationSwitch(mn, null,
+                FHandler.MouseDown, FHandler.MouseMove, FHandler.MouseUp, FHandler.MouseClick));
+
+            return FHandler != null ? this : null;
+        }
+
+        public void SetElement<T>(T element) where T : IUIElement
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     public static class NotificationHelpers
     {
         public static TResult MouseKeyboardSwitch<TResult>(object eventArg, TResult defaultResult,
@@ -62,9 +86,26 @@ namespace VL.Lib.UI
                 null); //gesture
         }
 
-    public static TResult PositionEvent<TResult>(object eventArg, TResult defaultResult,
-            Func<Vector2, TResult> onPositionEvent = null)
-            where TResult : class
+        public static IUIHandler DragMouseHandler(
+                Action<MouseDownNotification> onDragStart,
+                Action<MouseMoveNotification, Vector2> onDrag,
+                Action<MouseNotification> onDragEnd)
+        {
+            return new MouseHandlerDriver(Handler.DragMouseHandler(onDragStart, onDrag, onDragEnd));
+        }
+
+        public static IUIHandler SelectionRectHandler(
+                Action<MouseDownNotification> onMouseDown,
+                Action<MouseDownNotification> onSelectionStart,
+                Action<MouseMoveNotification, RectangleF> onSelection,
+                Action<MouseNotification> onSelectionFinish)
+        {
+            return new MouseHandlerDriver(Handler.SelectionRectMouseHandler(onMouseDown, onSelectionStart, onSelection, onSelectionFinish));
+        }
+
+        public static TResult PositionEvent<TResult>(object eventArg, TResult defaultResult,
+                Func<Vector2, TResult> onPositionEvent = null)
+                where TResult : class
         {
             return NotificationSwitch(eventArg, defaultResult,
                 mn => onPositionEvent(mn.Position),

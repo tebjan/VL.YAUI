@@ -395,10 +395,10 @@
             <Pad Id="EsIRoR2bAaNNxrzsVbzmOq" SlotId="MapTrYmAqAHLuS0t9lNQkT" Bounds="126,1241">
               <p:ValueBoxSettings />
             </Pad>
-            <Node Name="CreateButtonGrid2" Bounds="122,1114,262,85" Id="Mytvvh1Tn9VOK0CJKj2nUm">
+            <Node Name="CreateButtonGrid2" Bounds="122,1114,262,79" Id="Mytvvh1Tn9VOK0CJKj2nUm">
               <p:NodeReference LastCategoryFullName="VVVV.Value.UITesterInternal" LastSymbolSource="VVVV.2d.UITest.vl">
-                <Choice Kind="OperationCallFlag" Name="CreateButtonGrid" />
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="CreateButtonGrid" />
               </p:NodeReference>
               <Pin Id="EHlW59DyLgaNviBxRa0llO" Name="Condition" Kind="InputPin" />
               <Pin Id="KMWfUeLOobbOyZJqjjbO2j" Name="Center" Kind="InputPin" />
@@ -410,15 +410,11 @@
               <Patch Id="STw8YbdYbVbLNEUBsbeIWa" Name="Adder" ManuallySortedPins="true">
                 <Pin Id="CdcaK4aMfxoOsjfH7qlVkT" Name="Arg" Kind="InputPin" />
                 <ControlPoint Id="LcWkHHYfqZwMD4oglnpG2k" Bounds="181,1129" />
-                <Node Bounds="134,1157,65,22" Id="ED8McI3ykDdMISJrrrlBKV">
-                  <p:NodeReference LastCategoryFullName="VL.Lib.UI.IUIElement" LastSymbolSource="VL.Lib.UI.dll">
+                <Node Bounds="134,1160,65,22" Id="ED8McI3ykDdMISJrrrlBKV">
+                  <p:NodeReference LastCategoryFullName="UI.IUIElement" LastSymbolSource="VL.UI.CraftLie.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <AssemblyReference ID="VL.Lib.UI" />
-                    <CategoryReference Kind="AssemblyCategory" Name="VL" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Lib" />
-                    <CategoryReference Kind="AssemblyCategory" Name="UI" />
-                    <CategoryReference Kind="AssemblyCategory" Name="IUIElement" />
                     <Choice Kind="OperationCallFlag" Name="AddElement" />
+                    <CategoryReference Kind="MutableInterfaceType" Name="IUIElement" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="TKAgHMOLErAK9VcecN34iy" Name="Input" Kind="StateInputPin" />
                   <Pin Id="NBpoDnSgoXSMPuSXRvNcJb" Name="New Element" Kind="InputPin" />
@@ -428,15 +424,11 @@
               <Patch Id="NzxfKPxXPCcQQrpIUuN9b6" Name="Remover" ManuallySortedPins="true">
                 <Pin Id="BWQ2Cp3NJDCNIkUFZ2SM1k" Name="Arg" Kind="InputPin" />
                 <ControlPoint Id="Ox2XgyRxkD1OGpCrtL1WSf" Bounds="344,1120" />
-                <Node Bounds="267,1156,82,22" Id="JBsNJXGoIhkOdMu2qE9pRf">
-                  <p:NodeReference LastCategoryFullName="VL.Lib.UI.IUIElement" LastSymbolSource="VL.Lib.UI.dll">
+                <Node Bounds="264,1157,82,22" Id="JBsNJXGoIhkOdMu2qE9pRf">
+                  <p:NodeReference LastCategoryFullName="UI.IUIElement" LastSymbolSource="VL.UI.CraftLie.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <AssemblyReference ID="VL.Lib.UI" />
-                    <CategoryReference Kind="AssemblyCategory" Name="VL" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Lib" />
-                    <CategoryReference Kind="AssemblyCategory" Name="UI" />
-                    <CategoryReference Kind="AssemblyCategory" Name="IUIElement" />
                     <Choice Kind="OperationCallFlag" Name="RemoveElement" />
+                    <CategoryReference Kind="MutableInterfaceType" Name="IUIElement" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="AunBhEiMDZoNHi5TRehUXV" Name="Input" Kind="StateInputPin" />
                   <Pin Id="F78IruujihBLWEqD5WQYcY" Name="Output" Kind="StateOutputPin" />
@@ -507,6 +499,7 @@
               <p:NodeReference LastCategoryFullName="UI.Button" LastSymbolSource="VL.UI.CraftLie.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="GetPressedEvent" />
+                <FullNameCategoryReference ID="UI.Button" />
               </p:NodeReference>
               <Pin Id="SstWtjzCt36LjY3TNNyJW8" Name="Input" Kind="StateInputPin" />
               <Pin Id="IDSJ6raZAcKQZpnEbOzkcH" Name="Output" Kind="StateOutputPin" />
@@ -595,5 +588,4 @@
   </Patch>
   <DocumentDependency Id="JGGbSqtLN9OOZP219YsDvc" Location="..\..\..\VL.UI.CraftLie.vl" />
   <NugetDependency Id="HB3KsA0VJfPMJQjS8l6rnu" Location="CraftLie" Version="1.0.2" />
-  <PlatformDependency Id="PZAqnImeqzdM7EW2bCeZLa" Location="..\..\..\lib\VL.Lib.UI.dll" />
 </Document>

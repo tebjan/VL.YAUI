@@ -9,10 +9,9 @@ namespace VL.Lib.UI
 {
     public interface IUIElement
     {
-        bool HitTest(Vector2 position);
-        IUIHandler ProcessInput(object eventArgs);
         void Layout(Vector2 offset);
-        void Update();
+
+        bool HitTest(RectangleF hitArea);
 
         void Enter();
         void Leave();
@@ -23,6 +22,9 @@ namespace VL.Lib.UI
         void Select();
         void Deselect();
 
+        IUIHandler ProcessInput(object eventArgs);
+        void Update();
+       
         void SetVisibility(bool visible);
         bool GetVisibility();
 
