@@ -9,28 +9,32 @@ namespace VL.Lib.UI
 {
     public interface IUIElement
     {
-        void Layout(Vector2 offset);
 
+        void Layout(Vector2 offset);
         bool HitTest(RectangleF hitArea);
 
-        void Enter();
-        void Leave();
+        void SetHovered(bool hovered);
+        bool GetHovered();
 
-        void Focus();
-        void Unfocus();
+        void SetFocused(bool focused);
+        bool GetFocused();
 
-        void Select();
-        void Deselect();
+        void SetSelected(bool selected);
+        bool GetSelected();
 
-        IUIHandler ProcessInput(object eventArgs);
-        void Update();
-       
-        void SetVisibility(bool visible);
-        bool GetVisibility();
+        //interaction
+        IUIHandler ProcessInput(object eventArgs);  
 
+        //visuals
         void SetBounds(RectangleF bounds);
         RectangleF GetBounds();
 
+        void SetVisibility(bool visible);
+        bool GetVisibility();
+
+        void Update();
+
+        //children
         void AddElement(IUIElement newElement);
         bool RemoveElement(IUIElement oldElement);
         IEnumerable<IUIElement> GetChildren();
@@ -51,6 +55,42 @@ namespace VL.Lib.UI
         {
             var oldBounds = element.GetBounds();
             element.SetBounds(new RectangleF(oldBounds.X, oldBounds.Y, newSize.X, newSize.Y));
+            return element;
+        }
+
+        public static IUIElement Enter(this IUIElement element)
+        {
+            element.SetHovered(true);
+            return element;
+        }
+
+        public static IUIElement Leave(this IUIElement element)
+        {
+            element.SetHovered(false);
+            return element;
+        }
+
+        public static IUIElement Focus(this IUIElement element)
+        {
+            element.SetFocused(true);
+            return element;
+        }
+
+        public static IUIElement Unfocus(this IUIElement element)
+        {
+            element.SetFocused(false);
+            return element;
+        }
+
+        public static IUIElement Select(this IUIElement element)
+        {
+            element.SetSelected(true);
+            return element;
+        }
+
+        public static IUIElement Deselect(this IUIElement element)
+        {
+            element.SetSelected(false);
             return element;
         }
 
