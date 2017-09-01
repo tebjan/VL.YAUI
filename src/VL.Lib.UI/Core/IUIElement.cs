@@ -15,6 +15,7 @@ namespace VL.Lib.UI
 
         void SetHovered(bool hovered);
         bool GetHovered();
+        void Hover(object mouseMoveArgs);
 
         void SetFocused(bool focused);
         bool GetFocused();
@@ -31,6 +32,9 @@ namespace VL.Lib.UI
 
         void SetVisibility(bool visible);
         bool GetVisibility();
+
+        //void SetDirty(bool dirty);
+        //bool GetDirty();
 
         void Update();
 

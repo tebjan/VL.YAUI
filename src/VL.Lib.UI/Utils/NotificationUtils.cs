@@ -62,10 +62,10 @@ namespace VL.Lib.UI
 
         public static object TransformNotification(object notification, NotificationTransformer transformer)
         {
-            return NotificationSwitch(notification, null,
+            return NotificationSwitch(notification, notification,
 
                 //mouse
-                mn => MouseNotificationSwitch<object>(mn, null,
+                mn => MouseNotificationSwitch(mn, notification,
                     n => new MouseDownNotification(
                         transformer.Transform(n.Position),
                         transformer.Transform(n.ClientArea),

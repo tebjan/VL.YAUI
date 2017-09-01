@@ -23,9 +23,9 @@ namespace VL.Lib.UI
             return EventRegistry<TEvent>.Events.Remove(key);
         }
 
-        public static bool TryGetEventSource<TEvent>(string key, out TEvent eventSource)
+        public static void TryGetEventSource<TEvent>(string key, out bool success, out TEvent eventSource)
         {
-            return EventRegistry<TEvent>.Events.TryGetValue(key, out eventSource);
+            success = EventRegistry<TEvent>.Events.TryGetValue(key, out eventSource);
         }
     }
 }

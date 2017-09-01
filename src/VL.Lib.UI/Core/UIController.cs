@@ -42,6 +42,17 @@ namespace VL.Lib.UI
             return FElements.Remove(element);
         }
 
+        public void SetElements(IEnumerable<IUIElement> elements)
+        {
+            if(elements != null && elements.Any())
+                FElements = elements.ToList();
+        }
+
+        public void ClearElements()
+        {
+            FElements.Clear();
+        }
+
         public void OverrideDefaultHandler(IUIHandler defaultInteraction)
         {
             FDefaultHandler = defaultInteraction;
@@ -101,7 +112,7 @@ namespace VL.Lib.UI
             else
             {
                 //calc unhover
-                NotificationHelpers.MouseKeyboardSwitch(eventArgs, null, null, OnMouseMoveUnhover, null);
+                //NotificationHelpers.MouseKeyboardSwitch(eventArgs, null, null, OnMouseMoveUnhover, null);
             }
 
             //do handler
@@ -197,6 +208,12 @@ namespace VL.Lib.UI
         IUIHandler OnMouseMove(MouseMoveNotification mn)
         {
             CalculateEnterLeaveEvent(mn, FPickPath);
+
+            foreach (var item in FHoveredViews)
+            {
+                item.Hover(mn);
+            }
+
             return null;
         }
 
@@ -228,6 +245,11 @@ namespace VL.Lib.UI
         List<IUIElement> FEnteredViews = new List<IUIElement>();
         List<IUIElement> FLeftViews = new List<IUIElement>();
 
+        IEnumerable<T> LastOrDefaultAsSequence<T>(IEnumerable<T> input)
+        {
+            yield return input.LastOrDefault();
+        }
+
         void CalculateEnterLeaveEvent(MouseMoveNotification arg, IReadOnlyList<IUIElement> pickedViews)
         {
             FEnteredViews.Clear();
@@ -237,7 +259,7 @@ namespace VL.Lib.UI
             if (pickedViews.Any())
             {
                 //add new views
-                foreach (var view in pickedViews)
+                foreach (var view in LastOrDefaultAsSequence(pickedViews))
                 {
                     FHoveredViews.Add(view);
 

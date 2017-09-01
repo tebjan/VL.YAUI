@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using VL.Lib.UI.Notifications;
 
 namespace VL.Lib.UI
@@ -276,13 +277,21 @@ namespace VL.Lib.UI
                 {
                     onMouseDown(down);
                     return null;
-                }).InParallelWith(OnDragStart(
+                })              
+                .InParallelWith(OnDragStart(
                         start =>
                         {
-                            onSelectionStart?.Invoke(start);
-                            return Select(start, onSelection);
+                            if (start.Buttons.HasFlag(MouseButtons.Left))
+                            {
+                                onSelectionStart?.Invoke(start);
+                                return Select(start, onSelection).EndWith(onSelectionFinish); 
+                            }
+                            else
+                            {
+                                return null;
+                            }
                         }
-                    ).EndWith(onSelectionFinish));
+                    ));
         }
 
         /// <summary>
