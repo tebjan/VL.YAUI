@@ -86,7 +86,7 @@ namespace VL.Lib.UI
 
         IUIHandler SetupSelectionHandler()
         {
-            return NotificationHelpers.SelectionRectHandler(
+            return NotificationUtils.SelectionRectHandler(
                 OnSelectionDown,
                 null,
                 OnSelection,
@@ -104,10 +104,10 @@ namespace VL.Lib.UI
             if (FCurrentHandler == null)
             {
                 //get pick path 
-                FPickPath = NotificationHelpers.PositionEvent(eventArgs, FPickPath, pos => GetPickPath(pos.GetUnitRect()));
+                FPickPath = NotificationUtils.PositionEvent(eventArgs, FPickPath, pos => GetPickPath(pos.GetUnitRect()));
 
                 //calc hover, active, selected
-                FCurrentHandler = NotificationHelpers.MouseKeyboardSwitch(eventArgs, FCurrentHandler, OnMouseDown, OnMouseMove);
+                FCurrentHandler = NotificationUtils.MouseKeyboardSwitch(eventArgs, FCurrentHandler, OnMouseDown, OnMouseMove);
             }
             else
             {
@@ -314,7 +314,7 @@ namespace VL.Lib.UI
 
         public IUIHandler ProcessInput(object eventArgs)
         {
-            var active = NotificationHelpers.MouseKeyboardSwitch(eventArgs, this, OnMouseDown, OnMouseMove, OnMouseUp);
+            var active = NotificationUtils.MouseKeyboardSwitch(eventArgs, this, OnMouseDown, OnMouseMove, OnMouseUp);
 
             if (ActiveElement != null)
                 return ActiveElement.ProcessInput(eventArgs) ?? active;

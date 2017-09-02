@@ -32,8 +32,8 @@ namespace VL.Lib.UI
 
         public IUIHandler ProcessInput(object eventArgs)
         {
-            FHandler = NotificationHelpers.NotificationSwitch(eventArgs, FHandler,
-                mn => NotificationHelpers.MouseNotificationSwitch(mn, null,
+            FHandler = NotificationUtils.NotificationSwitch(eventArgs, FHandler,
+                mn => NotificationUtils.MouseNotificationSwitch(mn, null,
                 FHandler.MouseDown, FHandler.MouseMove, FHandler.MouseUp, FHandler.MouseClick));
 
             return FHandler != null ? this : null;
@@ -45,7 +45,7 @@ namespace VL.Lib.UI
         }
     }
 
-    public static class NotificationHelpers
+    public static class NotificationUtils
     {
         public static TResult MouseKeyboardSwitch<TResult>(object eventArg, TResult defaultResult,
             Func<MouseDownNotification, TResult> onMouseDown = null,
