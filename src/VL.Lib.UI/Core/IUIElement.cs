@@ -39,11 +39,14 @@ namespace VL.Lib.UI
         void Update();
 
         //children
-        void AddElement(IUIElement newElement);
-        bool RemoveElement(IUIElement oldElement);
         IEnumerable<IUIElement> GetChildren();
 
         object GetLayer();
+    }
+
+    public interface IUIElementSetChildren : IUIElement
+    {
+        void SetChildren(IEnumerable<IUIElement> children);
     }
 
     public static class IUElementExtensions

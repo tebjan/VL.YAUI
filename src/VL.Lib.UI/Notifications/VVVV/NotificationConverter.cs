@@ -6,7 +6,6 @@ using VUtils = VVVV.Utils.IO;
 using Drawing = System.Drawing;
 
 
-
 namespace VL.Lib.UI.Notifications
 {
     public class NotificationSpaceTransformer
@@ -22,7 +21,7 @@ namespace VL.Lib.UI.Notifications
 
         public Vector2 Transform(Drawing.Point point)
         {
-            return new Vector2(point.X * Scaling.X + Offset.X, point.Y * Scaling.Y + Offset.Y);
+            return new Vector2((point.X + Offset.X) * Scaling.X, (point.Y + Offset.Y) * Scaling.Y);
         }
 
         public Vector2 Transform(Drawing.Size size)

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VL.Lib.UI.Notifications.GestureNotification" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACBAAIADBAAABgAAAAAAAAQABACAAEKAAAAAAAEAA=</HashCode>
+      <FileName>Notifications\GestureNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.GestureBeginNotification" Collapsed="true">
+    <Position X="9" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\GestureNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.GestureEndNotification" Collapsed="true">
+    <Position X="13.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\GestureNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.GestureZoomNotification" Collapsed="true">
+    <Position X="15.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\GestureNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.GesturePanNotification" Collapsed="true">
+    <Position X="18" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\GestureNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.GestureRotateNotification" Collapsed="true">
+    <Position X="4.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\GestureNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.GestureTwoFingerTapNotification" Collapsed="true">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\GestureNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.GesturePressAndTapNotification" Collapsed="true">
+    <Position X="11.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\GestureNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.KeyNotification" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAABAAAAAAAAAAAAAAAAQAAAAAAAARAAAAAA=</HashCode>
+      <FileName>Notifications\KeyNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.KeyCodeNotification" Collapsed="true">
+    <Position X="8.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Notifications\KeyNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.KeyDownNotification" Collapsed="true">
+    <Position X="7.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\KeyNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.KeyPressNotification" Collapsed="true">
+    <Position X="3.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\KeyNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.KeyUpNotification" Collapsed="true">
+    <Position X="10" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\KeyNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.KeyboardLostNotification" Collapsed="true">
+    <Position X="5.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\KeyNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.MouseNotification" Collapsed="true">
+    <Position X="32.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABEEAAggAAAAAAAAAAAAIABAAAAAgAAEAA=</HashCode>
+      <FileName>Notifications\MouseNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.MouseMoveNotification" Collapsed="true">
+    <Position X="27" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\MouseNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.MouseButtonNotification" Collapsed="true">
+    <Position X="33.75" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\MouseNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.MouseDownNotification" Collapsed="true">
+    <Position X="31.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\MouseNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.MouseUpNotification" Collapsed="true">
+    <Position X="33.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\MouseNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.MouseClickNotification" Collapsed="true">
+    <Position X="36" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAACAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\MouseNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.MouseWheelNotification" Collapsed="true">
+    <Position X="38.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAEIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\MouseNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.MouseHorizontalWheelNotification" Collapsed="true">
+    <Position X="29.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAEIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\MouseNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.NotificationBase" Collapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAIAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\NotificationBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.TouchNotification" Collapsed="true">
+    <Position X="22.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAADAAAAgABAAAAAAAAgAAAAAAACAAACAEAA=</HashCode>
+      <FileName>Notifications\TouchNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.TouchDownNotification" Collapsed="true">
+    <Position X="22.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\TouchNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.TouchMoveNotification" Collapsed="true">
+    <Position X="24.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\TouchNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.TouchUpNotification" Collapsed="true">
+    <Position X="20.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\TouchNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.NotificationSpaceTransformer" Collapsed="true">
+    <Position X="42.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Notifications\VVVV\NotificationConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.Notifications.NotificationConverter" Collapsed="true">
+    <Position X="40.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Notifications\VVVV\NotificationConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VL.Lib.UI.VVVV.VVVVNotificationHelpers" Collapsed="true">
+    <Position X="40.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\VVVV\VVVVNotificationHelpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="VL.Lib.UI.Notifications.GestureNotificationKind" Collapsed="true">
+    <Position X="40.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAABBBAAAAAAAAAAAAABAAAAAAAAAAAAQAI=</HashCode>
+      <FileName>Notifications\GestureNotification.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="VL.Lib.UI.Notifications.KeyNotificationKind" Collapsed="true">
+    <Position X="42.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAABgAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Notifications\KeyNotification.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="VL.Lib.UI.Notifications.MouseNotificationKind" Collapsed="true">
+    <Position X="40.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAEAAIAAAAAAAAAAAEAAAAIAAAACAAAA=</HashCode>
+      <FileName>Notifications\MouseNotification.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="VL.Lib.UI.Notifications.TouchNotificationKind" Collapsed="true">
+    <Position X="42.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAEAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Notifications\TouchNotification.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
