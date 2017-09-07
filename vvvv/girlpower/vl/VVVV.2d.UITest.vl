@@ -45,7 +45,7 @@
               <Pin Id="Q1nYE2WmquOLYUUShW7y6Q" Name="Draw Description Layer" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="M6h77HXMl2sLd1NZ9A6ttz" Bounds="410,218" />
-            <ControlPoint Id="SDq2xjxCIRkOXSfb3GzcFA" Bounds="472,412" />
+            <ControlPoint Id="SDq2xjxCIRkOXSfb3GzcFA" Bounds="435,397" />
             <ControlPoint Id="UXgjiSsm2x9MNkmJJ7L1HI" Bounds="542,218" />
             <ControlPoint Id="RnGXtJYNgU6NtV2XPxPrsb" Bounds="254,402" />
           </Canvas>
@@ -323,10 +323,10 @@
                 <ControlPoint Id="QLOyAxfNi3HP4FWTF5jSOv" Bounds="686,345" />
                 <ControlPoint Id="R8ZS2MVCeOsMGu9qsgR5JR" Bounds="597,519" />
                 <Node Bounds="595,451,62,13" Id="MyosGz6Bi99Lbau0jClsBG">
-                  <p:NodeReference LastCategoryFullName="UI.IUIElementSetChildren" LastSymbolSource="VL.UI.CraftLie.vl">
+                  <p:NodeReference LastCategoryFullName="UI.IUIElementWithChildren" LastSymbolSource="VL.UI.CraftLie.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SetChildren" />
-                    <CategoryReference Kind="MutableInterfaceType" Name="IUIElementSetChildren" NeedsToBeDirectParent="true" />
+                    <CategoryReference Kind="Category" Name="IUIElementWithChildren" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="Mg5sRN3WDYLLOlFcQTCsBF" Name="Input" Kind="StateInputPin" />
                   <Pin Id="JaH7SO7qzcbMIN6t6q3bpK" Name="Children" Kind="InputPin" />
@@ -511,7 +511,7 @@
               <Pin Id="EX7wagbj2BTNNHezXFnVVA" Name="Size" Kind="InputPin" />
               <Pin Id="NZrOh2pvYyuOSb8pxrmuti" Name="Result" Kind="OutputPin" />
             </Node>
-            <Node Bounds="759,790,54,13" Id="TS2D77ohYrsQPE4uguuQoY">
+            <Node Bounds="763,801,54,13" Id="TS2D77ohYrsQPE4uguuQoY">
               <p:NodeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessNode" Name="Group" />

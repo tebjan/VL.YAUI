@@ -17,7 +17,7 @@
           </p:NodeReference>
           <p:Interfaces>
             <TypeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
-              <Choice Kind="MutableInterfaceType" Name="IUIElementSetChildren" />
+              <Choice Kind="MutableInterfaceType" Name="IUIElementWithChildren" />
             </TypeReference>
           </p:Interfaces>
           <Patch Id="UCbuwXvIrsiPNIqppEoHuE">
@@ -355,14 +355,14 @@
     ************************ Button ************************
 
 -->
-        <Node Name="Button" Bounds="-1,328" Id="Cg6csZ0LqYKOatgKmIT8NR">
+        <Node Name="Button" Bounds="169,268" Id="Cg6csZ0LqYKOatgKmIT8NR">
           <p:NodeReference>
             <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
             <Choice Kind="ClassDefinition" Name="Class" />
           </p:NodeReference>
           <p:Interfaces>
             <TypeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
-              <Choice Kind="MutableInterfaceType" Name="IUIElementSetChildren" />
+              <Choice Kind="MutableInterfaceType" Name="IUIElementWithChildren" />
             </TypeReference>
           </p:Interfaces>
           <Patch Id="RLUjvq3weHpMl7NzlejAfa">
@@ -1667,17 +1667,17 @@
         </Node>
         <!--
 
-    ************************ SubUI ************************
+    ************************ Panel ************************
 
 -->
-        <Node Name="SubUI" Bounds="1,394" Id="N2sGR2bHQ6FOqyzyA4Ax0m">
+        <Node Name="Panel" Bounds="172,337" Id="N2sGR2bHQ6FOqyzyA4Ax0m">
           <p:NodeReference>
             <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
             <Choice Kind="ClassDefinition" Name="Class" />
           </p:NodeReference>
           <p:Interfaces>
             <TypeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
-              <Choice Kind="MutableInterfaceType" Name="IUIElementSetChildren" />
+              <Choice Kind="MutableInterfaceType" Name="IUIElementWithChildren" />
             </TypeReference>
           </p:Interfaces>
           <Patch Id="A9dqKi0eUmzN7Nmdyr9qPr">
@@ -3071,10 +3071,10 @@
         </Node>
         <!--
 
-    ************************ IUIElementSetChildren ************************
+    ************************ IUIElementWithChildren ************************
 
 -->
-        <Node Name="IUIElementSetChildren" Bounds="-2,-32" Id="TzlO1Z0Mo8YMU8zevvsuWy">
+        <Node Name="IUIElementWithChildren" Bounds="-2,-32" Id="TzlO1Z0Mo8YMU8zevvsuWy">
           <p:NodeReference>
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
@@ -3123,14 +3123,14 @@
     ************************ Group (Spectral) ************************
 
 -->
-        <Node Name="Group (Spectral)" Bounds="521,292" Id="IWvBmM5R1YeQFDomQb2ygR">
+        <Node Name="Group (Spectral)" Bounds="491,261" Id="IWvBmM5R1YeQFDomQb2ygR">
           <p:NodeReference>
             <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
             <Choice Kind="ClassDefinition" Name="Class" />
           </p:NodeReference>
           <p:Interfaces>
             <TypeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
-              <Choice Kind="MutableInterfaceType" Name="IUIElementSetChildren" />
+              <Choice Kind="MutableInterfaceType" Name="IUIElementWithChildren" />
             </TypeReference>
           </p:Interfaces>
           <Patch Id="T40xuFoOHweMpXbWUJaX9D">
@@ -3261,14 +3261,14 @@
     ************************ Group ************************
 
 -->
-        <Node Name="Group" Bounds="523,351" Id="KLQEyMNpxIQNmjioiB2xFk">
+        <Node Name="Group" Bounds="493,320" Id="KLQEyMNpxIQNmjioiB2xFk">
           <p:NodeReference>
             <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
             <Choice Kind="ClassDefinition" Name="Class" />
           </p:NodeReference>
           <p:Interfaces>
             <TypeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
-              <Choice Kind="MutableInterfaceType" Name="IUIElementSetChildren" />
+              <Choice Kind="MutableInterfaceType" Name="IUIElementWithChildren" />
             </TypeReference>
           </p:Interfaces>
           <Patch Id="CYnrUnpHXQSOzDmtSUZp3G">
@@ -3421,7 +3421,7 @@
           </p:NodeReference>
           <p:Interfaces>
             <TypeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
-              <Choice Kind="MutableInterfaceType" Name="IUIElementSetChildren" />
+              <Choice Kind="MutableInterfaceType" Name="IUIElementWithChildren" />
             </TypeReference>
           </p:Interfaces>
           <Patch Id="GkPagf3EOTNP3cC5XAAr79">

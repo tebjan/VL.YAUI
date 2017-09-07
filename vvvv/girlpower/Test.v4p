@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5160" top="6360" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="12270" top="180" width="16365" height="12705">
+   <BOUNDS type="Window" left="11970" top="885" width="16065" height="14250">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -55,7 +55,7 @@
    <NODE id="18" systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Send String" slicecount="1" pintype="Input" visible="1" values="|UI Size|">
    </PIN>
-   <BOUNDS type="Node" left="6225" top="7170" width="100" height="100">
+   <BOUNDS type="Node" left="6225" top="6915" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" pintype="Input" slicecount="1" values="0">
    </PIN>
@@ -73,9 +73,9 @@
    <LINK srcnodeid="2" srcpinname="Actual BackBuffer SizeXY" dstnodeid="18" dstpinname="Input Value">
    </LINK>
    <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="49">
-   <BOUNDS type="Node" left="6150" top="1080" width="100" height="100">
+   <BOUNDS type="Node" left="7170" top="855" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6150" top="1080" width="3000" height="3000">
+   <BOUNDS type="Box" left="7170" top="855" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Key Match" slicecount="1" values="Space">
    </PIN>
@@ -85,7 +85,7 @@
    </PIN>
    </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="50">
-   <BOUNDS type="Node" left="6150" top="1515" width="100" height="100">
+   <BOUNDS type="Node" left="7170" top="1290" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -95,9 +95,9 @@
    <LINK srcnodeid="49" srcpinname="Space" dstnodeid="50" dstpinname="Input">
    </LINK>
    <NODE systemname="Keyboard (Devices Desktop)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Desktop)" componentmode="Hidden" id="51">
-   <BOUNDS type="Node" left="6165" top="570" width="100" height="100">
+   <BOUNDS type="Node" left="7185" top="345" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6165" top="570" width="3000" height="3000">
+   <BOUNDS type="Box" left="7185" top="345" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
    </PIN>
@@ -105,9 +105,9 @@
    <LINK srcnodeid="51" srcpinname="Device" dstnodeid="49" dstpinname="Keyboard">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="52">
-   <BOUNDS type="Node" left="7110" top="990" width="1140" height="270">
+   <BOUNDS type="Node" left="8130" top="765" width="1140" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7110" top="990" width="1140" height="270">
+   <BOUNDS type="Box" left="8130" top="765" width="1140" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|space to reset|">
    </PIN>
@@ -119,7 +119,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="53">
-   <BOUNDS type="Node" left="6165" top="1890" width="660" height="270">
+   <BOUNDS type="Node" left="7185" top="1665" width="660" height="270">
    </BOUNDS>
    <PIN pinname="Simulate" visible="1">
    </PIN>
@@ -219,9 +219,9 @@
    <LINK srcnodeid="117" srcpinname="Last Button Pressed" dstnodeid="56" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="118">
-   <BOUNDS type="Node" left="6165" top="2310" width="100" height="100">
+   <BOUNDS type="Node" left="7185" top="2085" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6165" top="2310" width="3000" height="3000">
+   <BOUNDS type="Box" left="7185" top="2085" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
