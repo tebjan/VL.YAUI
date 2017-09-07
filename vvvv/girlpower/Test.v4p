@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug35.8.dtd" >
-   <PATCH nodename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="540" scrolly="0">
-   <BOUNDS type="Window" left="3435" top="6645" width="9000" height="6000">
+   <PATCH nodename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="0" top="1365" width="11700" height="9090">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.9.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5160" top="6360" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="10740" top="270" width="21075" height="15225">
+   <BOUNDS type="Window" left="12270" top="180" width="16365" height="12705">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -27,9 +27,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Keyboard (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Window)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="3840" top="810" width="100" height="100">
+   <BOUNDS type="Node" left="3720" top="1185" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3840" top="810" width="3000" height="3000">
+   <BOUNDS type="Box" left="3720" top="1185" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
    </PIN>
@@ -119,7 +119,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="53">
-   <BOUNDS type="Node" left="6165" top="2040" width="660" height="270">
+   <BOUNDS type="Node" left="6165" top="1890" width="660" height="270">
    </BOUNDS>
    <PIN pinname="Simulate" visible="1">
    </PIN>
@@ -202,20 +202,34 @@
    </LINK>
    <LINK srcnodeid="72" srcpinname="Layer" dstnodeid="75" dstpinname="Layer 2">
    </LINK>
-   <NODE systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden" id="115">
+   <NODE systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden" id="117">
    <BOUNDS type="Node" left="2475" top="2715" width="3735" height="270">
    </BOUNDS>
+   <PIN pinname="Initialize" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Device" dstnodeid="115" dstpinname="Mouse">
+   <LINK srcnodeid="3" srcpinname="Device" dstnodeid="117" dstpinname="Mouse">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Device" dstnodeid="115" dstpinname="Keyboard">
+   <LINK srcnodeid="4" srcpinname="Device" dstnodeid="117" dstpinname="Keyboard">
    </LINK>
-   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="115" dstpinname="UI ResolutionXY">
+   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="117" dstpinname="UI ResolutionXY">
    </LINK>
-   <LINK srcnodeid="53" srcpinname="Bang" dstnodeid="115" dstpinname="Initialize">
+   <LINK srcnodeid="117" srcpinname="Draw Description Layer" dstnodeid="72" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="115" srcpinname="Draw Description Layer" dstnodeid="72" dstpinname="Input">
+   <LINK srcnodeid="117" srcpinname="Last Button Pressed" dstnodeid="56" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="115" srcpinname="Last Button Pressed" dstnodeid="56" dstpinname="Y Input Value">
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="118">
+   <BOUNDS type="Node" left="6165" top="2310" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6165" top="2310" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="Bang" dstnodeid="118" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="118" srcpinname="Output 1" dstnodeid="117" dstpinname="Initialize">
    </LINK>
    </PATCH>
