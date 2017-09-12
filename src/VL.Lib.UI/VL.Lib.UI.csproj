@@ -57,6 +57,7 @@
     <Compile Include="Notifications\KeyNotification.cs" />
     <Compile Include="Notifications\MouseNotification.cs" />
     <Compile Include="Notifications\NotificationBase.cs" />
+    <Compile Include="Utils\HandlerUtils.cs" />
     <Compile Include="Utils\NotificationUtils.cs" />
     <Compile Include="Core\IUIElement.cs" />
     <Compile Include="Core\IUIHandler.cs" />

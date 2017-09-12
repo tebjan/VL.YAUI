@@ -21,30 +21,6 @@ namespace VL.Lib.UI
         }      
     }
 
-    public class MouseHandlerDriver : IUIHandler
-    {
-        IMouseHandler FHandler;
-
-        public MouseHandlerDriver(IMouseHandler handler)
-        {
-            FHandler = handler;
-        }
-
-        public IUIHandler ProcessInput(object eventArgs)
-        {
-            FHandler = NotificationUtils.NotificationSwitch(eventArgs, FHandler,
-                mn => NotificationUtils.MouseNotificationSwitch(mn, null,
-                FHandler.MouseDown, FHandler.MouseMove, FHandler.MouseUp, FHandler.MouseClick));
-
-            return FHandler != null ? this : null;
-        }
-
-        public void SetElement<T>(T element) where T : IUIElement
-        {
-            throw new NotImplementedException();
-        }
-    }
-
     public static class NotificationUtils
     {
         public static TResult MouseKeyboardSwitch<TResult>(object eventArg, TResult defaultResult,
@@ -90,7 +66,7 @@ namespace VL.Lib.UI
                 Action<MouseMoveNotification, Vector2> onDrag,
                 Action<MouseNotification> onDragEnd)
         {
-            return new MouseHandlerDriver(Handler.DragMouseHandler(onDragStart, onDrag, onDragEnd));
+            return new MouseHandlerAdapter(Handler.DragMouseHandler(onDragStart, onDrag, onDragEnd));
         }
 
         public static IUIHandler SelectionRectHandler(
@@ -99,7 +75,7 @@ namespace VL.Lib.UI
                 Action<MouseMoveNotification, RectangleF> onSelection,
                 Action<MouseNotification> onSelectionFinish)
         {
-            return new MouseHandlerDriver(Handler.SelectionRectMouseHandler(onMouseDown, onSelectionStart, onSelection, onSelectionFinish));
+            return new MouseHandlerAdapter(Handler.SelectionRectMouseHandler(onMouseDown, onSelectionStart, onSelection, onSelectionFinish));
         }
 
         public static TResult PositionEvent<TResult>(object eventArg, TResult defaultResult,

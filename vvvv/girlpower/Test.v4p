@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug35.8.dtd" >
    <PATCH nodename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="0" top="1365" width="11700" height="9090">
+   <BOUNDS type="Window" left="1620" top="1995" width="9450" height="7890">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.9.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5160" top="6360" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="11970" top="885" width="16065" height="14250">
+   <BOUNDS type="Window" left="14940" top="0" width="13860" height="9210">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
