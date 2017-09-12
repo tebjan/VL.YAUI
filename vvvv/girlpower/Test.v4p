@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug35.8.dtd" >
-   <PATCH nodename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\REPOS\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="0" scrolly="15">
    <BOUNDS type="Window" left="1620" top="1995" width="9450" height="7890">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.9.0">
@@ -203,7 +203,7 @@
    <LINK srcnodeid="72" srcpinname="Layer" dstnodeid="75" dstpinname="Layer 2">
    </LINK>
    <NODE systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden" id="117">
-   <BOUNDS type="Node" left="2475" top="2715" width="3735" height="270">
+   <BOUNDS type="Node" left="2460" top="2715" width="3735" height="270">
    </BOUNDS>
    <PIN pinname="Initialize" visible="1">
    </PIN>

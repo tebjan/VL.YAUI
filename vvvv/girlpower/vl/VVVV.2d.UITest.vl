@@ -32,7 +32,7 @@
           <Canvas Id="NpyXbQuOPieL1SPjwVpNNo">
             <ControlPoint Id="SZp7SeoKXrYPrsCfbof6Yi" Bounds="199,218" />
             <ControlPoint Id="TBSpvUYNxblLNAVaSr277d" Bounds="302,218" />
-            <Node Bounds="254,334,185,20" Id="DNlBd46zJaNMf28qewhzUy">
+            <Node Bounds="255,328,185,13" Id="DNlBd46zJaNMf28qewhzUy">
               <p:NodeReference LastCategoryFullName="VVVV.Value" LastSymbolSource="VVVV.2d.UITest.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessNode" Name="UITestInternal" />
