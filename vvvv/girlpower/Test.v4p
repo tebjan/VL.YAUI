@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\REPOS\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="0" scrolly="15">
-   <BOUNDS type="Window" left="1620" top="1995" width="9450" height="7890">
+   <PATCH nodename="D:\REPOS\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="0" scrolly="15" locked="0">
+   <BOUNDS type="Window" left="-28365" top="375" width="9450" height="7890">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.9.0">
    </PACK>
@@ -9,13 +9,15 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5160" top="6360" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="14940" top="0" width="13860" height="9210">
+   <BOUNDS type="Window" left="-16905" top="600" width="13860" height="9210">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Show Cursor" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Actual BackBuffer SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="AA Samples per Pixel" slicecount="1" values="8">
    </PIN>
    </NODE>
    <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="3">
