@@ -10248,10 +10248,10 @@
         </Node>
         <!--
 
-    ************************ MultiToggleH ************************
+    ************************ MultiFlipFlopH ************************
 
 -->
-        <Node Name="MultiToggleH" Bounds="771,885" Id="EuxmfnMPEIaNOtCoqFdNKl">
+        <Node Name="MultiFlipFlopH" Bounds="771,885" Id="EuxmfnMPEIaNOtCoqFdNKl">
           <p:NodeReference>
             <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
             <Choice Kind="ClassDefinition" Name="Class" />
@@ -10378,10 +10378,10 @@
                   <Patch Id="IjDlobSMsLMQX4KvbnSAJg" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="OqSuK2hITF6NDjYFGsKBGV" Name="Then" ManuallySortedPins="true" />
                   <Node Bounds="1144,547,81,13" Id="JFcp3od2TbPLZhRVfhVIQs">
-                    <p:NodeReference LastCategoryFullName="UI.MultiToggleHInteraction" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                    <p:NodeReference LastCategoryFullName="UI.MultiFlipFlopHInteraction" LastSymbolSource="VL.Lib.UI.Widgets.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="Create" />
-                      <CategoryReference Kind="ClassType" Name="MultiToggleHInteraction" NeedsToBeDirectParent="true" />
+                      <CategoryReference Kind="Category" Name="MultiFlipFlopHInteraction" NeedsToBeDirectParent="true" />
                     </p:NodeReference>
                     <Pin Id="JPcBBhX2TTGObL3CIqMDs0" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="CNtjx5ljjHxLPNpL1fsBlE" Name="State" Kind="InputPin" />
@@ -11088,10 +11088,10 @@
         </Node>
         <!--
 
-    ************************ MultiToggleHInteraction ************************
+    ************************ MultiFlipFlopHInteraction ************************
 
 -->
-        <Node Name="MultiToggleHInteraction" Bounds="771,921" Id="VduYYD2Dr0eMDPndJsbhaK">
+        <Node Name="MultiFlipFlopHInteraction" Bounds="771,921" Id="VduYYD2Dr0eMDPndJsbhaK">
           <p:NodeReference>
             <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
             <Choice Kind="ClassDefinition" Name="Class" />
@@ -11517,6 +11517,15 @@
             <Link Id="PYTUnLuu9CEN3zXjkjtB3A" Ids="GcKhZzqmOqNN2tOSSpeOkT,CULatuAFTK6PW1EU5BeUyo" />
           </Patch>
         </Node>
+        <Pad Id="OQYnoMo9TaROp3kUoBdkgB" Bounds="1203,633,236,240" ShowValueBox="true" isIOBox="true" Value="&quot;HSV vvvv style\r\nHSV sliders\r\nROTARY H,V\r\nenum style menu\r\n2d pointer\r\nMultiSlider H V\r\nMulti2dPointer\r\nMultiBang H V\r\nMultiPush H V\r\nMultiBang V\r\nValue snapping (operation into the state?)\r\nText Field\r\nValue Field&quot;">
+          <p:ValueBoxSettings>
+            <p:fontsize p:Type="Int32">9</p:fontsize>
+            <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+          </p:ValueBoxSettings>
+          <p:TypeAnnotation>
+            <Choice Kind="TypeFlag" Name="String" />
+          </p:TypeAnnotation>
+        </Pad>
       </Canvas>
     </Canvas>
   </Patch>
