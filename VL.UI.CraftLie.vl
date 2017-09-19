@@ -2073,8 +2073,145 @@
               <Pin Id="NKMUFc7RaMIQY879jUA30R" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Link Id="INuaMFRKri9Oe5DeoKLx66" Ids="NKMUFc7RaMIQY879jUA30R,KNFr8JcTN8GPGanX4JJxy1" />
-            <Pad Id="JcAiCyObmisQd5Tdn8rCFx" Comment="Success" Bounds="1043,540,12,19" ShowValueBox="true" isIOBox="true" />
-            <Link Id="OetkTxPfKbEQBSncM6NcVu" Ids="OIQu1MsCoReLhbIbDSlfys,JcAiCyObmisQd5Tdn8rCFx" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ IsMouseDoubleClick ************************
+
+-->
+        <Node Name="IsMouseDoubleClick" Bounds="1236,440,315,261" Id="L0RTWYUDbCyPLcgYz0ieUH">
+          <p:NodeReference>
+            <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="Lc9LIO6azgpMFipzzQhab5">
+            <Pin Id="ABr8K6JGB8UNSfMbB4cTbc" Name="Arg" Kind="InputPin" />
+            <ControlPoint Id="G8DQMxbBbaKOA26371skDt" Bounds="1250,456" />
+            <Link Id="CE4TIeEnSmJOyRXQKX3z8O" Ids="ABr8K6JGB8UNSfMbB4cTbc,G8DQMxbBbaKOA26371skDt" IsHidden="true" />
+            <Node Bounds="1248,494,41,13" Id="UGRsYBjyXm6LyFRrn4WA2H">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="CastAs" />
+              </p:NodeReference>
+              <Pin Id="DLb0wbtj3MlLJBMXGXAvFQ" Name="Input" Kind="InputPin" />
+              <Pin Id="QdqumU4GaW5OHlQUvF6m1E" Name="Default" Kind="InputPin" />
+              <Pin Id="DSOrdIPi6wZNP4tJy3cngV" Name="Result" Kind="OutputPin" />
+              <Pin Id="RoEY9aMr5lAPWtCgY3FqQ8" Name="Success" Kind="OutputPin" />
+            </Node>
+            <Link Id="OBkizVySghcMgiLrfBpflW" Ids="G8DQMxbBbaKOA26371skDt,DLb0wbtj3MlLJBMXGXAvFQ" />
+            <ControlPoint Id="IsHvuRkq9SmQOhE6ioJB6L" Bounds="1338,584" />
+            <Link Id="V0wkGWyieg8NPFvJw6CAop" Ids="DSOrdIPi6wZNP4tJy3cngV,IsHvuRkq9SmQOhE6ioJB6L" />
+            <Pin Id="AOhNVbZv8owPuq8HuFUPOp" Name="Notification" Kind="OutputPin" />
+            <Link Id="Umi4mD1K6FGM5E8pxi9yrL" Ids="IsHvuRkq9SmQOhE6ioJB6L,AOhNVbZv8owPuq8HuFUPOp" IsHidden="true" />
+            <ControlPoint Id="MY1cyW7ufodK9tD8TkQNz3" Bounds="1286,682" />
+            <Pin Id="AjBI7zULRHNMuVkc4WX4Fu" Name="Result" Kind="OutputPin" />
+            <Link Id="LVf4HpMXpctOqDurYs5nv2" Ids="MY1cyW7ufodK9tD8TkQNz3,AjBI7zULRHNMuVkc4WX4Fu" IsHidden="true" />
+            <Node Bounds="1327,469,45,13" Id="D6HMV7y1tVtMvAuzj1BxNc">
+              <p:NodeReference LastCategoryFullName="VL.Lib.UI.Notifications.MouseClickNotification" LastSymbolSource="VL.Lib.UI.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+                <AssemblyReference ID="VL.Lib.UI" />
+                <CategoryReference Kind="AssemblyCategory" Name="MouseClickNotification" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="U8r7agZj4QRPYXy3xGQDfE" Name="Position" Kind="InputPin" />
+              <Pin Id="A0dcqL9gLh0O1vFHr7Heeb" Name="Client Area" Kind="InputPin" />
+              <Pin Id="VDco3WRfqW3Ocu9CQm8qIv" Name="Buttons" Kind="InputPin" />
+              <Pin Id="RmHaJkD3IQVQEU5DO4FReV" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="TrefiMcxVRiNdAcgbMHXUW" Name="Click Count" Kind="InputPin" />
+            </Node>
+            <Link Id="G5W50FfJSKNLxmxtpsJCkI" Ids="RmHaJkD3IQVQEU5DO4FReV,QdqumU4GaW5OHlQUvF6m1E" />
+            <Node Bounds="1376,535,92,22" Id="ETbso48bCqtPJ4FT9EXMup">
+              <p:NodeReference LastCategoryFullName="VL.Lib.UI.Notifications.MouseClickNotification" LastSymbolSource="VL.Lib.UI.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ClickCount" />
+                <CategoryReference Kind="AssemblyCategory" Name="MouseClickNotification" NeedsToBeDirectParent="true" />
+                <AssemblyReference ID="VL.Lib.UI" />
+              </p:NodeReference>
+              <Pin Id="ROUlq09KQ5zO3kj40XSvP2" Name="Input" Kind="StateInputPin" />
+              <Pin Id="V14MzV0j0djQX3vC5Df1YQ" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="CqHcf2ddrf2Ncmy4sZLvdj" Name="Click Count" Kind="OutputPin" />
+            </Node>
+            <Link Id="PsQOWFi6FxgOhoJDiKf63I" Ids="DSOrdIPi6wZNP4tJy3cngV,ROUlq09KQ5zO3kj40XSvP2" />
+            <Node Bounds="1284,636,46,13" Id="I82V1fY8ohiPoieJ0qEGIO">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="AND" />
+              </p:NodeReference>
+              <Pin Id="O7llaQ7uSsZP5molrhQW1B" Name="Input" Kind="InputPin" />
+              <Pin Id="KAxJdH8jiyYL1z9P462PDs" Name="Input 2" Kind="InputPin" />
+              <Pin Id="Mr9Y3132PVaNzknnLxHUf4" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Link Id="M72jHnBEC5nM3qdK0l4uRm" Ids="RoEY9aMr5lAPWtCgY3FqQ8,O7llaQ7uSsZP5molrhQW1B" />
+            <Node Bounds="1463,582,25,13" Id="RtEJwtnyugXLzW8cVesuz8">
+              <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="&gt;" />
+                <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="FfC5eQPY5h8M1DKKahFj3E" Name="Input" Kind="InputPin" />
+              <Pin Id="QKvgYIR1N8rLFYzILLico1" Name="Input 2" Kind="InputPin" />
+              <Pin Id="Nnyb2OeyCCyLH9IPiaWSFw" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Link Id="KLtgXcInh2mP1IguacbshC" Ids="CqHcf2ddrf2Ncmy4sZLvdj,FfC5eQPY5h8M1DKKahFj3E" />
+            <Pad Id="Tx6YE8x5ms9LjH3QYWyrj5" Comment="" Bounds="1486,563,18,19" ShowValueBox="true" isIOBox="true" Value="1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Link Id="BjQCam3CoKWOhb8HvHPA12" Ids="Tx6YE8x5ms9LjH3QYWyrj5,QKvgYIR1N8rLFYzILLico1" />
+            <Link Id="QnbMod5ijYJO5hjVmkM1NN" Ids="Nnyb2OeyCCyLH9IPiaWSFw,KAxJdH8jiyYL1z9P462PDs" />
+            <Link Id="RER1wLkQQluOFMIuguGgFj" Ids="Mr9Y3132PVaNzknnLxHUf4,MY1cyW7ufodK9tD8TkQNz3" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ IsMouseClick ************************
+
+-->
+        <Node Name="IsMouseClick" Bounds="919,648,196,144" Id="LMPu6xzSIl5LshUERnL00Q">
+          <p:NodeReference>
+            <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="Vm8uovJi1X8NEIPWQDPEut">
+            <Pin Id="BKTGiszNFJ4OGE2nJThcma" Name="Arg" Kind="InputPin" />
+            <ControlPoint Id="Pqs3fPfmUcWO4mXXO5ZeKf" Bounds="934,664" />
+            <Link Id="QHybCjZN0HDPW93dyIk5JJ" Ids="BKTGiszNFJ4OGE2nJThcma,Pqs3fPfmUcWO4mXXO5ZeKf" IsHidden="true" />
+            <Node Bounds="932,702,41,13" Id="OvwVm8GuZF9N2dqWsSGKB2">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="CastAs" />
+              </p:NodeReference>
+              <Pin Id="TRZgDQVSA0sPVRKhr3cI7H" Name="Input" Kind="InputPin" />
+              <Pin Id="RoIM6I5dxR8MMis4t5K91B" Name="Default" Kind="InputPin" />
+              <Pin Id="MTs2880tjF0OHXZvXVcY2W" Name="Result" Kind="OutputPin" />
+              <Pin Id="KMgG9iULKRXMqQCEWiEGje" Name="Success" Kind="OutputPin" />
+            </Node>
+            <Link Id="NHj0DeGjEH8LA5fPLYE9e6" Ids="Pqs3fPfmUcWO4mXXO5ZeKf,TRZgDQVSA0sPVRKhr3cI7H" />
+            <ControlPoint Id="IOyNArwimS9LTBgmCWQsbR" Bounds="994,770" />
+            <Link Id="NHVZzpT3qQgNWs0QNMhJmK" Ids="MTs2880tjF0OHXZvXVcY2W,IOyNArwimS9LTBgmCWQsbR" />
+            <Pin Id="Jqf48jMr9mdQMSi3Qx2siy" Name="Notification" Kind="OutputPin" />
+            <Link Id="EtKRAJmGaBZLT1QIbz4Mnu" Ids="IOyNArwimS9LTBgmCWQsbR,Jqf48jMr9mdQMSi3Qx2siy" IsHidden="true" />
+            <ControlPoint Id="ADg7nuKLFvGLkv2k79irrJ" Bounds="933,773" />
+            <Link Id="Srj6f0MkmHgPlmpk5uMg30" Ids="KMgG9iULKRXMqQCEWiEGje,ADg7nuKLFvGLkv2k79irrJ" />
+            <Pin Id="FtLJbvnN0lSLTO5dsRzUJj" Name="Result" Kind="OutputPin" />
+            <Link Id="SW61pqZrlUkLiwrYjIaiPm" Ids="ADg7nuKLFvGLkv2k79irrJ,FtLJbvnN0lSLTO5dsRzUJj" IsHidden="true" />
+            <Node Bounds="1011,677,65,13" Id="IJh8ymfcepLOY4sXl4TY0C">
+              <p:NodeReference LastCategoryFullName="VL.Lib.UI.Notifications.MouseClickNotification" LastSymbolSource="VL.Lib.UI.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+                <AssemblyReference ID="VL.Lib.UI" />
+                <CategoryReference Kind="AssemblyCategory" Name="MouseClickNotification" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="VieBJcPYzhVMpcdc6dPmlo" Name="Position" Kind="InputPin" />
+              <Pin Id="LNwhvEnvqUIOIjUEbSKT07" Name="Client Area" Kind="InputPin" />
+              <Pin Id="FmfXRgZJ4aUM4XlwvMnO2W" Name="Buttons" Kind="InputPin" />
+              <Pin Id="DpMYaHqxnxYO8HIlSvbybE" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="F5ihotxW62JNEQs3o9zuRJ" Name="Click Count" Kind="InputPin" />
+            </Node>
+            <Link Id="JRP2UVnn4PzOxrzKYFws9K" Ids="DpMYaHqxnxYO8HIlSvbybE,RoIM6I5dxR8MMis4t5K91B" />
           </Patch>
         </Node>
       </Canvas>
