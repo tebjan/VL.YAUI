@@ -982,6 +982,7 @@
               <Pin Id="JfUmRAKfS2HO00EhlVHOUR" Name="Color" Kind="InputPin" />
               <Pin Id="GZqWfhfKo3WMSXEYgoMwv6" Name="Output" Kind="StateOutputPin" />
               <Pin Id="QCh9nJU9EkFNkqQueXC5Ol" Name="Value Changed" Kind="OutputPin" />
+              <Pin Id="IOgN0LZomqaP8YQyPd8N5y" Name="KeyDown" Kind="ApplyPin" />
             </Node>
             <Pad Id="DjixZwie7ByNWfomFMGpPY" Comment="" Bounds="-826,1356,45,38" ShowValueBox="true" isIOBox="true" Value="new vec(25.0,400.0)">
               <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="VL.CoreLib.vl">

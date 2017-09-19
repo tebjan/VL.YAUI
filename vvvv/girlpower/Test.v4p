@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
    <PATCH nodename="D:\REPOS\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="210" scrolly="0" locked="0">
-   <BOUNDS type="Window" left="3660" top="4170" width="9450" height="7890">
+   <BOUNDS type="Window" left="1005" top="480" width="9450" height="7890">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.9.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5160" top="6360" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="14160" top="4410" width="13860" height="9210">
+   <BOUNDS type="Window" left="8385" top="3165" width="13860" height="9210">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -230,20 +230,20 @@
    <PIN pinname="Chooser Style" slicecount="1" values="HSVASlider">
    </PIN>
    </NODE>
-   <NODE systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden" id="131">
+   <NODE systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden" id="138">
    <BOUNDS type="Node" left="2460" top="2715" width="3735" height="270">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Device" dstnodeid="131" dstpinname="Mouse">
+   <LINK srcnodeid="3" srcpinname="Device" dstnodeid="138" dstpinname="Mouse">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Device" dstnodeid="131" dstpinname="Keyboard">
+   <LINK srcnodeid="4" srcpinname="Device" dstnodeid="138" dstpinname="Keyboard">
    </LINK>
-   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="131" dstpinname="UI ResolutionXY">
+   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="138" dstpinname="UI ResolutionXY">
    </LINK>
-   <LINK srcnodeid="131" srcpinname="Draw Description Layer" dstnodeid="72" dstpinname="Input">
+   <LINK srcnodeid="138" srcpinname="Draw Description Layer" dstnodeid="72" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="131" srcpinname="Last Button Pressed" dstnodeid="56" dstpinname="Y Input Value">
+   <LINK srcnodeid="138" srcpinname="Last Button Pressed" dstnodeid="56" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="118" srcpinname="Output 1" dstnodeid="131" dstpinname="Initialize">
+   <LINK srcnodeid="118" srcpinname="Output 1" dstnodeid="138" dstpinname="Initialize">
    </LINK>
    </PATCH>
