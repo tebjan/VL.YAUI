@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using VL.Lib.UI.Notifications;
+using VL.Lib.UI.Utils;
+using VVVV.Utils.IO;
 
 namespace VL.Lib.UI
 {
@@ -409,10 +411,10 @@ namespace VL.Lib.UI
         {
             return Handler.OnDown(down =>
             {
-                var clickArea = down.Position.GetRect(DoubleClickSize);
+                var clickArea = down.Position.ToVector2().GetRect(DoubleClickSize);
                 return Handler.WhileMove((c, move) =>
                 {
-                    if (!clickArea.Contains(move.Position))
+                    if (!clickArea.Contains(move.Position.ToVector2()))
                         // Provide the client with the original down event
                         return onDragStart(down);
                     return c;
@@ -431,7 +433,7 @@ namespace VL.Lib.UI
                 var last = start;
                 return Handler.WhileMove((c, move) =>
                 {
-                    var delta = move.Position - last.Position;
+                    var delta = move.Position.ToVector2() - last.Position.ToVector2();
                     last = move;
                     drag(move, delta);
                     return c;
@@ -447,7 +449,7 @@ namespace VL.Lib.UI
         {
             return Handler.WhileMove((c, move) =>
             {
-                var marquee = GetMarquee(move.Position, initial.Position);
+                var marquee = GetMarquee(move.Position.ToVector2(), initial.Position.ToVector2());
                 selector(move, marquee);
                 return c;
             });

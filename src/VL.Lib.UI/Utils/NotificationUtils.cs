@@ -1,6 +1,8 @@
 ﻿using SharpDX;
 using System;
 using VL.Lib.UI.Notifications;
+using VL.Lib.UI.Utils;
+using VVVV.Utils.IO;
 
 namespace VL.Lib.UI
 {
@@ -18,7 +20,17 @@ namespace VL.Lib.UI
         public Vector2 Transform(Vector2 point)
         {
             return new Vector2(point.X * Scaling.X + Offset.X, point.Y * Scaling.Y + Offset.Y);
-        }      
+        }
+
+        public System.Drawing.Size Transform(System.Drawing.Size size)
+        {
+            return new System.Drawing.Size((int)(size.Width * Scaling.X), (int)(size.Height * Scaling.Y));
+        }
+
+        public System.Drawing.Point Transform(System.Drawing.Point point)
+        {
+            return new System.Drawing.Point((int)(point.X * Scaling.X + Offset.X), (int)(point.Y * Scaling.Y + Offset.Y));
+        }
     }
 
     public static class NotificationUtils
@@ -83,10 +95,10 @@ namespace VL.Lib.UI
                 where TResult : class
         {
             return NotificationSwitch(eventArg, defaultResult,
-                mn => onPositionEvent(mn.Position),
+                mn => onPositionEvent(mn.Position.ToVector2()),
                 null,
-                tn => onPositionEvent(tn.Position),
-                gn => onPositionEvent(gn.Position));
+                tn => onPositionEvent(tn.Position.ToVector2()),
+                gn => onPositionEvent(gn.Position.ToVector2()));
         }
 
         public static TResult NotificationSwitch<TResult>(object eventArg, TResult defaultResult, 
