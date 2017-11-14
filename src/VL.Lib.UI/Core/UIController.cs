@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VL.Lib.UI.Notifications;
+using VL.Lib.UI.Utils;
+using VVVV.Utils.IO;
 
 namespace VL.Lib.UI
 {
@@ -99,8 +101,18 @@ namespace VL.Lib.UI
             FSelectionRect = null;
         }
 
+        bool CtrlKey;
+
         public void ProcessInput(object eventArgs)
         {
+            var kd = eventArgs as KeyDownNotification;
+            if (kd?.KeyCode == System.Windows.Forms.Keys.Control)
+                CtrlKey = true;
+
+            var ku = eventArgs as KeyUpNotification;
+            if (ku?.KeyCode == System.Windows.Forms.Keys.Control)
+                CtrlKey = false;
+
             if (FCurrentHandler == null)
             {
                 //get pick path 
@@ -125,7 +137,7 @@ namespace VL.Lib.UI
         void OnSelectionDown(MouseDownNotification mn)
         {
             //selection
-            if (!mn.CtrlKey)
+            if (!CtrlKey)
             {
                 foreach (var elem in FSelectedElements)
                     elem.Deselect();
@@ -167,7 +179,7 @@ namespace VL.Lib.UI
                 leftovers.Remove(pick);
             }
 
-            if (!mn.CtrlKey)
+            if (!CtrlKey)
             {
                 foreach (var item in leftovers)
                 {
@@ -219,7 +231,7 @@ namespace VL.Lib.UI
 
         IUIHandler OnMouseMoveUnhover(MouseMoveNotification mn)
         {
-            CalculateEnterLeaveEvent(mn, FHoveredViews.Where(elem => elem.HitTest(mn.Position.GetUnitRect())).ToList());
+            CalculateEnterLeaveEvent(mn, FHoveredViews.Where(elem => elem.HitTest(mn.Position.ToVector2().GetUnitRect())).ToList());
             return null;
         }
 

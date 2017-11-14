@@ -2,7 +2,7 @@
 using System;
 using System.Windows.Forms;
 using VL.Lib.UI.VVVV;
-using VUtils = VVVV.Utils.IO;
+using VVVV.Utils.IO;
 using Drawing = System.Drawing;
 
 
@@ -19,14 +19,15 @@ namespace VL.Lib.UI.Notifications
             Scaling = scaling;
         }
 
-        public Vector2 Transform(Drawing.Point point)
+
+        public Drawing.Point Transform(Drawing.Point point)
         {
-            return new Vector2((point.X + Offset.X) * Scaling.X, (point.Y + Offset.Y) * Scaling.Y);
+            return new Drawing.Point((int)((point.X + Offset.X) * Scaling.X), (int)((point.Y + Offset.Y) * Scaling.Y));
         }
 
-        public Vector2 Transform(Drawing.Size size)
+        public Drawing.Size Transform(Drawing.Size size)
         {
-            return new Vector2(size.Width * Scaling.X, size.Height * Scaling.Y);
+            return new Drawing.Size((int)(size.Width * Scaling.X), (int)(size.Height * Scaling.Y));
         }
     }
 
