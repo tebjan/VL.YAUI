@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.58">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.59">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <NugetDependency Id="Q18ZLENm9gzPhBnFnztPMP" Location="VL.Core" Version="0.35.21" />
@@ -141,7 +141,7 @@
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <Patch Id="NbH6adKtwzSNwDIcSssJqr">
-                <Node Name="If2" Bounds="2003,682,311,554" Id="Uh1bSA9gUhvPJUuaqZxgtV">
+                <Node Bounds="2003,682,311,554" Id="Uh1bSA9gUhvPJUuaqZxgtV">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                     <Choice Kind="AdaptiveRegion" Name="If" />
                     <FullNameCategoryReference ID="Primitive" />
@@ -158,7 +158,7 @@
                       <Pin Id="N41HndVeAZ8M1F1j6oDoR8" Name="Count" Kind="InputPin" />
                       <Pin Id="DAkiEofnaRNN2M66aq959G" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Name="ForEach2" Bounds="2059,892,207,304" Id="DvhFOpik8WnPvNftfsZ3Qx">
+                    <Node Bounds="2059,892,207,304" Id="DvhFOpik8WnPvNftfsZ3Qx">
                       <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
                         <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
                         <CategoryReference Kind="Category" Name="Primitive" />
@@ -169,7 +169,7 @@
                         <Patch Id="UWLjqJCVUXLMtjCPkdQUlH" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="Bl3oAw5h6DgP1EXxXiObZg" Name="Update" ManuallySortedPins="true" />
                         <Patch Id="Gm8OREGF4B4PcqH9czScMX" Name="Destroy" ManuallySortedPins="true" />
-                        <Node Name="ForEach2" Bounds="2115,932,139,239" Id="CRXwbtwqIePMN43IH1Fl9T">
+                        <Node Bounds="2115,932,139,239" Id="CRXwbtwqIePMN43IH1Fl9T">
                           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
                             <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
                             <CategoryReference Kind="Category" Name="Primitive" />
@@ -307,7 +307,7 @@
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Name="Project" Bounds="583,339,159,189" Id="NNj5lhbQLaGMwqRQLIf4kO">
+            <Node Bounds="583,339,159,189" Id="NNj5lhbQLaGMwqRQLIf4kO">
               <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.DevLib.vl">
                 <Choice Kind="OperationCallFlag" Name="Project" />
                 <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
@@ -584,6 +584,7 @@
               <Pin Id="HPXI1zTdWwhPrBvuCAJ2Hz" Name="Color" Kind="InputPin" />
               <Pin Id="F61eKu9hyUgMRVBjRQBz2U" Name="Output" Kind="StateOutputPin" />
               <Pin Id="P1OorMw6tl0Lj19iIAuMtz" Name="Value Changed" Kind="OutputPin" />
+              <Pin Id="TT6Ko8t0JB6O7H0BiWzst8" Name="GetValue" Kind="ApplyPin" />
             </Node>
             <Pad Id="DHpGNiQTITqMnMlaiA4yCX" Comment="Color" Bounds="1632,515,143,20" ShowValueBox="true" isIOBox="true" Value="{&quot;Red&quot;:0.330000371,&quot;Green&quot;:0.330000371,&quot;Blue&quot;:0.330000371,&quot;Alpha&quot;:1.0}">
               <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="VL.CoreLib.vl">
@@ -648,6 +649,7 @@
               <Pin Id="KPMslKSNm5iNUWtOH3YMlB" Name="Color" Kind="InputPin" />
               <Pin Id="ANsx8TouwqsPyE2BAB8p7o" Name="Output" Kind="StateOutputPin" />
               <Pin Id="Nwwgzn7PK11LkexFjAJXDw" Name="Value Changed" Kind="OutputPin" />
+              <Pin Id="HTwFjfzGX8CLXa9sk601VQ" Name="GetValue" Kind="ApplyPin" />
             </Node>
             <Pad Id="FSyqR6IWtsjPOUCHLi7Ksj" Comment="" Bounds="253,972,143,20" ShowValueBox="true" isIOBox="true" Value="{&quot;Red&quot;:0.330000371,&quot;Green&quot;:0.330000371,&quot;Blue&quot;:0.330000371,&quot;Alpha&quot;:1.0}">
               <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="VL.CoreLib.vl">
