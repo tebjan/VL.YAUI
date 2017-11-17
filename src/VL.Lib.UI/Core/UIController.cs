@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VL.Lib.UI.Notifications;
+using VL.Lib.IO.Notifications;
 using VL.Lib.UI.Utils;
-using VVVV.Utils.IO;
 
 namespace VL.Lib.UI
 {
@@ -231,7 +230,7 @@ namespace VL.Lib.UI
 
         IUIHandler OnMouseMoveUnhover(MouseMoveNotification mn)
         {
-            CalculateEnterLeaveEvent(mn, FHoveredViews.Where(elem => elem.HitTest(mn.Position.ToVector2().GetUnitRect())).ToList());
+            CalculateEnterLeaveEvent(mn, FHoveredViews.Where(elem => elem.HitTest(mn.Position.GetUnitRect())).ToList());
             return null;
         }
 

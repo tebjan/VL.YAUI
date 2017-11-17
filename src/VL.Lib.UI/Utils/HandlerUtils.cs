@@ -1,7 +1,6 @@
 ﻿using SharpDX;
 using System;
-using VL.Lib.UI.Notifications;
-using VVVV.Utils.IO;
+using VL.Lib.IO.Notifications;
 
 namespace VL.Lib.UI
 {
@@ -16,8 +15,8 @@ namespace VL.Lib.UI
 
         public IUIHandler ProcessInput(object eventArgs)
         {
-            FHandler = NotificationUtils.NotificationSwitch(eventArgs, FHandler,
-                mn => NotificationUtils.MouseNotificationSwitch(mn, null,
+            FHandler = NotificationHelpers.NotificationSwitch(eventArgs, FHandler,
+                mn => NotificationHelpers.MouseNotificationSwitch(mn, null,
                 FHandler.MouseDown, FHandler.MouseMove, FHandler.MouseUp, FHandler.MouseClick));
 
             return FHandler != null ? this : null;
@@ -40,10 +39,10 @@ namespace VL.Lib.UI
 
         public IUIHandler ProcessInput(object eventArgs)
         {
-            FHandler = NotificationUtils.NotificationSwitch(eventArgs, FHandler,
-                mn => NotificationUtils.MouseNotificationSwitch(mn, null,
+            FHandler = NotificationHelpers.NotificationSwitch(eventArgs, FHandler,
+                mn => NotificationHelpers.MouseNotificationSwitch(mn, null,
                 FHandler.MouseDown, FHandler.MouseMove, FHandler.MouseUp, FHandler.MouseClick),
-                kn => NotificationUtils.KeyNotificationSwitch(kn, null, 
+                kn => NotificationHelpers.KeyNotificationSwitch(kn, null, 
                 FHandler.KeyDown, FHandler.KeyUp, FHandler.KeyPress, FHandler.DeviceLost));
 
             return FHandler != null ? this : null;

@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VL.Lib.UI.Notifications;
-using VVVV.Utils.IO;
+using VL.Lib.IO.Notifications;
 
 namespace VL.Lib.UI
 {
