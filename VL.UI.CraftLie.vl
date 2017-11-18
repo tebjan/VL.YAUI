@@ -2103,7 +2103,7 @@
             <AssemblyReference ID="VL.Lib.UI" />
           </p:TypeAnnotation>
           <Patch Id="NvjCTaWQoyqNqoAc5siUGV">
-            <Canvas Id="SZbYVoOjPtbLhQlQ9CnQNi" BordersChecked="false" />
+            <Canvas Id="SZbYVoOjPtbLhQlQ9CnQNi" />
             <ProcessDefinition Id="AdK1jWnCjL1MXT0gYma8VM" IsHidden="true" />
           </Patch>
         </Node>
