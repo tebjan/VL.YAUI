@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\REPOS\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="210" scrolly="0" locked="0">
-   <BOUNDS type="Window" left="1005" top="480" width="9450" height="7890">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug35.10.dtd" >
+   <PATCH nodename="C:\dev\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="210" scrolly="0" locked="0">
+   <BOUNDS type="Window" left="1008" top="476" width="9443" height="7889">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.9.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5160" top="6360" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="8385" top="3165" width="13860" height="9210">
+   <BOUNDS type="Window" left="16233" top="3199" width="13860" height="9205">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -130,24 +130,6 @@
    </NODE>
    <LINK srcnodeid="50" srcpinname="Up Edge" dstnodeid="53" dstpinname="Simulate">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56">
-   <BOUNDS type="Box" left="2460" top="3570" width="1725" height="1560">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2460" top="3570" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Last Button Pressed|">
-   </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="74">
    <BOUNDS type="Box" left="6645" top="4170" width="1590" height="270">
    </BOUNDS>
@@ -216,34 +198,18 @@
    </NODE>
    <LINK srcnodeid="53" srcpinname="Bang" dstnodeid="118" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="Template (Value)" filename="%VVVV%\lib\packs\VL.CoreLib.VVVV.0.58.5-g32eab30e1e\vvvv\nodes\vl\Template.vl" nodename="Template (Value)" componentmode="Hidden" id="127">
-   <BOUNDS type="Node" left="4755" top="4650" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="129">
-   <BOUNDS type="Node" left="7095" top="5745" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7095" top="5745" width="2250" height="480">
-   </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" values="|0.38926,0.00000,0.26141,0.75535|">
-   </PIN>
-   <PIN pinname="Chooser Style" slicecount="1" values="HSVASlider">
-   </PIN>
-   </NODE>
-   <NODE systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden" id="138">
+   <NODE id="142" systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden">
    <BOUNDS type="Node" left="2460" top="2715" width="3735" height="270">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Device" dstnodeid="138" dstpinname="Mouse">
+   <LINK srcnodeid="118" srcpinname="Output 1" dstnodeid="142" dstpinname="Initialize">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Device" dstnodeid="138" dstpinname="Keyboard">
+   <LINK srcnodeid="142" srcpinname="Draw Description Layer" dstnodeid="72" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="138" dstpinname="UI ResolutionXY">
+   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="142" dstpinname="UI ResolutionXY">
    </LINK>
-   <LINK srcnodeid="138" srcpinname="Draw Description Layer" dstnodeid="72" dstpinname="Input">
+   <LINK srcnodeid="4" srcpinname="Device" dstnodeid="142" dstpinname="Keyboard">
    </LINK>
-   <LINK srcnodeid="138" srcpinname="Last Button Pressed" dstnodeid="56" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="118" srcpinname="Output 1" dstnodeid="138" dstpinname="Initialize">
+   <LINK srcnodeid="3" srcpinname="Device" dstnodeid="142" dstpinname="Mouse">
    </LINK>
    </PATCH>

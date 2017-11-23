@@ -1,7 +1,6 @@
 ﻿using SharpDX;
 using System;
 using VL.Lib.IO.Notifications;
-using VL.Lib.UI.Notifications;
 using VL.Lib.UI.Utils;
 
 namespace VL.Lib.UI

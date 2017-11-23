@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="EKLGVpIeN3MNQFDSU2rkh0" Version="0.59">
+<Document xmlns:p="property" Id="EKLGVpIeN3MNQFDSU2rkh0" Version="0.61">
   <Patch Id="SO1YgH3N6RaNuxOOTRV9Tf">
     <Canvas Id="Gvn6Kwgu0BtNBxwgsCgaEj">
       <Canvas Id="DfsUmGDaVwvPR8ls90O2JY" Name="UI" Position="254,285">
@@ -50,8 +50,8 @@
               <Pad Id="EAgSWbPTAHfOAKfpPujJuA" Bounds="210,708" />
               <Pad Id="CY4agEMSog1QSrAQZSIYuu" Bounds="1166,270,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -518,8 +518,8 @@
               </Pad>
               <Pad Id="RgZlnLw9vfUMmYjCexf07e" Bounds="1453,126,89,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -742,8 +742,8 @@
               <ControlPoint Id="FBu8RaAUWS0NHYG5dhzzNK" Bounds="542,822" />
               <Pad Id="NyTktvHkwLqM5f5NKi6jYp" Bounds="306,701,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -1198,8 +1198,8 @@
               </Pad>
               <Pad Id="IC3JpEnrIsnM31Dpd4RzXt" Bounds="1453,126,89,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -1422,8 +1422,8 @@
               <ControlPoint Id="HZL2omQB7p7OjZHG2oHjsE" Bounds="544,835" />
               <Pad Id="E9qGDb15DWDLszPSwrEbAD" Bounds="261,647,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Sub UI&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -1455,11 +1455,11 @@
                 <Pin Id="IEchTtStlN5LkzR5vLHB8d" Name="Scaling" Kind="InputPin" />
                 <Pin Id="CcpxOSOeEjPNsyanYB6404" Name="Event Args" Kind="InputPin" />
                 <Pin Id="S4Ql7f8S1DlP4KNJOLpjg0" Name="Mouse Move" Kind="InputPin" />
-                <Pin Id="VSLaAWbOypVMbEfmdtvsp7" Name="State Output" Kind="OutputPin" />
+                <Pin Id="URaeWnIbn7VMpuj4iONBLe" Name="Elements" Kind="InputPin" />
                 <Pin Id="CR0sgp8oLHOMhdF3XxmED1" Name="Result" Kind="OutputPin" />
                 <Pin Id="Iyda6jNTL4zNgx9yR4JJkc" Name="Output" Kind="OutputPin" />
                 <Pin Id="THpJN43nfgNPPdup0jtPKK" Name="Children" Kind="OutputPin" />
-                <Pin Id="URaeWnIbn7VMpuj4iONBLe" Name="Elements" Kind="InputPin" />
+                <Pin Id="VSLaAWbOypVMbEfmdtvsp7" Name="State Output" Kind="OutputPin" />
               </Node>
               <Pad Id="KBygQK5MEqdLd6i1X30JJL" SlotId="G13p7aJ5KeWLVX5rAnIqYT" Bounds="256,834" />
               <ControlPoint Id="ACDgslIg1nhNvUuAS5kV0Q" Bounds="529,747" />
@@ -2426,8 +2426,8 @@
               <ControlPoint Id="UHOcWlaY98FNs2wRxlNpCJ" Bounds="589,298" />
               <Pad Id="L2KBmkcgk3jNG0nfHuqnsc" Bounds="1383,575,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -2628,8 +2628,8 @@
               <ControlPoint Id="MU66rm7O1ZoQdA0Ak5UMfd" Bounds="408,1152" />
               <Pad Id="NLJ0IKSjFmxMpTZlFyEMu5" Bounds="172,1031,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -3281,7 +3281,7 @@
                 <Pin Id="BXM41doxPvQPm1uF4RADhY" Name="Result" Kind="OutputPin" />
               </Node>
               <Node Bounds="714,489,45,13" Id="E9rCU6Xt2jzPct8dYtKECo">
-                <p:NodeReference LastCategoryFullName="Primitive.Float32" LastSymbolSource="VL.CoreLib.vl">
+                <p:NodeReference LastCategoryFullName="Adaptive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="*" />
                   <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
@@ -3458,8 +3458,8 @@
               <ControlPoint Id="GNbOnPOpYzcNT9Ai5WII07" Bounds="522,441" />
               <Pad Id="SY7OdNkcX5aM8h4KzSO84J" Bounds="1383,575,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -3666,8 +3666,8 @@
               <ControlPoint Id="CKoQhthdYhkMwHokUtT7tr" Bounds="59,1081" />
               <Pad Id="RcT2UVf09bdLMUmyO6FjmH" Bounds="-44,927,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -4342,8 +4342,8 @@
               <ControlPoint Id="IrIOYtY8vzrNodP9hCX8Kr" Bounds="589,298" />
               <Pad Id="PMRJjDllb1DLHBPIfAsZiH" Bounds="1383,575,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -4550,8 +4550,8 @@
               <ControlPoint Id="OMGMkJMfe6jL21G6Cdon9Y" Bounds="80,1142" />
               <Pad Id="AVVlP6m99DoME151Q0ZO92" Bounds="-23,988,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -5270,8 +5270,8 @@
               <ControlPoint Id="GBFyfryKlayLw7RKb2CY77" Bounds="589,298" />
               <Pad Id="Bkk6eOTGbZLMHi2wLGXLwt" Bounds="1383,575,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -5468,8 +5468,8 @@
               <ControlPoint Id="SvmfedqbBRBPLdUA01XFhB" Bounds="80,1142" />
               <Pad Id="Io9Ay3x42OXPMdRhI3NuvT" Bounds="-23,988,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -6299,8 +6299,8 @@
               <ControlPoint Id="C0ZE1a14khoLdegcRhBUwA" Bounds="589,298" />
               <Pad Id="H8YxUwAQfTrPxKs7kq68O9" Bounds="1383,575,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -6501,8 +6501,8 @@
               <ControlPoint Id="SvxqNjwA4CKQFsY4NPBKrO" Bounds="408,1152" />
               <Pad Id="HZov2SLvEubOgumfdGXKK4" Bounds="172,1031,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -7334,7 +7334,7 @@
                 <Pin Id="QzWIoyOuQojNiTMFxQQsBS" Name="Result" Kind="OutputPin" />
               </Node>
               <Node Bounds="710,444,45,13" Id="GndqqM7H3DyNsG9EbwIwgo">
-                <p:NodeReference LastCategoryFullName="Primitive.Float32" LastSymbolSource="VL.CoreLib.vl">
+                <p:NodeReference LastCategoryFullName="Adaptive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="*" />
                   <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
@@ -7345,7 +7345,7 @@
                 <Pin Id="Ds0iTTkhYmaNEyM8jR35dQ" Name="Input 3" Kind="InputPin" />
               </Node>
               <Node Bounds="875,444,45,13" Id="Omwp2cjwIpGP7pbMS3bzlF">
-                <p:NodeReference LastCategoryFullName="Primitive.Float32" LastSymbolSource="VL.CoreLib.vl">
+                <p:NodeReference LastCategoryFullName="Adaptive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="*" />
                   <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
@@ -8005,8 +8005,8 @@
               <ControlPoint Id="Khai2XaDJxYO2bQJoYGLiy" Bounds="589,298" />
               <Pad Id="ENo6NkorfDlOtuBHpNtePf" Bounds="1383,575,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -8204,8 +8204,8 @@
               <ControlPoint Id="M5Ea6x3xzuOMifHKekMFiD" Bounds="59,1081" />
               <Pad Id="KqVO6e9Ldr4NaQntf5VDGr" Bounds="-44,927,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -8379,7 +8379,7 @@
                 <Pin Id="Edzyrogw4VWLhZfgel6Ywi" Name="Result" Kind="OutputPin" />
               </Node>
               <Node Bounds="323,639,280,215" Id="R05Ts7pg5bpMf7ZjT3PkUR">
-                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
                   <Choice Kind="ForLoop" Name="Repeat" />
@@ -9254,8 +9254,8 @@
         </Node>
         <Pad Id="OQYnoMo9TaROp3kUoBdkgB" Bounds="1383,566,236,240" ShowValueBox="true" isIOBox="true" Value="&quot;HSV vvvv style\r\nHSV sliders\r\nROTARY H,V\r\nenum style menu\r\n2d pointer\r\nMultiSlider H V\r\nMulti2dPointer\r\nMultiBang H V\r\nMultiPush H V\r\nMultiBang V\r\nValue snapping (operation into the state?)\r\nText Field\r\nValue Field&quot;">
           <p:ValueBoxSettings>
-            <p:fontsize p:Type="Int32">9</p:fontsize>
             <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            <p:fontsize p:Type="Int32">9</p:fontsize>
           </p:ValueBoxSettings>
           <p:TypeAnnotation>
             <Choice Kind="TypeFlag" Name="String" />
@@ -9285,8 +9285,8 @@
               <ControlPoint Id="Kgus5fuGacHMXDTnFJtLHc" Bounds="589,298" />
               <Pad Id="V4VLCaLIb0TNAcE7D7tfmV" Bounds="1383,575,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -9484,8 +9484,8 @@
               <ControlPoint Id="N4dPwdIvFiXLmPIQvEV1Ny" Bounds="59,1081" />
               <Pad Id="QQBpWmodeMUQT952c3E0K1" Bounds="-44,927,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:fontsize p:Type="Int32">9</p:fontsize>
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -9678,6 +9678,7 @@
               <Node Bounds="1336,254,116,80" Id="DK6krnd84KtOAuntblwCyu">
                 <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="AdaptiveRegion" Name="If" />
+                  <FullNameCategoryReference ID="Primitive" />
                 </p:NodeReference>
                 <Pin Id="R7eVbhi13LqNnrEeroOpPx" Name="Condition" Kind="InputPin" />
                 <Patch Id="SjVBeJx4CU7MSLtZz6Yk4q" ManuallySortedPins="true">
@@ -10043,7 +10044,7 @@
                   <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
                   <Choice Kind="OperationDefinition" Name="Operation" />
                 </p:NodeReference>
-                <Patch Id="QtwjTfng5XHMwNuoHK89he">
+                <Patch Id="QtwjTfng5XHMwNuoHK89he" ManuallySortedPins="true">
                   <Node Bounds="1569,484,57,22" Id="Lqe5o89NJ4wOTQmuBB4yQL">
                     <p:NodeReference LastCategoryFullName="Text.TextBuilder" LastSymbolSource="VL.Typewriter.vl">
                       <Choice Kind="OperationNode" Name="InsertChar" />
@@ -10138,11 +10139,9 @@
                   <Link Id="BLlSMcwTIRfOmyqmzyEdB8" Ids="NLkYsIpezUIMCGkCkpsw0B,P4ZmT3WJ3F5L3n7IcbggRY" />
                   <Link Id="II1WMhiF6StQTKoYETVm89" Ids="IV4upGxX97tOu9c1OHBbOE,S3eUBYhPLqVLsrPssDGK14" />
                   <ControlPoint Id="FpYx6rUJ94lN6cuRhvnv8o" Bounds="1495,132" />
-                  <Pin Id="FUI0mFiWvRhNEBltOmV142" Name="Input" Kind="InputPin" />
                   <Link Id="GEPQqg9E4dvQX1p27ABPyB" Ids="FUI0mFiWvRhNEBltOmV142,FpYx6rUJ94lN6cuRhvnv8o" IsHidden="true" />
                   <ControlPoint Id="Oge1Zv5axHzP9rDYFlRnMq" Bounds="1692,186" />
                   <Link Id="JC8DOHW8mIZQXZ06ixAySJ" Ids="Oge1Zv5axHzP9rDYFlRnMq,MUmFCxC9H13QOd4kdLtZKv" />
-                  <Pin Id="L6OflMuUsdROf4ApbvOdoW" Name="KeyNotification" Kind="InputPin" />
                   <Link Id="Pyp5AL7i6TLMiDQsu8daRf" Ids="L6OflMuUsdROf4ApbvOdoW,Oge1Zv5axHzP9rDYFlRnMq" IsHidden="true" />
                   <Link Id="UMTEXvUsyHJLSUs3P1ROPn" Ids="Oge1Zv5axHzP9rDYFlRnMq,PzInSsQgw6AOgML6ugXCBO" />
                   <Link Id="LsHof6afx3ILRK4snudQOF" Ids="Oge1Zv5axHzP9rDYFlRnMq,KNBwnotxxzhLJKFFSTL3QY" />
@@ -10185,8 +10184,10 @@
                   <Link Id="CAkvcFIYmdNM14tq1EY86y" Ids="RXOPgJGKyx3PDrzWFjWRPF,DFuIQkgs1iVMPrbRTjSFXu" />
                   <ControlPoint Id="JnmCYFqLUqnQXDQi1F5dA2" Bounds="1613,139" />
                   <Link Id="NGCQGDlja39OV3JrgTqnMA" Ids="JnmCYFqLUqnQXDQi1F5dA2,VBsOlcIMeo7QUPO5aiOPIU" />
-                  <Pin Id="PbF5yffAcoULDe9RkMblcc" Name="State" Kind="InputPin" />
                   <Link Id="TQ2VkrZ4SY4QG0WagiwMRh" Ids="PbF5yffAcoULDe9RkMblcc,JnmCYFqLUqnQXDQi1F5dA2" IsHidden="true" />
+                  <Pin Id="FUI0mFiWvRhNEBltOmV142" Name="Input" Kind="InputPin" />
+                  <Pin Id="PbF5yffAcoULDe9RkMblcc" Name="State" Kind="InputPin" />
+                  <Pin Id="L6OflMuUsdROf4ApbvOdoW" Name="KeyNotification" Kind="InputPin" />
                 </Patch>
               </Node>
               <Node Bounds="732,359,98,13" Id="Uwwgmj9gAu1OicTkE5Xhna">
@@ -10316,15 +10317,9 @@
                   <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
                   <Choice Kind="OperationDefinition" Name="Operation" />
                 </p:NodeReference>
-                <Patch Id="LPxCbKFsIwfMNt5iKsGmqb">
-                  <Pin Id="KdaXdfyy1MVOL7KipiSInB" Name="Input" Kind="InputPin">
-                    <p:TypeAnnotation LastCategoryFullName="Text" LastSymbolSource="VL.Typewriter.vl">
-                      <Choice Kind="TypeFlag" Name="TextBuilder" />
-                    </p:TypeAnnotation>
-                  </Pin>
+                <Patch Id="LPxCbKFsIwfMNt5iKsGmqb" ManuallySortedPins="true">
                   <ControlPoint Id="OfPaUivN46QP3WwUfKf4Kp" Bounds="1933,144" />
                   <Link Id="UzqyK8dTY4hL6qQ1DcfD3O" Ids="KdaXdfyy1MVOL7KipiSInB,OfPaUivN46QP3WwUfKf4Kp" IsHidden="true" />
-                  <Pin Id="DZns9Lk8xiOMqI8bDE1XHa" Name="Output" Kind="OutputPin" />
                   <ControlPoint Id="QRYXA08Uv7jOoetqx9SqJT" Bounds="1930,199" />
                   <Link Id="OK9ntnsWsCpLV6kgAQey4q" Ids="QRYXA08Uv7jOoetqx9SqJT,DZns9Lk8xiOMqI8bDE1XHa" IsHidden="true" />
                   <Node Bounds="1931,160,50,22" Id="C38htTDcmxoQROotTkepzR">
@@ -10337,6 +10332,12 @@
                     <Pin Id="LgNrHRFwORJPMqIG3nlkne" Name="Output" Kind="StateOutputPin" />
                   </Node>
                   <Link Id="S7YIdMibUUeQTjV0gmtPCd" Ids="LgNrHRFwORJPMqIG3nlkne,QRYXA08Uv7jOoetqx9SqJT" />
+                  <Pin Id="KdaXdfyy1MVOL7KipiSInB" Name="Input" Kind="InputPin">
+                    <p:TypeAnnotation LastCategoryFullName="Text" LastSymbolSource="VL.Typewriter.vl">
+                      <Choice Kind="TypeFlag" Name="TextBuilder" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="DZns9Lk8xiOMqI8bDE1XHa" Name="Output" Kind="OutputPin" />
                 </Patch>
               </Node>
               <Node Bounds="640,214,86,13" Id="K2p3arXABFDMPrS7Wc1A0p">
@@ -10741,7 +10742,7 @@
             <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
             <Choice Kind="OperationDefinition" Name="Operation" />
           </p:NodeReference>
-          <Patch Id="F6KOAylcpi2M2FKDJtoF2n">
+          <Patch Id="F6KOAylcpi2M2FKDJtoF2n" ManuallySortedPins="true">
             <Node Bounds="-55,502,69,13" Id="JmD1TG0xqvDLoygEuRxs9V">
               <p:NodeReference LastCategoryFullName="System.Windows.Forms.Control" LastSymbolSource="System.Windows.Forms.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -10784,8 +10785,8 @@
             <Link Id="EJQfWp2bQr4QCCmnKNHwor" Ids="EmEHGmjSo46Mtx7OxVMpbn,NlqvKkDyWLeMvkEF1pnc7B" />
             <ControlPoint Id="NUgHdOPU9UsLIyonXqRzIR" Bounds="-50,614" />
             <Link Id="V8iydJT7R8IL87AylCfXiw" Ids="GLy92i6Hq3rPWOTOMjhW4T,NUgHdOPU9UsLIyonXqRzIR" />
-            <Pin Id="J9fCr2denLlN2FmvTgzwoS" Name="Ctrl Key" Kind="OutputPin" />
             <Link Id="R90vJ1352nwPyH1ms4FzIs" Ids="NUgHdOPU9UsLIyonXqRzIR,J9fCr2denLlN2FmvTgzwoS" IsHidden="true" />
+            <Pin Id="J9fCr2denLlN2FmvTgzwoS" Name="Ctrl Key" Kind="OutputPin" />
           </Patch>
         </Node>
         <!--
@@ -10798,7 +10799,7 @@
             <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
             <Choice Kind="OperationDefinition" Name="Operation" />
           </p:NodeReference>
-          <Patch Id="OIw6a5QSVNBMGhE0OmLin4">
+          <Patch Id="OIw6a5QSVNBMGhE0OmLin4" ManuallySortedPins="true">
             <Node Bounds="-53,698,69,13" Id="MaqtrRylQUYPdmnueKgy1U">
               <p:NodeReference LastCategoryFullName="System.Windows.Forms.Control" LastSymbolSource="System.Windows.Forms.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -10841,8 +10842,8 @@
             <Link Id="BdGotKx51l6PNZ65rhNoXA" Ids="GzmASfkdiTmLBaCM64vkiU,RnikqwclPD0MxGQC20MnD1" />
             <ControlPoint Id="AFtIpAosYGMP3eL14fEOvc" Bounds="-48,810" />
             <Link Id="LTLHAeCoyUKMmqq4iJ32fr" Ids="OsNlAChe1MpLOzKjsyH8j0,AFtIpAosYGMP3eL14fEOvc" />
-            <Pin Id="DmGrD11OgmROcxqZ2mQY7Z" Name="Shift Key" Kind="OutputPin" />
             <Link Id="TVOnInMmOHtP8GKJ817HHc" Ids="AFtIpAosYGMP3eL14fEOvc,DmGrD11OgmROcxqZ2mQY7Z" IsHidden="true" />
+            <Pin Id="DmGrD11OgmROcxqZ2mQY7Z" Name="Shift Key" Kind="OutputPin" />
           </Patch>
         </Node>
         <!--
@@ -10855,7 +10856,7 @@
             <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
             <Choice Kind="OperationDefinition" Name="Operation" />
           </p:NodeReference>
-          <Patch Id="Fd8mXqggid6QX3jL38QX4N">
+          <Patch Id="Fd8mXqggid6QX3jL38QX4N" ManuallySortedPins="true">
             <Node Bounds="-57,302,69,13" Id="H9pB4pZhvXSNt0gxzENOXd">
               <p:NodeReference LastCategoryFullName="System.Windows.Forms.Control" LastSymbolSource="System.Windows.Forms.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -10898,8 +10899,8 @@
             <Link Id="GJfHxGitg6HN2eNiQXqq2p" Ids="Nnd29BXuXHWPKV3qRSJXli,SNohBXQO5D5P1k83J2vODI" />
             <ControlPoint Id="Uhnv2PzjM1POGQiaOAhVDI" Bounds="-52,414" />
             <Link Id="P84gLoFNJi5LeU3dwTYEtg" Ids="DGSwXchuHqYQKTqfj3LUHL,Uhnv2PzjM1POGQiaOAhVDI" />
-            <Pin Id="Ol7R8YEeAi9LmiKMKZ8Pyj" Name="Alt Key" Kind="OutputPin" />
             <Link Id="GKsrrb3uvftPVhhf5grwJ2" Ids="Uhnv2PzjM1POGQiaOAhVDI,Ol7R8YEeAi9LmiKMKZ8Pyj" IsHidden="true" />
+            <Pin Id="Ol7R8YEeAi9LmiKMKZ8Pyj" Name="Alt Key" Kind="OutputPin" />
           </Patch>
         </Node>
       </Canvas>
