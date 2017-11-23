@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug35.10.dtd" >
    <PATCH nodename="C:\dev\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="210" scrolly="0" locked="0">
-   <BOUNDS type="Window" left="1008" top="476" width="9443" height="7889">
+   <BOUNDS type="Window" left="9730" top="791" width="9443" height="7889">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.9.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5160" top="6360" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="16233" top="3199" width="13860" height="9205">
+   <BOUNDS type="Window" left="371" top="5376" width="9247" height="8939">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -34,6 +34,8 @@
    <BOUNDS type="Box" left="3720" top="1185" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
+   </PIN>
+   <PIN pinname="Key Name" visible="1">
    </PIN>
    </NODE>
    <NODE id="19" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
@@ -198,18 +200,32 @@
    </NODE>
    <LINK srcnodeid="53" srcpinname="Bang" dstnodeid="118" dstpinname="Input 1">
    </LINK>
-   <NODE id="142" systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="148">
+   <BOUNDS type="Box" left="3906" top="1680" width="693" height="210">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3906" top="1680" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Key Name" dstnodeid="148" dstpinname="Input String">
+   </LINK>
+   <NODE id="152" systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden">
    <BOUNDS type="Node" left="2460" top="2715" width="3735" height="270">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="118" srcpinname="Output 1" dstnodeid="142" dstpinname="Initialize">
+   <LINK srcnodeid="118" srcpinname="Output 1" dstnodeid="152" dstpinname="Initialize">
    </LINK>
-   <LINK srcnodeid="142" srcpinname="Draw Description Layer" dstnodeid="72" dstpinname="Input">
+   <LINK srcnodeid="152" srcpinname="Draw Description Layer" dstnodeid="72" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="142" dstpinname="UI ResolutionXY">
+   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="152" dstpinname="UI ResolutionXY">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Device" dstnodeid="142" dstpinname="Keyboard">
+   <LINK srcnodeid="4" srcpinname="Device" dstnodeid="152" dstpinname="Keyboard">
    </LINK>
-   <LINK srcnodeid="3" srcpinname="Device" dstnodeid="142" dstpinname="Mouse">
+   <LINK srcnodeid="3" srcpinname="Device" dstnodeid="152" dstpinname="Mouse">
    </LINK>
    </PATCH>

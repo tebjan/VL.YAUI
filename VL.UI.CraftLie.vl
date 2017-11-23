@@ -425,11 +425,10 @@
           <Patch Id="JTczjpwX7QPQEec1T6f0Aj">
             <Canvas Id="La2veVlxnvcPp94FYLyzXT">
               <Node Bounds="444,277,117,22" Id="Eu8yhihWylpOC5G9Nx2p5H">
-                <p:NodeReference>
+                <p:NodeReference LastCategoryFullName="IO.Notifications.NotificationSpaceTransformer" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
-                  <AssemblyReference ID="VL.Lib.UI" />
-                  <CategoryReference Kind="AssemblyCategory" Name="NotificationTransformer" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="ClassType" Name="NotificationSpaceTransformer" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="VFq6awBlSOuNILWvXL4lCp" Name="Offset" Kind="InputPin" />
                 <Pin Id="BAHxlbtmwfKPdvksdQ3uUH" Name="Scaling" Kind="InputPin" />
@@ -445,18 +444,17 @@
                 <Pin Id="RDEATYHfIlBL01UHhx5TuE" Name="Condition" Kind="InputPin" />
                 <Patch Id="MoqVNfN9MR2O9TlQE8daSj" ManuallySortedPins="true">
                   <Node Bounds="526,605,117,22" Id="USVPx8TW3LGNxikjgtrjfm">
-                    <p:NodeReference>
+                    <p:NodeReference LastCategoryFullName="IO.Notifications.NotificationSpaceTransformer" LastSymbolSource="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="Create" />
-                      <AssemblyReference ID="VL.Lib.UI" />
-                      <CategoryReference Kind="AssemblyCategory" Name="NotificationTransformer" NeedsToBeDirectParent="true" />
+                      <CategoryReference Kind="ClassType" Name="NotificationSpaceTransformer" NeedsToBeDirectParent="true" />
                     </p:NodeReference>
                     <Pin Id="MjG7XrPdT6ONzhyZ0LHLDm" Name="Offset" Kind="InputPin" />
                     <Pin Id="TKhcQZdDxQRPem0vVVLHVU" Name="Scaling" Kind="InputPin" />
                     <Pin Id="S49bRoJCNogMuRTMr3yyGK" Name="Output" Kind="StateOutputPin" />
                   </Node>
                   <Node Bounds="526,560,14,13" Id="MQc5QagycltLzRlWutCsT9">
-                    <p:NodeReference LastCategoryFullName="Adaptive" LastSymbolSource="VL.CoreLib.vl">
+                    <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="- (Negate)" />
                       <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
@@ -465,7 +463,7 @@
                     <Pin Id="IxaXwv96LziLcDHTPKFoGV" Name="Output" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="641,574,25,13" Id="Jii0rmPficEQWLI0TfYP9f">
-                    <p:NodeReference LastCategoryFullName="Adaptive" LastSymbolSource="VL.CoreLib.vl">
+                    <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="/" />
                       <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
@@ -506,14 +504,15 @@
               </Node>
               <ControlPoint Id="KqwrUAgI6t8Npzn4E68UdN" Bounds="422,762" />
               <Node Bounds="420,815,111,13" Id="PJcqU8bIONBLL0XOmnLT5e">
-                <p:NodeReference>
+                <p:NodeReference LastCategoryFullName="IO.Notifications.NotificationBase" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="TransformNotification" />
-                  <AssemblyReference ID="VL.Lib.UI" />
+                  <Choice Kind="OperationCallFlag" Name="Transform" />
+                  <CategoryReference Kind="ClassType" Name="NotificationBase" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
-                <Pin Id="EW1YkHUwgk2Nzhpa1Z9muB" Name="Notification" Kind="InputPin" />
+                <Pin Id="BP7x3ATjKkTOqx0wmpYai3" Name="Input" Kind="StateInputPin" />
                 <Pin Id="Ur43dpqHd9LNVJHFhOaD48" Name="Transformer" Kind="InputPin" />
                 <Pin Id="GXTmGO5XIKmP8QTdDn2Dnx" Name="Output" Kind="OutputPin" />
+                <Pin Id="Va94HSld5KJLzNcXQICirm" Name="Result" Kind="OutputPin" />
               </Node>
               <Pad Id="IQN1IHEy2M6OYgYVeP7Epd" SlotId="JtLz5noUKeYLdoO7o3NPAr" Bounds="529,695" />
               <ControlPoint Id="UDGxmuKdyW5PpMiNmRweiv" Bounds="735,358" />
@@ -557,7 +556,6 @@
             <Link Id="OAAtPglrfzyLh1Y4a9evTV" Ids="HTE0X1vgh8lMmRIgo6JyS3,GY6nbuNu1CfLSSgpKp9Fdu" />
             <Link Id="ATkLscQiloWQJMXVItXwis" Ids="IxaXwv96LziLcDHTPKFoGV,MjG7XrPdT6ONzhyZ0LHLDm" />
             <Link Id="Vvc3kFwJ3YHO2EejpFBvuW" Ids="CSAHs4jog3ENnTXnTyu4XT,KqwrUAgI6t8Npzn4E68UdN" IsHidden="true" />
-            <Link Id="BmYH8biot4JL424Yckv8tV" Ids="KqwrUAgI6t8Npzn4E68UdN,EW1YkHUwgk2Nzhpa1Z9muB" />
             <Link Id="SRy2DsO3BP3PUIysOIEHwy" Ids="GXTmGO5XIKmP8QTdDn2Dnx,NhHPbuOtX9pNRkUpyzulvB" />
             <Link Id="S9Z9R1PcKUZLTjMPyTKWRN" Ids="Cd0PIelCc5JOtCq3AuzfyG,IQN1IHEy2M6OYgYVeP7Epd" />
             <Link Id="BHm71KImxsRPVatu5ZSsjG" Ids="IQN1IHEy2M6OYgYVeP7Epd,Ur43dpqHd9LNVJHFhOaD48" />
@@ -582,6 +580,7 @@
             <Link Id="HALfHIkwpn1LmVNLBbWALq" Ids="UM4gm8vDBiqQQ43fSHK4J9,IvHPDvReXvNMmvQ7REJF5H" />
             <Link Id="Andam67n4TSPsTLzNNVU9N" Ids="QxmoWtzjpfjMIzHJAgGzje,Ao32l0zhK2hQaUrWX8EVmE" />
             <Link Id="PKrvsD93oSaMSNkoAbr6pF" Ids="Ozu9kQsVndRLk49iDXkcyw,RDEATYHfIlBL01UHhx5TuE" />
+            <Link Id="RRtQWcM3ABBMWIbJtR8CW4" Ids="KqwrUAgI6t8Npzn4E68UdN,BP7x3ATjKkTOqx0wmpYai3" />
           </Patch>
         </Node>
         <!--
@@ -1817,14 +1816,12 @@
               <ControlPoint Id="B5wWmk23x9XOZlw3pw2RAb" Bounds="741,6" />
               <ControlPoint Id="Kmf0ekpKk70QEmerK4SBhH" Bounds="740,96" />
               <ControlPoint Id="Ipb1ruXqTeXMl0pzjGjvml" Bounds="548,349" />
-              <Node Bounds="705,428" Id="KFODlNgpB7fNxbiScyr46z">
-                <p:NodeReference>
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="CreateDefault" />
-                  <CategoryReference Kind="ClassType" Name="Layer" NeedsToBeDirectParent="true" />
-                </p:NodeReference>
-                <Pin Id="LZmXw7roV3SM6CdADW5U21" Name="Output" Kind="OutputPin" />
-              </Node>
+              <Pad Id="BmB92g0M7zlLz2Dbnfwzn9" Bounds="710,436">
+                <p:ValueBoxSettings />
+                <p:TypeAnnotation LastCategoryFullName="CraftLie" LastSymbolSource="CraftLie.vl">
+                  <Choice Kind="TypeFlag" Name="Layer" />
+                </p:TypeAnnotation>
+              </Pad>
             </Canvas>
             <Patch Id="AYItdsmaio4MQpA1WlPUvR" Name="Create" />
             <Patch Id="JQq8uS3XrsANKSYcaBbyxF" Name="Update" />
@@ -1919,7 +1916,7 @@
             <Patch Id="TsntOn8itLVMUMGBjMlvyK" Name="SetChildren">
               <Pin Id="TMUPvhlQHZyNWwwYxLkRZj" Name="Children" Kind="InputPin" />
             </Patch>
-            <Link Id="AicUBZAZlFiMCxZ3d9skCx" Ids="LZmXw7roV3SM6CdADW5U21,PN2lUqVAgZwOHYe8AHa30U" />
+            <Link Id="Ms6QNL2tsHIN4PhdJhwKUU" Ids="BmB92g0M7zlLz2Dbnfwzn9,PN2lUqVAgZwOHYe8AHa30U" />
           </Patch>
         </Node>
         <!--
