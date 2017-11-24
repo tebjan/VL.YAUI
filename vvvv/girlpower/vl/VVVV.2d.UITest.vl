@@ -128,8 +128,9 @@
               <p:NodeReference LastCategoryFullName="UI" LastSymbolSource="VL.Lib.UI.Widgets.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Category" Name="UI" />
-                <Choice Kind="ProcessAppFlag" Name="SliderX" />
+                <Choice Kind="ProcessAppFlag" Name="Slider" />
               </p:NodeReference>
+              <Pin Id="VgOlbaFhGQPOyqsYdVaA8H" Name="CustomSettings" Kind="InputPin" />
               <Pin Id="HTPHTjorcHZP7w5fQcfVZ8" Name="Bounds" Kind="InputPin" />
               <Pin Id="C9gGPQs7Yd5LZyUY06OHsu" Name="Color" Kind="InputPin" DefaultValue="{&quot;Red&quot;:0.5300003,&quot;Green&quot;:0.5300003,&quot;Blue&quot;:0.5300003,&quot;Alpha&quot;:1.0}">
                 <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="VL.CoreLib.vl">
@@ -137,7 +138,6 @@
                 </p:TypeAnnotation>
               </Pin>
               <Pin Id="C6yQZxfVruNQX3rlsoXzgy" Name="Inital Value" Kind="InputPin" />
-              <Pin Id="Ax3uenkFcx9MQAAaqizcpf" Name="GetValue" Kind="ApplyPin" />
               <Pin Id="Tux8myc4CxgLEnbczEQKx2" Name="Value" Kind="InputPin" />
               <Pin Id="LyDb8sWa7PuLrRMD6teQmF" Name="Raise Event" Kind="InputPin" />
               <Pin Id="I2Gc1750yfuQbqAQtXrnOq" Name="Output" Kind="StateOutputPin" />

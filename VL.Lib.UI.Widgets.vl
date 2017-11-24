@@ -50,8 +50,8 @@
               <Pad Id="EAgSWbPTAHfOAKfpPujJuA" Bounds="210,708" />
               <Pad Id="CY4agEMSog1QSrAQZSIYuu" Bounds="1166,270,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -518,8 +518,8 @@
               </Pad>
               <Pad Id="RgZlnLw9vfUMmYjCexf07e" Bounds="1453,126,89,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -742,8 +742,8 @@
               <ControlPoint Id="FBu8RaAUWS0NHYG5dhzzNK" Bounds="542,822" />
               <Pad Id="NyTktvHkwLqM5f5NKi6jYp" Bounds="306,701,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -1864,8 +1864,8 @@
               <ControlPoint Id="UHOcWlaY98FNs2wRxlNpCJ" Bounds="589,298" />
               <Pad Id="L2KBmkcgk3jNG0nfHuqnsc" Bounds="1349,595,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -2068,8 +2068,8 @@
               <ControlPoint Id="MU66rm7O1ZoQdA0Ak5UMfd" Bounds="408,1152" />
               <Pad Id="NLJ0IKSjFmxMpTZlFyEMu5" Bounds="172,1031,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -2453,8 +2453,8 @@
               <Pad Id="VfpFlMu9frtO1V3sGyuGav" SlotId="BaLEuOMVWpiO8Adx42wAvQ" Bounds="1816,295" />
               <Pad Id="O0sNTAYKD07LwFkHpPmP40" Bounds="1777,206,48,22" ShowValueBox="true" isIOBox="true" Value="&quot;debug &quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -2462,8 +2462,8 @@
               </Pad>
               <Pad Id="LO7PLpm7vghOvfTphVZgIu" Bounds="1754,595,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -3107,8 +3107,8 @@
               <ControlPoint Id="GNbOnPOpYzcNT9Ai5WII07" Bounds="522,441" />
               <Pad Id="SY7OdNkcX5aM8h4KzSO84J" Bounds="1383,575,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -3314,8 +3314,8 @@
               <ControlPoint Id="CKoQhthdYhkMwHokUtT7tr" Bounds="59,1081" />
               <Pad Id="RcT2UVf09bdLMUmyO6FjmH" Bounds="-44,927,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -3931,8 +3931,8 @@
               <ControlPoint Id="IrIOYtY8vzrNodP9hCX8Kr" Bounds="589,298" />
               <Pad Id="PMRJjDllb1DLHBPIfAsZiH" Bounds="1383,575,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -4139,8 +4139,8 @@
               <ControlPoint Id="OMGMkJMfe6jL21G6Cdon9Y" Bounds="80,1142" />
               <Pad Id="AVVlP6m99DoME151Q0ZO92" Bounds="-23,988,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -4856,8 +4856,8 @@
               <ControlPoint Id="GBFyfryKlayLw7RKb2CY77" Bounds="589,298" />
               <Pad Id="Bkk6eOTGbZLMHi2wLGXLwt" Bounds="1462,567,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -5056,8 +5056,8 @@
               <ControlPoint Id="SvmfedqbBRBPLdUA01XFhB" Bounds="80,1142" />
               <Pad Id="Io9Ay3x42OXPMdRhI3NuvT" Bounds="-23,988,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -6296,8 +6296,8 @@
               <ControlPoint Id="C0ZE1a14khoLdegcRhBUwA" Bounds="589,298" />
               <Pad Id="H8YxUwAQfTrPxKs7kq68O9" Bounds="1383,575,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -6498,8 +6498,8 @@
               <ControlPoint Id="SvxqNjwA4CKQFsY4NPBKrO" Bounds="408,1152" />
               <Pad Id="HZov2SLvEubOgumfdGXKK4" Bounds="172,1031,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -7998,8 +7998,8 @@
               <ControlPoint Id="Khai2XaDJxYO2bQJoYGLiy" Bounds="589,298" />
               <Pad Id="ENo6NkorfDlOtuBHpNtePf" Bounds="1383,575,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -8197,8 +8197,8 @@
               <ControlPoint Id="M5Ea6x3xzuOMifHKekMFiD" Bounds="59,1081" />
               <Pad Id="KqVO6e9Ldr4NaQntf5VDGr" Bounds="-44,927,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -9245,8 +9245,8 @@
         </Node>
         <Pad Id="OQYnoMo9TaROp3kUoBdkgB" Bounds="1523,562,236,240" ShowValueBox="true" isIOBox="true" Value="&quot;HSV vvvv style\r\nHSV sliders\r\nROTARY H,V\r\nenum style menu\r\n2d pointer\r\nMultiSlider H V\r\nMulti2dPointer\r\nMultiBang H V\r\nMultiPush H V\r\nMultiBang V\r\nValue snapping (operation into the state?)\r\nText Field\r\nValue Field&quot;">
           <p:ValueBoxSettings>
-            <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             <p:fontsize p:Type="Int32">9</p:fontsize>
+            <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
           </p:ValueBoxSettings>
           <p:TypeAnnotation>
             <Choice Kind="TypeFlag" Name="String" />
@@ -9276,8 +9276,8 @@
               <ControlPoint Id="Kgus5fuGacHMXDTnFJtLHc" Bounds="589,298" />
               <Pad Id="V4VLCaLIb0TNAcE7D7tfmV" Bounds="1419,591,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -9475,8 +9475,8 @@
               <ControlPoint Id="N4dPwdIvFiXLmPIQvEV1Ny" Bounds="59,1081" />
               <Pad Id="QQBpWmodeMUQT952c3E0K1" Bounds="-44,927,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -11529,8 +11529,8 @@
               <ControlPoint Id="MRSZS2wDjjVLpLY2iht4UL" Bounds="589,298" />
               <Pad Id="Lc1FRfbEfiZPRJGi2KYjy9" Bounds="1253,466,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -12203,8 +12203,8 @@
               <ControlPoint Id="HbPCZZxqvG5NihQfHkDnN6" Bounds="589,298" />
               <Pad Id="GnJkuyJ0WDMObE0NyNIfUD" Bounds="1253,466,92,22" ShowValueBox="true" isIOBox="true" Value="&quot;Interaction&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -12851,8 +12851,8 @@
               <ControlPoint Id="DHQHTSCEQ96K9xCjvyqXpQ" Bounds="1103,897" />
               <Pad Id="SsWa52UQ4uFMMRexf53X1r" Bounds="867,776,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -13193,8 +13193,8 @@
               <ControlPoint Id="CIB4pzuMNoEN6AIHrncApU" Bounds="828,645" />
               <Pad Id="KWPBfXXHGnqLzMyWkfUczr" Bounds="593,530,87,22" ShowValueBox="true" isIOBox="true" Value="&quot;Children&quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -13242,8 +13242,8 @@
               </Pad>
               <Pad Id="ML6DNvMNlzlM4KIsIB6SDJ" Bounds="277,205,50,22" ShowValueBox="true" isIOBox="true" Value="&quot;Layout &quot;">
                 <p:ValueBoxSettings>
-                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
