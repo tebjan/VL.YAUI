@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="MZmd92n0x8tLLBfKYOnxOx" Version="0.61">
+<Document xmlns:p="property" Id="MZmd92n0x8tLLBfKYOnxOx" Version="0.62">
   <NugetDependency Id="Q8t0r8GegU6LxRf2wXWopD" Location="VL.Core" Version="0.38.1043" />
   <Patch Id="AXcrkz7wtuiLTLQMfXYFvQ">
     <Canvas Id="UNxfqzqFZ0sNZX8LT3rUat">
@@ -164,7 +164,7 @@
                   <CategoryReference Kind="RecordType" Name="MouseDevice" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="PDONa6XyEGmM5lhoAMGoJK" Name="Input" Kind="StateInputPin" />
-                <Pin Id="IAHrSnnSQMnNCmqSBp77At" Name="Mouse Notifications" Kind="OutputPin" />
+                <Pin Id="IAHrSnnSQMnNCmqSBp77At" Name="Notifications" Kind="OutputPin" />
               </Node>
               <Node Bounds="368,340,68,13" Id="DzVl26JhRoMM7Gj4WvKIdL">
                 <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyboardDevice" LastSymbolSource="VL.CoreLib.vl">
@@ -173,7 +173,7 @@
                   <CategoryReference Kind="RecordType" Name="KeyboardDevice" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="NpSN8xgu174MSVJkgOyQnq" Name="Input" Kind="StateInputPin" />
-                <Pin Id="QncbnrFPAbBNmxZAt2T1FP" Name="Key Notifications" Kind="OutputPin" />
+                <Pin Id="QncbnrFPAbBNmxZAt2T1FP" Name="Notifications" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="QOSxJ8jRFaAM7rk8ZiouuP" Bounds="270,290" />
               <ControlPoint Id="NhV74K2DA0iPQYd812G11z" Bounds="369,290" />
