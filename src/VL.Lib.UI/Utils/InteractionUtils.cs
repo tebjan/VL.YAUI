@@ -70,10 +70,19 @@ namespace VL.Lib.UI
                 return this;
             }
 
+            public IMouseHandler MouseWheel(MouseWheelNotification arg)
+            {
+                if (Handler != null)
+                    Handler = Handler.MouseWheel(arg);
+                if (Handler == null)
+                    return this.continuation(arg);
+                return this;
+            }
+
             public void Dispose()
             {
                 Handler?.Dispose();
-            }
+            }           
         }
 
         internal class ParallelMouseHandler : IMouseHandler
@@ -121,6 +130,14 @@ namespace VL.Lib.UI
                 return ThisIfLeftAndRightIsNotNull();
             }
 
+
+            public IMouseHandler MouseWheel(MouseWheelNotification arg)
+            {
+                if (Left != null) Left = Left.MouseWheel(arg);
+                if (Right != null) Right = Right.MouseWheel(arg);
+                return ThisIfLeftAndRightIsNotNull();
+            }
+
             protected virtual IMouseHandler ThisIfLeftAndRightIsNotNull()
             {
                 if (Left == null)
@@ -129,6 +146,7 @@ namespace VL.Lib.UI
                     return Left;
                 return this;
             }
+
         }
 
         internal class SyncMouseHandler : ParallelMouseHandler
@@ -159,17 +177,20 @@ namespace VL.Lib.UI
             readonly Func<IMouseHandler, MouseMoveNotification, IMouseHandler> onMouseMove;
             readonly Func<IMouseHandler, MouseUpNotification, IMouseHandler> onMouseUp;
             readonly Func<IMouseHandler, MouseClickNotification, IMouseHandler> onMouseClick;
+            readonly Func<IMouseHandler, MouseWheelNotification, IMouseHandler> onMouseWheel;
 
             public WaitForEventMouseHandler(
                 Func<IMouseHandler, MouseDownNotification, IMouseHandler> onMouseDown,
                 Func<IMouseHandler, MouseMoveNotification, IMouseHandler> onMouseMove,
                 Func<IMouseHandler, MouseUpNotification, IMouseHandler> onMouseUp,
-                Func<IMouseHandler, MouseClickNotification, IMouseHandler> onMouseClick)
+                Func<IMouseHandler, MouseClickNotification, IMouseHandler> onMouseClick,
+                Func<IMouseHandler, MouseWheelNotification, IMouseHandler> onMouseWheel)
             {
                 this.onMouseDown = onMouseDown;
                 this.onMouseMove = onMouseMove;
                 this.onMouseUp = onMouseUp;
                 this.onMouseClick = onMouseClick;
+                this.onMouseWheel = onMouseWheel;
             }
 
             public void Dispose() { }
@@ -199,6 +220,13 @@ namespace VL.Lib.UI
             {
                 if (this.onMouseClick != null)
                     return this.onMouseClick(this, arg);
+                return this;
+            }
+
+            public IMouseHandler MouseWheel(MouseWheelNotification arg)
+            {
+                if (this.onMouseWheel != null)
+                    return this.onMouseWheel(this, arg);
                 return this;
             }
         }
@@ -209,17 +237,22 @@ namespace VL.Lib.UI
             readonly Func<IMouseHandler, MouseMoveNotification, IMouseHandler> onMouseMove;
             readonly Func<IMouseHandler, MouseUpNotification, IMouseHandler> onMouseUp;
             readonly Func<IMouseHandler, MouseClickNotification, IMouseHandler> onMouseClick;
+            readonly Func<IMouseHandler, MouseWheelNotification, IMouseHandler> onMouseWheel;
+
 
             public WhileEventMouseHandler(
                 Func<IMouseHandler, MouseDownNotification, IMouseHandler> onMouseDown,
                 Func<IMouseHandler, MouseMoveNotification, IMouseHandler> onMouseMove,
                 Func<IMouseHandler, MouseUpNotification, IMouseHandler> onMouseUp,
-                Func<IMouseHandler, MouseClickNotification, IMouseHandler> onMouseClick)
+                Func<IMouseHandler, MouseClickNotification, IMouseHandler> onMouseClick,
+                Func<IMouseHandler, MouseWheelNotification, IMouseHandler> onMouseWheel)
             {
                 this.onMouseDown = onMouseDown;
                 this.onMouseMove = onMouseMove;
                 this.onMouseUp = onMouseUp;
                 this.onMouseClick = onMouseClick;
+                this.onMouseWheel = onMouseWheel;
+
             }
 
             public void Dispose() { }
@@ -249,6 +282,13 @@ namespace VL.Lib.UI
             {
                 if (this.onMouseClick != null)
                     return this.onMouseClick(this, arg);
+                return null;
+            }
+
+            public IMouseHandler MouseWheel(MouseWheelNotification arg)
+            {
+                if (this.onMouseWheel != null)
+                    return this.onMouseWheel(this, arg);
                 return null;
             }
         }
@@ -343,7 +383,7 @@ namespace VL.Lib.UI
         /// </summary>
         public static IMouseHandler OnDown(Func<MouseDownNotification, IMouseHandler> onDown)
         {
-            return new WaitForEventMouseHandler((c, a) => onDown(a), null, null, null);
+            return new WaitForEventMouseHandler((c, a) => onDown(a), null, null, null, null);
         }
 
         /// <summary>
@@ -351,7 +391,7 @@ namespace VL.Lib.UI
         /// </summary>
         public static IMouseHandler OnMove(Func<MouseMoveNotification, IMouseHandler> onMove)
         {
-            return new WaitForEventMouseHandler(null, (c, a) => onMove(a), null, null);
+            return new WaitForEventMouseHandler(null, (c, a) => onMove(a), null, null, null);
         }
 
         /// <summary>
@@ -359,7 +399,7 @@ namespace VL.Lib.UI
         /// </summary>
         public static IMouseHandler OnUp(Func<MouseUpNotification, IMouseHandler> onUp)
         {
-            return new WaitForEventMouseHandler(null, null, (c, a) => onUp(a), null);
+            return new WaitForEventMouseHandler(null, null, (c, a) => onUp(a), null, null);
         }
 
         /// <summary>
@@ -369,7 +409,7 @@ namespace VL.Lib.UI
         /// </summary>
         public static IMouseHandler WhileAny(Func<IMouseHandler, MouseNotification, IMouseHandler> whileAny)
         {
-            return new WhileEventMouseHandler(whileAny, whileAny, whileAny, whileAny);
+            return new WhileEventMouseHandler(whileAny, whileAny, whileAny, whileAny, whileAny);
         }
 
         /// <summary>
@@ -379,7 +419,7 @@ namespace VL.Lib.UI
         /// </summary>
         public static IMouseHandler WhileMove(Func<IMouseHandler, MouseMoveNotification, IMouseHandler> whileMove)
         {
-            return new WhileEventMouseHandler(null, whileMove, null, null);
+            return new WhileEventMouseHandler(null, whileMove, null, null, null);
         }
 
         /// <summary>
@@ -387,7 +427,15 @@ namespace VL.Lib.UI
         /// </summary>
         public static IMouseHandler OnClick(Func<MouseClickNotification, IMouseHandler> onClick)
         {
-            return new WaitForEventMouseHandler(null, null, null, (c, a) => onClick(a));
+            return new WaitForEventMouseHandler(null, null, null, (c, a) => onClick(a), null);
+        }
+
+        /// <summary>
+        /// Creates a handler which will call the given continuation once a mouse click was observed.
+        /// </summary>
+        public static IMouseHandler OnWheel(Func<MouseWheelNotification, IMouseHandler> onWheel)
+        {
+            return new WaitForEventMouseHandler(null, null, null, null, (c, a) => onWheel(a));
         }
 
         /// <summary>

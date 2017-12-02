@@ -22,6 +22,7 @@ namespace VL.Lib.UI
         IMouseHandler MouseMove(MouseMoveNotification arg);
         IMouseHandler MouseUp(MouseUpNotification arg);
         IMouseHandler MouseClick(MouseClickNotification arg);
+        IMouseHandler MouseWheel(MouseWheelNotification arg);
     }
 
     public interface IKeyboardHandler : IDisposable
@@ -38,6 +39,7 @@ namespace VL.Lib.UI
         IMouseKeyboardHandler MouseMove(MouseMoveNotification arg);
         IMouseKeyboardHandler MouseUp(MouseUpNotification arg);
         IMouseKeyboardHandler MouseClick(MouseClickNotification arg);
+        IMouseKeyboardHandler MouseWheel(MouseWheelNotification arg);
 
         IMouseKeyboardHandler KeyDown(KeyDownNotification arg);
         IMouseKeyboardHandler KeyUp(KeyUpNotification arg);
@@ -51,6 +53,7 @@ namespace VL.Lib.UI
         bool MouseMove(MouseMoveNotification arg);
         bool MouseUp(MouseUpNotification arg);
         bool MouseClick(MouseClickNotification arg);
+        bool MouseWheel(MouseWheelNotification arg);
 
         bool KeyDown(KeyDownNotification arg);
         bool KeyUp(KeyUpNotification arg);
