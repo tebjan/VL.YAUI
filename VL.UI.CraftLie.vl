@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="MZmd92n0x8tLLBfKYOnxOx" Version="0.62">
+<Document xmlns:p="property" Id="MZmd92n0x8tLLBfKYOnxOx" Version="0.72">
   <NugetDependency Id="Q8t0r8GegU6LxRf2wXWopD" Location="VL.Core" Version="0.38.1043" />
   <Patch Id="AXcrkz7wtuiLTLQMfXYFvQ">
     <Canvas Id="UNxfqzqFZ0sNZX8LT3rUat">
@@ -19,7 +19,7 @@
               <Node Bounds="525,125,55,22" Id="G4wErjA0npAMlVUK5GkxMz">
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="Controller" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
                 </p:NodeReference>
                 <Pin Id="DnAJoQynxpvLaXAgM3rHza" Name="Output" Kind="StateOutputPin" />
@@ -30,7 +30,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayer" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="DjpeY4mU4CoPzjgg10iacZ" Name="Input" Kind="StateInputPin" />
                 <Pin Id="SUIsSFGDyN1OI87S76Ubei" Name="Layer" Kind="OutputPin" />
@@ -39,7 +39,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Update" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="CKNrpOZ5W6iO3iEuHECsvK" Name="Input" Kind="StateInputPin" />
                 <Pin Id="UEtqAWpQGHpMO0d4aMM1tq" Name="Output" Kind="StateOutputPin" />
@@ -49,7 +49,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Layout" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="FYK4gaCFxPiPZZtkgcjrKd" Name="Input" Kind="StateInputPin" />
                 <Pin Id="PCbhQHyDgEsNvQwTTAEAh4" Name="Offset" Kind="InputPin" />
@@ -62,7 +62,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetElements" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="MggzVODNtPsPre076o3PlT" Name="Input" Kind="StateInputPin" />
                 <Pin Id="AyHgs88o37dPruLnDhpbEc" Name="Output" Kind="StateOutputPin" />
@@ -86,7 +86,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="SetElements" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="G1cZ0Y91vksPF1bYyD1Dzt" Name="Input" Kind="StateInputPin" />
                 <Pin Id="CIvkuY9frBDMZVevPIRk8z" Name="Elements" Kind="InputPin" />
@@ -104,6 +104,7 @@
               <Pin Id="CF9fMnfRfgJN0ovZascRTH" Name="Clip" Kind="InputPin" DefaultValue="true">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Boolean" />
+                  <FullNameCategoryReference ID="Primitive" />
                 </p:TypeAnnotation>
               </Pin>
               <Pin Id="EKbQ53rhz3nPCNntxuKXfr" Name="Clip Rect" Kind="InputPin" />
@@ -161,7 +162,7 @@
                 <p:NodeReference LastCategoryFullName="IO.Mouse.MouseDevice" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Notifications" />
-                  <CategoryReference Kind="RecordType" Name="MouseDevice" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="MouseDevice" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="PDONa6XyEGmM5lhoAMGoJK" Name="Input" Kind="StateInputPin" />
                 <Pin Id="IAHrSnnSQMnNCmqSBp77At" Name="Notifications" Kind="OutputPin" />
@@ -170,7 +171,7 @@
                 <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyboardDevice" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Notifications" />
-                  <CategoryReference Kind="RecordType" Name="KeyboardDevice" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="KeyboardDevice" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="NpSN8xgu174MSVJkgOyQnq" Name="Input" Kind="StateInputPin" />
                 <Pin Id="QncbnrFPAbBNmxZAt2T1FP" Name="Notifications" Kind="OutputPin" />
@@ -221,7 +222,7 @@
                     <p:NodeReference LastCategoryFullName="IO.Notifications.NotificationBase" LastSymbolSource="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="Transform" />
-                      <CategoryReference Kind="ClassType" Name="NotificationBase" NeedsToBeDirectParent="true" />
+                      <CategoryReference Kind="TypeFlag" Name="NotificationBase" NeedsToBeDirectParent="true" />
                     </p:NodeReference>
                     <Pin Id="F35iD82lnE6LkpkNOZi1L1" Name="Input" Kind="StateInputPin" />
                     <Pin Id="KBQQ1DEQJ77NunWM5TsbWr" Name="Transformer" Kind="InputPin" />
@@ -234,7 +235,7 @@
                 <p:NodeReference LastCategoryFullName="IO.Notifications.NotificationSpaceTransformer" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
-                  <CategoryReference Kind="ClassType" Name="NotificationSpaceTransformer" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="NotificationSpaceTransformer" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="Bla3jaRbTPiO46AuwTnyQN" Name="Offset" Kind="InputPin" />
                 <Pin Id="ADF0KxU6VVNOmERPItYSMh" Name="Scaling" Kind="InputPin" />
@@ -254,7 +255,7 @@
               <ControlPoint Id="UZy4kzxQ7yXO2m1AwLjYec" Bounds="426,774" />
               <Node Bounds="548,272,236,167" Id="O183fZmJgroL8Pe3NWdEqI">
                 <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                  <Choice Kind="AdaptiveRegion" Name="If" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="If" />
                   <FullNameCategoryReference ID="Primitive" />
                 </p:NodeReference>
                 <Pin Id="KuDWo8B7qQONOHzQGQO0uJ" Name="Condition" Kind="InputPin" />
@@ -263,7 +264,7 @@
                     <p:NodeReference LastCategoryFullName="IO.Notifications.NotificationSpaceTransformer" LastSymbolSource="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="Create" />
-                      <CategoryReference Kind="ClassType" Name="NotificationSpaceTransformer" NeedsToBeDirectParent="true" />
+                      <CategoryReference Kind="TypeFlag" Name="NotificationSpaceTransformer" NeedsToBeDirectParent="true" />
                     </p:NodeReference>
                     <Pin Id="CMsMZOHgi9KLAPGZDqVFgY" Name="Offset" Kind="InputPin" />
                     <Pin Id="RpTRudqKlxfLF4fXhu4jPQ" Name="Scaling" Kind="InputPin" />
@@ -428,7 +429,7 @@
                 <p:NodeReference LastCategoryFullName="IO.Notifications.NotificationSpaceTransformer" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
-                  <CategoryReference Kind="ClassType" Name="NotificationSpaceTransformer" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="NotificationSpaceTransformer" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="VFq6awBlSOuNILWvXL4lCp" Name="Offset" Kind="InputPin" />
                 <Pin Id="BAHxlbtmwfKPdvksdQ3uUH" Name="Scaling" Kind="InputPin" />
@@ -438,7 +439,7 @@
               <ControlPoint Id="NhHPbuOtX9pNRkUpyzulvB" Bounds="421,885" />
               <Node Bounds="486,493,238,166" Id="JMz3UY3Ly5XLm8Q2LSGcGP">
                 <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                  <Choice Kind="AdaptiveRegion" Name="If" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="If" />
                   <FullNameCategoryReference ID="Primitive" />
                 </p:NodeReference>
                 <Pin Id="RDEATYHfIlBL01UHhx5TuE" Name="Condition" Kind="InputPin" />
@@ -447,7 +448,7 @@
                     <p:NodeReference LastCategoryFullName="IO.Notifications.NotificationSpaceTransformer" LastSymbolSource="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="Create" />
-                      <CategoryReference Kind="ClassType" Name="NotificationSpaceTransformer" NeedsToBeDirectParent="true" />
+                      <CategoryReference Kind="TypeFlag" Name="NotificationSpaceTransformer" NeedsToBeDirectParent="true" />
                     </p:NodeReference>
                     <Pin Id="MjG7XrPdT6ONzhyZ0LHLDm" Name="Offset" Kind="InputPin" />
                     <Pin Id="TKhcQZdDxQRPem0vVVLHVU" Name="Scaling" Kind="InputPin" />
@@ -507,7 +508,7 @@
                 <p:NodeReference LastCategoryFullName="IO.Notifications.NotificationBase" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Transform" />
-                  <CategoryReference Kind="ClassType" Name="NotificationBase" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="NotificationBase" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="BP7x3ATjKkTOqx0wmpYai3" Name="Input" Kind="StateInputPin" />
                 <Pin Id="Ur43dpqHd9LNVJHFhOaD48" Name="Transformer" Kind="InputPin" />
@@ -593,12 +594,9 @@
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
-          <p:TypeAnnotation>
+          <p:TypeAnnotation LastSymbolSource="VL.Lib.UI.dll">
             <Choice Kind="TypeFlag" Name="IUIElement" />
-            <AssemblyReference ID="VL.Lib.UI" />
             <FullNameCategoryReference ID="VL.Lib.UI" />
-            <FullNameCategoryReference ID="VL.Lib.UI" />
-            <AssemblyReference ID="VL.Lib.UI" />
           </p:TypeAnnotation>
           <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">true</p:ForwardAllNodesOfTypeDefinition>
           <Patch Id="T3IqeOUiAicMtZrox5YeJ6">
@@ -617,7 +615,7 @@
                   <Node Bounds="331,143,71,22" Id="Dr7SHSnnyHTOXS7WoYyAL3">
                     <p:NodeReference LastCategoryFullName="UI.DefaultUIElement" LastSymbolSource="VL.UI.CraftLie.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <CategoryReference Kind="ClassType" Name="DefaultUIElement" />
+                      <CategoryReference Kind="TypeFlag" Name="DefaultUIElement" />
                       <Choice Kind="OperationCallFlag" Name="Create" />
                     </p:NodeReference>
                     <Pin Id="J0Ud3x95GxtOk1pgOD725a" Name="Output" Kind="StateOutputPin" />
@@ -649,7 +647,7 @@
               <Node Bounds="123,-251,55,22" Id="LOVoAYZNZsZLOtUFgGM0MH">
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="Controller" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
                 </p:NodeReference>
                 <Pin Id="N6sXUE1bmd2MHUXIMV8foq" Name="Output" Kind="StateOutputPin" />
@@ -695,7 +693,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayer" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="Q3QCYWx3ZZ9NG0UOS4XgVQ" Name="Input" Kind="StateInputPin" />
                 <Pin Id="AvBPzVa9ODCQBVFDKCzUTN" Name="Layer" Kind="OutputPin" />
@@ -706,7 +704,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Update" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="BVvDsbYpLPoPhlGyjZDzcr" Name="Input" Kind="StateInputPin" />
                 <Pin Id="LnhOQ5MFpNCOnJ9VNeYBJN" Name="Output" Kind="StateOutputPin" />
@@ -715,7 +713,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="AddElement" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="PbO1BPs13BwOwV7FnAcusO" Name="Input" Kind="StateInputPin" />
                 <Pin Id="HwBQxA1Mrq5MVHjtPg2OfU" Name="Element" Kind="InputPin" />
@@ -732,7 +730,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="RemoveElement" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="UaCRYaZ7ojxMdo0M2hk7ZB" Name="Input" Kind="StateInputPin" />
                 <Pin Id="JT6GaOzY0mNPEY2dMppwQs" Name="Element" Kind="InputPin" />
@@ -756,7 +754,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Layout" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="RQ7aDX8R27VNmxIgpGQmnC" Name="Input" Kind="StateInputPin" />
                 <Pin Id="VIbhVcnu3hvNzxaob11tet" Name="Offset" Kind="InputPin" />
@@ -796,7 +794,6 @@
               <Node Bounds="165,229,88,22" Id="LvQSakZkhmfMDz5oVXmmvh">
                 <p:NodeReference LastCategoryFullName="VL.Lib.UI.RectangleExtensions" LastSymbolSource="VL.Lib.UI.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <AssemblyReference ID="VL.Lib.UI" />
                   <Choice Kind="OperationCallFlag" Name="GetNullableValue" />
                 </p:NodeReference>
                 <Pin Id="Pam4N0wbunxM42wf3w4oNb" Name="Input" Kind="StateInputPin" />
@@ -819,7 +816,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="ProcessInput" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="CeOsGnKCyNuMW4dNg8Cd0k" Name="Input" Kind="StateInputPin" />
                 <Pin Id="VKG61RMDclcQXVGLhXaExB" Name="Event Args" Kind="InputPin" />
@@ -836,7 +833,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetElements" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="CgA2AHuWNLcLMg3p9svgKj" Name="Input" Kind="StateInputPin" />
                 <Pin Id="HqYF5G3T9rYLdl8t3VWE0V" Name="Output" Kind="StateOutputPin" />
@@ -850,7 +847,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="ProcessInput" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="MNHLe0zRCQ9QHAshMOfihL" Name="Input" Kind="StateInputPin" />
                 <Pin Id="ReW7PWuwAiuOwJeo5txcNF" Name="Event Args" Kind="InputPin" />
@@ -872,7 +869,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="SetElements" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="FjCFghd9HkpO5ubQLtvCLL" Name="Input" Kind="StateInputPin" />
                 <Pin Id="HG4lqbCBYuSNrWPraXqNs4" Name="Elements" Kind="InputPin" />
@@ -886,7 +883,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetSelectionRect" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="BLHc6iRXbFQNyi0NMffQCq" Name="Input" Kind="StateInputPin" />
                 <Pin Id="HwzIM206skrOJulGWVZTn1" Name="Output" Kind="StateOutputPin" />
@@ -1005,7 +1002,7 @@
               <Node Bounds="338,58,55,22" Id="SwQg9ymI6d8NKZkW4BLMic">
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="Controller" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
                 </p:NodeReference>
                 <Pin Id="R1tNxfCXsmUNoRTfEOlgaw" Name="Output" Kind="StateOutputPin" />
@@ -1030,7 +1027,7 @@
                 <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
-                  <Choice Kind="ForEachLoop" Name="ForEach" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 </p:NodeReference>
                 <Pin Id="I9rAoFj0mwcOGqDAvejA4y" Name="Break" Kind="OutputPin" />
                 <Patch Id="LKscNBw2VWwNAlaVlB3XQl" ManuallySortedPins="true">
@@ -1041,7 +1038,7 @@
                     <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="ProcessInput" />
-                      <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                      <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                     </p:NodeReference>
                     <Pin Id="QOehT0pYe2rP2tkP0DCoYN" Name="Input" Kind="StateInputPin" />
                     <Pin Id="GwLgsZbDNnnN6xSw7lpZNT" Name="Event Args" Kind="InputPin" />
@@ -1112,7 +1109,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayer" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="CN6yhEK2ZdvMn2vP55Xd4e" Name="Input" Kind="StateInputPin" />
                 <Pin Id="NCUlrgXaWUzOG3IPQoxz4D" Name="Layer" Kind="OutputPin" />
@@ -1123,7 +1120,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Update" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="GuQhJUrNmE3PBeSgwUFcZM" Name="Input" Kind="StateInputPin" />
                 <Pin Id="DSfwYUouRB2MZaMFyFwuyu" Name="Output" Kind="StateOutputPin" />
@@ -1148,7 +1145,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Layout" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="FmBoTiMhDINNiDgPWYqhoU" Name="Input" Kind="StateInputPin" />
                 <Pin Id="L11IqWxVgXILKabXhPLuDW" Name="Offset" Kind="InputPin" />
@@ -1188,7 +1185,6 @@
               <Node Bounds="435,608,88,22" Id="SOSt4CUSgcRNaI2sThzxUS">
                 <p:NodeReference LastCategoryFullName="VL.Lib.UI.RectangleExtensions" LastSymbolSource="VL.Lib.UI.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <AssemblyReference ID="VL.Lib.UI" />
                   <Choice Kind="OperationCallFlag" Name="GetNullableValue" />
                 </p:NodeReference>
                 <Pin Id="M0EiLYI2g2cLT161aZfdFf" Name="Input" Kind="StateInputPin" />
@@ -1210,7 +1206,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="SetElements" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="SO2GUXqlsQfPUNyzpI3zTZ" Name="Input" Kind="StateInputPin" />
                 <Pin Id="SQFLkIu30kdMlYF141GokZ" Name="Elements" Kind="InputPin" />
@@ -1241,7 +1237,7 @@
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetSelectionRect" />
-                  <CategoryReference Kind="ClassType" Name="Controller" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Controller" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="LZfa0tXbl0hPs06fP2lt81" Name="Input" Kind="StateInputPin" />
                 <Pin Id="Nh1zeQDrzG3L8AhIJRtf2W" Name="Output" Kind="StateOutputPin" />
@@ -1330,12 +1326,9 @@
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
-          <p:TypeAnnotation>
+          <p:TypeAnnotation LastSymbolSource="VL.Lib.UI.dll">
             <Choice Kind="TypeFlag" Name="IUIElementSetChildren" />
-            <AssemblyReference ID="VL.Lib.UI" />
             <FullNameCategoryReference ID="VL.Lib.UI" />
-            <FullNameCategoryReference ID="VL.Lib.UI" />
-            <AssemblyReference ID="VL.Lib.UI" />
           </p:TypeAnnotation>
           <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
           <Patch Id="C0RoB7szf9EPQ04fSldZYU">
@@ -1355,7 +1348,6 @@
                     <p:NodeReference LastCategoryFullName="VL.Lib.UI.IUIElementSetChildren" LastSymbolSource="VL.Lib.UI.dll">
                       <Choice Kind="OperationNode" Name="SetChildren" />
                       <FullNameCategoryReference ID="VL.Lib.UI.IUIElementSetChildren" />
-                      <AssemblyReference ID="VL.Lib.UI" />
                     </p:NodeReference>
                     <Pin Id="Ryk6ApqWCm8OLkZOGfbi9u" Name="Input" Kind="StateInputPin" />
                     <Pin Id="NaxM1HT1m48P4Fgs9h3uR0" Name="Children" Kind="InputPin" />
@@ -1410,7 +1402,7 @@
               <Node Bounds="722,390,66,95" Id="Htn7dZnyOOkLWnRW02Jkhp">
                 <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="OperationCallFlag" Name="Any (Predicate)" />
-                  <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Sequence" NeedsToBeDirectParent="true" />
                   <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                 </p:NodeReference>
                 <Pin Id="UPtBTcFo7OqPlbw1tFxEye" Name="Input" Kind="StateInputPin" />
@@ -1424,7 +1416,7 @@
                     <p:NodeReference LastCategoryFullName="UI.IUIElement" LastSymbolSource="VL.UI.CraftLie.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="HitTest" />
-                      <CategoryReference Kind="MutableInterfaceType" Name="IUIElement" NeedsToBeDirectParent="true" />
+                      <CategoryReference Kind="TypeFlag" Name="IUIElement" NeedsToBeDirectParent="true" />
                     </p:NodeReference>
                     <Pin Id="AxemsK8wAqbMt88JtUMEtZ" Name="Input" Kind="StateInputPin" />
                     <Pin Id="D1J07C83zxVNULBXropU3i" Name="Hit Area" Kind="InputPin" />
@@ -1601,7 +1593,7 @@
                 <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Cons" />
-                  <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Sequence" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="Q6hH5JpnyvhMsPdkmelPgA" Name="Input" Kind="InputPin" />
                 <Pin Id="FuARRyTPafpMWfav0FmS3e" Name="Input 2" Kind="InputPin" />
@@ -1610,7 +1602,7 @@
               <Node Bounds="889,556,66,95" Id="LvoyVSfQdiuLaYrBMlgQdm">
                 <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="OperationCallFlag" Name="Any (Predicate)" />
-                  <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="TypeFlag" Name="Sequence" NeedsToBeDirectParent="true" />
                   <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                 </p:NodeReference>
                 <Pin Id="UQlPGT1LBPFLV38zc7X5c3" Name="Input" Kind="StateInputPin" />
@@ -1624,7 +1616,7 @@
                     <p:NodeReference LastCategoryFullName="UI.IUIElement" LastSymbolSource="VL.UI.CraftLie.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="HitTest" />
-                      <CategoryReference Kind="MutableInterfaceType" Name="IUIElement" NeedsToBeDirectParent="true" />
+                      <CategoryReference Kind="TypeFlag" Name="IUIElement" NeedsToBeDirectParent="true" />
                     </p:NodeReference>
                     <Pin Id="GpM4hCWYCXIMw9jo3IojNA" Name="Input" Kind="StateInputPin" />
                     <Pin Id="EKIXrxJupeeMrFZ9PuozEN" Name="Hit Area" Kind="InputPin" />
@@ -1793,6 +1785,7 @@
                 </p:ValueBoxSettings>
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
+                  <FullNameCategoryReference ID="Primitive" />
                 </p:TypeAnnotation>
               </Pad>
               <ControlPoint Id="LQV4GUFvOAwLoerJQbTkgd" Bounds="550,482" />
@@ -1929,12 +1922,9 @@
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
-          <p:TypeAnnotation>
+          <p:TypeAnnotation LastSymbolSource="VL.Lib.UI.dll">
             <Choice Kind="TypeFlag" Name="UIController" />
-            <AssemblyReference ID="VL.Lib.UI" />
             <FullNameCategoryReference ID="VL.Lib.UI" />
-            <FullNameCategoryReference ID="VL.Lib.UI" />
-            <AssemblyReference ID="VL.Lib.UI" />
           </p:TypeAnnotation>
           <Patch Id="DpC86q2wovsMo6aEvB9LpC">
             <Canvas Id="BXNIQaCtALmOqiiRQ1dr7W">
@@ -1953,7 +1943,7 @@
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                       <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
                       <CategoryReference Kind="Category" Name="Primitive" />
-                      <Choice Kind="ForEachLoop" Name="ForEach" />
+                      <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                     </p:NodeReference>
                     <Pin Id="FowPt4CeOEnMoMnqfQQwrV" Name="Break" Kind="OutputPin" />
                     <Patch Id="GwfplhQwq75QESy11LOgGc" ManuallySortedPins="true">
@@ -1965,7 +1955,6 @@
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="IUIElement" />
                           <Choice Kind="OperationCallFlag" Name="GetLayer" />
-                          <AssemblyReference ID="VL.Lib.UI" />
                         </p:NodeReference>
                         <Pin Id="GR4Wae5wRRONRNrBOj4JSE" Name="Input" Kind="StateInputPin" />
                         <Pin Id="IDdYJc0OIS9O1IUufRDjF6" Name="Output" Kind="StateOutputPin" />
@@ -2035,7 +2024,6 @@
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="UIController" />
                       <Choice Kind="OperationCallFlag" Name="Create" />
-                      <AssemblyReference ID="VL.Lib.UI" />
                     </p:NodeReference>
                     <Pin Id="A8L0Qpac2odM4ioVD07E0D" Name="Output" Kind="StateOutputPin" />
                   </Node>
@@ -2062,12 +2050,9 @@
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
-          <p:TypeAnnotation>
+          <p:TypeAnnotation LastSymbolSource="VL.Lib.UI.dll">
             <Choice Kind="TypeFlag" Name="IUIHandler" />
-            <AssemblyReference ID="VL.Lib.UI" />
             <FullNameCategoryReference ID="VL.Lib.UI" />
-            <FullNameCategoryReference ID="VL.Lib.UI" />
-            <AssemblyReference ID="VL.Lib.UI" />
           </p:TypeAnnotation>
           <Patch Id="NU2Gsh44zYSMYmpwU2pWCO">
             <Canvas Id="DHvxzGrXVOTMmyT2k5VRfT" />
@@ -2084,12 +2069,9 @@
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
-          <p:TypeAnnotation>
+          <p:TypeAnnotation LastSymbolSource="VL.Lib.UI.dll">
             <Choice Kind="TypeFlag" Name="IMouseHandler" />
-            <AssemblyReference ID="VL.Lib.UI" />
             <FullNameCategoryReference ID="VL.Lib.UI" />
-            <FullNameCategoryReference ID="VL.Lib.UI" />
-            <AssemblyReference ID="VL.Lib.UI" />
           </p:TypeAnnotation>
           <Patch Id="CNPO8Y0graQO60eIkQL4hj">
             <Canvas Id="KsPc0oKoFDdPBMQ45qfpf4" BordersChecked="false" />
@@ -2106,12 +2088,9 @@
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
-          <p:TypeAnnotation>
+          <p:TypeAnnotation LastSymbolSource="VL.Lib.UI.dll">
             <Choice Kind="TypeFlag" Name="MouseKeyboardHandlerBoolAdapter" />
-            <AssemblyReference ID="VL.Lib.UI" />
             <FullNameCategoryReference ID="VL.Lib.UI" />
-            <FullNameCategoryReference ID="VL.Lib.UI" />
-            <AssemblyReference ID="VL.Lib.UI" />
           </p:TypeAnnotation>
           <Patch Id="NvjCTaWQoyqNqoAc5siUGV">
             <Canvas Id="SZbYVoOjPtbLhQlQ9CnQNi" />
@@ -2128,12 +2107,9 @@
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
-          <p:TypeAnnotation>
+          <p:TypeAnnotation LastSymbolSource="VL.Lib.UI.dll">
             <Choice Kind="TypeFlag" Name="IMouseKeyboardHandlerBool" />
-            <AssemblyReference ID="VL.Lib.UI" />
             <FullNameCategoryReference ID="VL.Lib.UI" />
-            <FullNameCategoryReference ID="VL.Lib.UI" />
-            <AssemblyReference ID="VL.Lib.UI" />
           </p:TypeAnnotation>
           <Patch Id="RTGAl7lNwsdQOSM7BFNFsJ">
             <Canvas Id="Hx5ZZ36eil9O6RivnQVnNi" BordersChecked="false" />
@@ -2334,7 +2310,7 @@
             <Node Bounds="654,1003,150,123" Id="C4ZjHxX8BrlPBktlGmWBMI">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
-                <Choice Kind="AdaptiveRegion" Name="If" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
               <Pin Id="Qo6P2bnL3PXO8221cGmP9s" Name="Condition" Kind="InputPin" />
@@ -2344,7 +2320,7 @@
                 <Node Bounds="666,1026,98,22" Id="OouyJo6cg4zOYwzerOxR4D">
                   <p:NodeReference LastCategoryFullName="IO.Mouse.MouseButtonNotification" LastSymbolSource="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="RecordType" Name="MouseButtonNotification" />
+                    <CategoryReference Kind="TypeFlag" Name="MouseButtonNotification" />
                     <Choice Kind="OperationCallFlag" Name="Buttons" />
                   </p:NodeReference>
                   <Pin Id="KlIe63A3atSPzyxJPJAgLL" Name="Input" Kind="StateInputPin" />
@@ -2417,7 +2393,7 @@
             <Node Bounds="936,1004,152,123" Id="GNtfaOP2UvXLRutydxjfyz">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
-                <Choice Kind="AdaptiveRegion" Name="If" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
               <Pin Id="VpRHlLB01TFQVCY69LBNV5" Name="Condition" Kind="InputPin" />
@@ -2427,7 +2403,7 @@
                 <Node Bounds="948,1027,98,13" Id="HEIHJnXL2e3NzA6wwk0Q8t">
                   <p:NodeReference LastCategoryFullName="IO.Mouse.MouseButtonNotification" LastSymbolSource="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="RecordType" Name="MouseButtonNotification" />
+                    <CategoryReference Kind="TypeFlag" Name="MouseButtonNotification" />
                     <Choice Kind="OperationCallFlag" Name="Buttons" />
                   </p:NodeReference>
                   <Pin Id="Og4c4ay3gCkOaXMc7QLAPJ" Name="Input" Kind="StateInputPin" />
@@ -2500,7 +2476,7 @@
             <Node Bounds="1209,1010,151,123" Id="TEdgJCmGaXkPUA6VrT53Ka">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
-                <Choice Kind="AdaptiveRegion" Name="If" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
               <Pin Id="PN7xSG4jTWDLK9tIKNnSoj" Name="Condition" Kind="InputPin" />
@@ -2510,7 +2486,7 @@
                 <Node Bounds="1221,1033,98,22" Id="F6CSpFElWuXPwnMwp9VNrr">
                   <p:NodeReference LastCategoryFullName="IO.Mouse.MouseButtonNotification" LastSymbolSource="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="RecordType" Name="MouseButtonNotification" />
+                    <CategoryReference Kind="TypeFlag" Name="MouseButtonNotification" />
                     <Choice Kind="OperationCallFlag" Name="Buttons" />
                   </p:NodeReference>
                   <Pin Id="BrNQYyoRxcIPMKl4ULFGEB" Name="Input" Kind="StateInputPin" />
@@ -2548,7 +2524,8 @@
     </Canvas>
   </Patch>
   <NugetDependency Id="VTzeCUFappyOuabUhCeE9h" Location="VL.DevLib" Version="0.49.63-g3a681d5a96" />
-  <DocumentDependency Id="SaXZrRuxFj9PFzaKCfqXnE" Location="..\..\..\CraftLie.vl" />
-  <PlatformDependency Id="L4EJZbpUy2ZNd81lH87LuR" Location="./lib\VL.Lib.UI.dll" />
+  <DocumentDependency Id="SaXZrRuxFj9PFzaKCfqXnE" Location="../../Dropbox/vvvv/vvvv_50alpha35.10_x64/packs/CraftLie.1.1.0/CraftLie.vl" />
+  <PlatformDependency Id="L4EJZbpUy2ZNd81lH87LuR" Location="./lib/VL.Lib.UI.dll" />
   <NugetDependency Id="PPbh2AtviWXLfCFe27H4H5" Location="VL.CoreLib" Version="0.61.9-g682f86826f" />
+  <NugetDependency Id="JiFgJ9xCCbdMYLhl68fRLZ" Location="CraftLie" Version="1.1.0" />
 </Document>
