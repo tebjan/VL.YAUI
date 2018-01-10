@@ -12,7 +12,7 @@
         <member name="T:VL.Lib.Mathematics.Collision2D">
             <summary>
             
-            This class is organized like the <see cref="!:SharpDX.Mathematics.Collision"/> class.
+            This class is organized like the <see cref="T:SharpDX.Collision"/> class.
             So that the least complex objects will have the most methods in most cases. 
             Note that not all shapes exist at this time and not all shapes have a corresponding struct. 
             Only the objects that have a corresponding struct should come first in naming and in parameter order.
@@ -371,8 +371,8 @@
             Calculates yaw and pitch for the direction of a Vector3 in cycles, the lenght is output as well since its calculated in the process anyway
             </summary>
             <param name="input"></param>
-            <param name="yaw"></param>
-            <param name="pitch"></param>
+            <param name="polar"></param>
+            <param name="azimuthal"></param>
             <param name="length"></param>
         </member>
         <member name="M:VL.Lib.Mathematics.Vector3Nodes.FromValues(System.Collections.Generic.IEnumerable{System.Single})">
@@ -885,7 +885,15 @@
             <param name="input"></param>
             <returns></returns>
         </member>
-        <!-- Ungültiger XML-Kommentar wurde für den Member "M:VL.Lib.Collections.Spread.SpreadGenerators.Cons``1(VL.Lib.Collections.Spread{``0},``0)" ignoriert -->
+        <member name="M:VL.Lib.Collections.Spread.SpreadGenerators.Cons``1(VL.Lib.Collections.Spread{``0},``0)">
+            <summary>
+            Returns a spread consisting of its inputs as slices. If the inputs are Spreads, the result will be a Spread&lt;Spread&lt;&gt;&gt;
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="spread"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
         <member name="M:VL.Lib.Collections.Spread.SpreadGenerators.LinearSpread(System.Single,System.Single,System.Int32)">
             <summary>
             Creates a spread of values linearly spread across the given interval
@@ -918,44 +926,31 @@
             <summary>
             Converts a sequence of values to vectors, if the count of the sequence is not divisible by the dimension the remainig value gets omitted
             </summary>
-            <param name="builder"></param>
-            <param name="values"></param>
-            <returns></returns>
         </member>
         <member name="M:VL.Lib.Collections.Spread.ValuesToVectorsNodes.ValuesToVectors2D(System.Collections.Generic.IEnumerable{System.Single})">
             <summary>
             Converts a sequence of values to vectors, if the count of the sequence is not divisible by the dimension the remainig value gets omitted
             </summary>
-            <param name="values"></param>
-            <returns></returns>
         </member>
         <member name="M:VL.Lib.Collections.Spread.ValuesToVectorsNodes.ValuesToVectors3D(VL.Lib.Collections.SpreadBuilder{SharpDX.Vector3},System.Collections.Generic.IEnumerable{System.Single})">
             <summary>
             Converts a sequence of values to vectors, if the count of the sequence is not divisible by the dimension the remainig value gets omitted
             </summary>
-            <param name="values"></param>
-            <returns></returns>
         </member>
         <member name="M:VL.Lib.Collections.Spread.ValuesToVectorsNodes.ValuesToVectors3D(System.Collections.Generic.IEnumerable{System.Single})">
             <summary>
             Converts a sequence of values to vectors, if the count of the sequence is not divisible by the dimension the remainig value gets omitted
             </summary>
-            <param name="values"></param>
-            <returns></returns>
         </member>
         <member name="M:VL.Lib.Collections.Spread.ValuesToVectorsNodes.ValuesToVectors4D(VL.Lib.Collections.SpreadBuilder{SharpDX.Vector4},System.Collections.Generic.IEnumerable{System.Single})">
             <summary>
             Converts a sequence of values to vectors, if the count of the sequence is not divisible by the dimension the remainig value gets omitted
             </summary>
-            <param name="values"></param>
-            <returns></returns>
         </member>
         <member name="M:VL.Lib.Collections.Spread.ValuesToVectorsNodes.ValuesToVectors4D(System.Collections.Generic.IEnumerable{System.Single})">
             <summary>
             Converts a sequence of values to vectors, if the count of the sequence is not divisible by the dimension the remainig value gets omitted
             </summary>
-            <param name="values"></param>
-            <returns></returns>
         </member>
         <member name="T:VL.Lib.Collections.EnumerableNodes">
             <summary>
@@ -1617,6 +1612,56 @@
             Gets or creates the stream of a file for reading and writing
             </summary>
         </member>
+        <member name="T:VL.Lib.IO.Net.NetUtils">
+            <summary>
+            A couple of utility functions around IP addresses and end points.
+            </summary>
+        </member>
+        <member name="F:VL.Lib.IO.Net.NetUtils.DefaultAddress">
+            <summary>
+            The default IP address to use for unconnected pins. Points to the 127.0.0.1
+            </summary>
+        </member>
+        <member name="F:VL.Lib.IO.Net.NetUtils.DefaultIPEndPoint">
+            <summary>
+            The default IP end point to use for unconnected pins. Points to 127.0.0.1 and port 0
+            </summary>
+        </member>
+        <member name="F:VL.Lib.IO.Net.NetUtils.NoIPEndPoint">
+            <summary>
+            An IP end point which points to nowhere.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.IO.Net.NetUtils.GetHostAddresses(System.String)">
+            <summary>
+            Returns the Internet Protocol (IP) addresses for the specified host
+            </summary>
+            <param name="hostNameOrAddress"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VL.Lib.IO.Net.NetUtils.GetHostAddressesAsync(System.String)">
+            <summary>
+            Returns the Internet Protocol (IP) addresses for the specified host asynchronously
+            </summary>
+            <param name="hostNameOrAddress"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VL.Lib.IO.Net.NetUtils.GetIPEndPoint(System.String,System.Int32)">
+            <summary>
+            Returns the IP end point for the specified host and port
+            </summary>
+            <param name="hostNameOrAddress"></param>
+            <param name="port"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VL.Lib.IO.Net.NetUtils.GetIPEndPointAsync(System.String,System.Int32)">
+            <summary>
+            Returns the IP end point for the specified host and port asynchronously
+            </summary>
+            <param name="hostNameOrAddress"></param>
+            <param name="port"></param>
+            <returns></returns>
+        </member>
         <member name="P:VL.Lib.IO.Mouse.PressedButtons">
             <summary>
             The currently pressed mouse buttons.
@@ -1737,6 +1782,146 @@
             <param name="input"></param>
             <param name="do"></param>
             <param name="success"></param>
+        </member>
+        <member name="T:VL.Lib.IO.Ports.SerialPort">
+            <summary>
+            Manages a serialport provider.
+            </summary>
+        </member>
+        <member name="P:VL.Lib.IO.Ports.SerialPort.IsOpen">
+            <summary>
+            Whether or not the serialport is connected.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.IO.Ports.SerialPort.Update(VL.Lib.IO.Ports.ComPort,System.Int32,System.Int32,System.IO.Ports.StopBits,System.IO.Ports.Parity,System.IO.Ports.Handshake,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Configures the internally managed serialport provider.
+            </summary>
+            <returns>A serialport provider which can be used by multiple threads in parallel.</returns>
+        </member>
+        <member name="T:VL.Lib.IO.Ports.Receiver">
+            <summary>
+            Receives bytes from a SerialPort.
+            </summary>
+        </member>
+        <member name="P:VL.Lib.IO.Ports.Receiver.Data">
+            <summary>
+            The observable sequence of bytes. The bytes will be pushed on the network thread.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.IO.Ports.Receiver.Update(VL.Lib.Basics.Resources.IResourceProvider{System.IO.Ports.SerialPort})">
+            <summary>
+            Configures the receiver.
+            </summary>
+            <param name="port">The serialport to receive data from.</param>
+        </member>
+        <member name="T:VL.Lib.IO.Ports.Sender">
+            <summary>
+            Sends bytes on a SerialPort.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.IO.Ports.Sender.Update(VL.Lib.Basics.Resources.IResourceProvider{System.IO.Ports.SerialPort},System.IObservable{VL.Lib.Collections.Spread{System.Byte}})">
+            <summary>
+            Configures the sender.
+            </summary>
+            <param name="port">The serialport to send data to.</param>
+            <param name="data">The bytes to send.</param>
+        </member>
+        <member name="T:VL.Lib.IO.Socket.Datagram">
+            <summary>
+            A datagram is a little message used in connection less network protocols (like UDP). 
+            </summary>
+        </member>
+        <member name="M:VL.Lib.IO.Socket.Datagram.#ctor(System.Net.IPEndPoint,VL.Lib.Collections.Spread{System.Byte})">
+            <summary>
+            Creates a datagram.
+            </summary>
+            <param name="remoteEndPoint">The remote end point.</param>
+            <param name="payload">The payload.</param>
+        </member>
+        <member name="M:VL.Lib.IO.Socket.Datagram.Split(System.Net.IPEndPoint@,VL.Lib.Collections.Spread{System.Byte}@)">
+            <summary>
+            Splits the datagram into its remote end point and payload.
+            </summary>
+            <param name="remoteEndPoint">The remote end point from which this datagram was received or will be sent to. Returns none if it's the default value.</param>
+            <param name="payload">The payload of the datagram. Returns the empty spread if it's the default value.</param>
+        </member>
+        <member name="P:VL.Lib.IO.Socket.Datagram.RemoteEndPoint">
+            <summary>
+            The remote end point this datagram shall be sent to or was received from.
+            </summary>
+        </member>
+        <member name="P:VL.Lib.IO.Socket.Datagram.Payload">
+            <summary>
+            The content of this datagram.
+            </summary>
+        </member>
+        <member name="T:VL.Lib.IO.Socket.DatagramReceiver">
+            <summary>
+            Receives datagrams from a local socket.
+            </summary>
+        </member>
+        <member name="P:VL.Lib.IO.Socket.DatagramReceiver.Datagrams">
+            <summary>
+            The observable sequence of datagrams. The datagrams will be pushed on the network thread.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.IO.Socket.DatagramReceiver.Update(VL.Lib.Basics.Resources.IResourceProvider{System.Net.Sockets.Socket})">
+            <summary>
+            Configures the receiver.
+            </summary>
+            <param name="localSocket">The local socket to receive data from.</param>
+        </member>
+        <member name="T:VL.Lib.IO.Socket.DatagramSender">
+            <summary>
+            Sends datagrams on a local socket.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.IO.Socket.DatagramSender.Update(VL.Lib.Basics.Resources.IResourceProvider{System.Net.Sockets.Socket},System.IObservable{VL.Lib.IO.Socket.Datagram})">
+            <summary>
+            Configures the sender.
+            </summary>
+            <param name="localSocket">The local socket to send data out of.</param>
+            <param name="datagrams">The datagrams to send.</param>
+        </member>
+        <member name="T:VL.Lib.IO.Socket.UDPSocket">
+            <summary>
+            Manages a UDP socket provider.
+            </summary>
+        </member>
+        <member name="P:VL.Lib.IO.Socket.UDPSocket.IsOpen">
+            <summary>
+            Whether or not the socket is open.
+            </summary>
+        </member>
+        <member name="P:VL.Lib.IO.Socket.UDPSocket.Enabled">
+            <summary>
+            Gets or sets whether the socket is active.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.IO.Socket.UDPSocket.Update(System.Net.IPEndPoint,System.Boolean)">
+            <summary>
+            Configures the internally managed socket provider.
+            </summary>
+            <param name="localEndPoint">The local end point to use.</param>
+            <param name="bind">Whether or not to bind the socket.</param>
+            <returns>A socket provider which can be used by multiple threads in parallel.</returns>
+        </member>
+        <member name="T:VL.Lib.IO.IProjectionSpace">
+            <summary>
+            Implement this interface on your gui plugin if this has a notion of a projection space.
+            You can use the aspect ratio of your window or viewport to do the math or have an explicit aspect ratio transform input.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.IO.IProjectionSpace.MapFromPixels(VL.Lib.IO.Notifications.INotificationWithPosition,SharpDX.Vector2@,SharpDX.Vector2@)">
+            <summary>
+            Transforms a position in pixels into 
+            * a position in normalized projection space ((bottom, left = -1, -1) .. (top, right = 1, 1)) 
+            * a position in projection space (typically one that respects the aspect ratio of the window)
+            so you might need to "undo" the last 2 or 3 transformations in that chain:
+                        World T.          View T.          Proj T.          AspectR. T.           Crop T.        Viewport Placement
+            Object Space  -->  World Space  -->  View Space  -->  PROJ SPACE  -->  NORM PROJ SPACE  -->  Viewport Space  -->  Pixel Space
+            </summary>
         </member>
         <member name="M:VL.Lib.IO.RenamedEventArgsUtils.NewPath(System.IO.RenamedEventArgs)">
             <summary>
@@ -1928,7 +2113,15 @@
             difference to proto: GetHandle() is not lazy, but will create the resource.
             </summary>
         </member>
-        <!-- Ungültiger XML-Kommentar wurde für den Member "M:VL.Lib.Basics.Resources.ResourceProvider.Return``1(``0)" ignoriert -->
+        <member name="M:VL.Lib.Basics.Resources.ResourceProvider.Return``1(``0)">
+            <summary>
+            Will always provide same single resource. It exists already. 
+            So its not the responsibility of Return() to dispose it.
+            
+            Could also imagine a ReturnLazy that takes a Func&lt;TResource&gt;, 
+            but as it is used mostly inside the monade it is already lazy to GetHandle() from downstream
+            </summary>
+        </member>
         <member name="M:VL.Lib.Basics.Resources.ResourceProvider.Bind``2(VL.Lib.Basics.Resources.IResourceProvider{``0},System.Func{``0,VL.Lib.Basics.Resources.IResourceProvider{``1}})">
             <summary>
             SelectMany
@@ -2165,7 +2358,7 @@
             <param name="value3">The third position in the interpolation.</param>
             <param name="value4">The fourth position in the interpolation.</param>
             <param name="amount">Weighting factor.</param>
-            <param name="result">When the method completes, contains the result of the Catmull-Rom interpolation.</param>
+            <returns>The result of the Catmull-Rom interpolation.</returns>
         </member>
         <member name="T:VL.Lib.Primitive.DoubleConverter">
             <summary>
@@ -2174,9 +2367,24 @@
             efficiency.
             </summary>
         </member>
-        <!-- Ungültiger XML-Kommentar wurde für den Member "M:VL.Lib.Primitive.DoubleConverter.ToExactString(System.Double)" ignoriert -->
-        <!-- Ungültiger XML-Kommentar wurde für den Member "T:VL.Lib.Primitive.DoubleConverter.ArbitraryDecimal" ignoriert -->
-        <!-- Ungültiger XML-Kommentar wurde für den Member "F:VL.Lib.Primitive.DoubleConverter.ArbitraryDecimal.digits" ignoriert -->
+        <member name="M:VL.Lib.Primitive.DoubleConverter.ToExactString(System.Double)">
+            <summary>
+            Converts the given double to a string representation of its
+            exact decimal value.
+            </summary>
+            <param name="input">The double to convert.</param>
+            <returns>A string representation of the double's exact decimal value.</returns>
+        </member>
+        <member name="T:VL.Lib.Primitive.DoubleConverter.ArbitraryDecimal">
+            <summary>
+            Private class used for manipulating
+            </summary>
+        </member>
+        <member name="F:VL.Lib.Primitive.DoubleConverter.ArbitraryDecimal.digits">
+            <summary>
+            Digits in the decimal expansion, one byte per digit
+            </summary>
+        </member>
         <member name="F:VL.Lib.Primitive.DoubleConverter.ArbitraryDecimal.decimalPoint">
             <summary> 
             How many digits are *after* the decimal point
@@ -2276,7 +2484,17 @@
             <param name="value3">The third position in the interpolation.</param>
             <param name="value4">The fourth position in the interpolation.</param>
             <param name="amount">Weighting factor.</param>
-            <param name="result">When the method completes, contains the result of the Catmull-Rom interpolation.</param>
+            <returns>The result of the Catmull-Rom interpolation.</returns>
+        </member>
+        <member name="M:VL.Lib.Primitive.ByteNodes.TryParseHex(System.String,System.Byte@)">
+            <summary>
+            Parses a hex string to an integer
+            </summary>
+        </member>
+        <member name="M:VL.Lib.Primitive.ByteNodes.TryParseHex(System.String,System.SByte@)">
+            <summary>
+            Parses a hex string to an integer
+            </summary>
         </member>
         <member name="T:VL.Lib.Primitive.IntegerConversions">
             <summary>
@@ -3783,37 +4001,37 @@
         </member>
         <member name="M:VL.Lib.Primitive.IntegerConversions.TryParseHex(System.String,System.Char@)">
             <summary>
-            Parses a hex string to an integer, note that leading '0x' is not allowed
+            Parses a hex string to a char
             </summary>
         </member>
         <member name="M:VL.Lib.Primitive.IntegerConversions.TryParseHex(System.String,System.Int16@)">
             <summary>
-            Parses a hex string to an integer, note that leading '0x' is not allowed
+            Parses a hex string to an integer
             </summary>
         </member>
         <member name="M:VL.Lib.Primitive.IntegerConversions.TryParseHex(System.String,System.UInt16@)">
             <summary>
-            Parses a hex string to an integer, note that leading '0x' is not allowed
+            Parses a hex string to an integer
             </summary>
         </member>
         <member name="M:VL.Lib.Primitive.IntegerConversions.TryParseHex(System.String,System.Int32@)">
             <summary>
-            Parses a hex string to an integer, note that leading '0x' is not allowed
+            Parses a hex string to an integer
             </summary>
         </member>
         <member name="M:VL.Lib.Primitive.IntegerConversions.TryParseHex(System.String,System.UInt32@)">
             <summary>
-            Parses a hex string to an integer, note that leading '0x' is not allowed
+            Parses a hex string to an integer
             </summary>
         </member>
         <member name="M:VL.Lib.Primitive.IntegerConversions.TryParseHex(System.String,System.Int64@)">
             <summary>
-            Parses a hex string to an integer, note that leading '0x' is not allowed
+            Parses a hex string to an integer
             </summary>
         </member>
         <member name="M:VL.Lib.Primitive.IntegerConversions.TryParseHex(System.String,System.UInt64@)">
             <summary>
-            Parses a hex string to an integer, note that leading '0x' is not allowed
+            Parses a hex string to an integer
             </summary>
         </member>
         <member name="M:VL.Lib.Primitive.IntegerConversions.ToString(System.Byte,System.Boolean)">
@@ -3988,6 +4206,19 @@
             <param name="quotes"></param>
             <returns></returns>
         </member>
+        <member name="T:VL.Lib.Reactive.AsyncLoop`2">
+            <summary>
+            Runs an infinite loop in a background thread.
+            </summary>
+            <typeparam name="TState">The state type.</typeparam>
+            <typeparam name="TOut">The output type.</typeparam>
+        </member>
+        <member name="T:VL.Lib.Reactive.AsyncTask`1">
+            <summary>
+            Runs the given task once in a background thread.
+            </summary>
+            <typeparam name="TOut">The output type.</typeparam>
+        </member>
         <member name="T:VL.Lib.Reactive.DebugNode`1">
             <summary>
             Keeps track of the calls made internally in the obserable computation
@@ -4117,7 +4348,11 @@
             Checks for device additions and removals, buffers multiple events in 2 second windows. Can fire multiple times
             </summary>
         </member>
-        <!-- Ungültiger XML-Kommentar wurde für den Member "T:VL.Lib.GUID_DEVCLASS" ignoriert -->
+        <member name="T:VL.Lib.GUID_DEVCLASS">
+            <summary>
+             Defines GUIDs for device classes used in Plug &amp; Play.
+            </summary>
+        </member>
         <member name="M:VL.Lib.LinearEquationSolver.Solve(VL.Lib.Collections.Spread{VL.Lib.Collections.Spread{System.Single}},VL.Lib.Collections.Spread{System.Single},VL.Lib.Collections.Spread{System.Single}@,System.Boolean@)">
             <summary>
             Computes the solution of a linear equation system using Gauss elimination
@@ -4134,6 +4369,19 @@
             It will contain the solution in "row canonical form" if the function returns "true".
             </param>
             <returns>Returns whether the matrix has a unique solution or not.</returns>
+        </member>
+        <member name="T:VL.Lib.Threading.TaskExtensions">
+            <summary>
+            Extension methods for tasks.
+            </summary>
+        </member>
+        <member name="M:VL.Lib.Threading.TaskExtensions.CancelAndDispose(System.Threading.Tasks.Task,System.Threading.CancellationTokenSource,System.Int32)">
+            <summary>
+            Cancels the tasks, waits for it to finish and disposes both the cancellation token source as well as the task.
+            </summary>
+            <param name="task">The task to cancel.</param>
+            <param name="cancellation">The cancellation token source whose token is used by the task.</param>
+            <param name="timeout">The time in milli seconds to wait for termination of the task.</param>
         </member>
         <member name="M:VL.Lib.Xml.XmlNodes.JoinXDocument(System.Xml.Linq.XElement,System.Xml.Linq.XDeclaration,System.Xml.Linq.XDocumentType)">
             <summary>
