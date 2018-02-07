@@ -94,6 +94,27 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:VL.Core.SafeLazy`1">
+            <summary>
+            Provides support for lazy initialization with recursive fallback options.
+            </summary>
+            <typeparam name="T">The type of object that is being lazily initialized.</typeparam>
+        </member>
+        <member name="M:VL.Core.SafeLazy`1.GetValue(System.Func{`0},System.Func{`0})">
+            <summary>
+            Gets the lazily initialized value. 
+            Will throw a <see cref="T:VL.Core.RecursiveCallException"/> in case the factory call is recursive and <paramref name="recursiveFallback"/> is null.
+            If the <paramref name="recursiveFallback"/> is set it will be used to produce an intermediate result instead of throwing the <see cref="T:VL.Core.RecursiveCallException"/>.
+            </summary>
+            <param name="factory">The factory function to produce the value.</param>
+            <param name="recursiveFallback">The fallback function in case the factory call is recursive. If null a <see cref="T:VL.Core.RecursiveCallException"/> will be thrown.</param>
+            <returns>The lazily initialized value.</returns>
+        </member>
+        <member name="T:VL.Core.RecursiveCallException">
+            <summary>
+            This exception is thrown when the factory function of <see cref="T:VL.Core.SafeLazy`1"/> leads to a recursion.
+            </summary>
+        </member>
         <member name="T:VL.Core.Properties.Settings">
             <summary>
             Global HDE settings
@@ -248,13 +269,31 @@
             If the index is out of range, returns false and the input value.
             </summary>
         </member>
-        <!-- Ungültiger XML-Kommentar wurde für den Member "T:VL.Lib.Collections.DynamicEnumBase`2" ignoriert -->
+        <member name="T:VL.Lib.Collections.DynamicEnumBase`2">
+            <summary>
+            Base class for easy dynamic enum implementaion. Use like this:
+            MyEnumClass : DynamicEnumBase&lt;MyEnumClass&gt; and override 
+            IDynamicEnumDefinition Definition { get; } and define a default value:
+            public static MidiInputDevice Default => new MyEnumClass("Default Entry");
+            <typeparam name="TSubclass">The type of the actual dynamic enum class.</typeparam>
+            <typeparam name="TDefinitionClass">The type of the enum definition.</typeparam>
+            <seealso cref="T:VL.Lib.Collections.IDynamicEnum" />
+            </summary>
+        </member>
         <member name="M:VL.Lib.Collections.DynamicEnumBase`2.CreateDefaultBase(System.String)">
             <summary>
             Can be used in subclass to create the default, selects the first entry.
             </summary>
         </member>
-        <!-- Ungültiger XML-Kommentar wurde für den Member "T:VL.Lib.Collections.DynamicEnumDefinitionBase`1" ignoriert -->
+        <member name="T:VL.Lib.Collections.DynamicEnumDefinitionBase`1">
+            <summary>
+            Base class for dynamic enum definitions.
+            Takes care of the singleton pattern and the update of the entries. Use like this:
+            MyEnumDefinitionClass : DynamicEnumBase&lt;MyEnumDefinitionClass&gt; and override the two abstract methods.
+            <typeparam name="TDefinitionSubclass">The type of the actual definition class.</typeparam>
+            <seealso cref="T:VL.Lib.Collections.IDynamicEnumDefinition" />
+            </summary>
+        </member>
         <member name="M:VL.Lib.Collections.SpreadBuilder`1.IndexOf(`0)">
             <summary>
             Searches for the specified item and returns index of the first occurrence

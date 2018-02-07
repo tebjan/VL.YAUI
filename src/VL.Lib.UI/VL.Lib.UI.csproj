@@ -53,23 +53,23 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Cci.CodeModel, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.CoreLib.0.61.15-g36250545f7\lib\net461\Microsoft.Cci.CodeModel.dll</HintPath>
+      <HintPath>..\packages\VL.CoreLib.0.72.8-g6b24b20a78\lib\net461\Microsoft.Cci.CodeModel.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Cci.MetadataHelper, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.CoreLib.0.61.15-g36250545f7\lib\net461\Microsoft.Cci.MetadataHelper.dll</HintPath>
+      <HintPath>..\packages\VL.CoreLib.0.72.8-g6b24b20a78\lib\net461\Microsoft.Cci.MetadataHelper.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Cci.MetadataModel, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.CoreLib.0.61.15-g36250545f7\lib\net461\Microsoft.Cci.MetadataModel.dll</HintPath>
+      <HintPath>..\packages\VL.CoreLib.0.72.8-g6b24b20a78\lib\net461\Microsoft.Cci.MetadataModel.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Cci.MutableMetadataModel, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.CoreLib.0.61.15-g36250545f7\lib\net461\Microsoft.Cci.MutableMetadataModel.dll</HintPath>
+      <HintPath>..\packages\VL.CoreLib.0.72.8-g6b24b20a78\lib\net461\Microsoft.Cci.MutableMetadataModel.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Cci.PeReader, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.CoreLib.0.61.15-g36250545f7\lib\net461\Microsoft.Cci.PeReader.dll</HintPath>
+      <HintPath>..\packages\VL.CoreLib.0.72.8-g6b24b20a78\lib\net461\Microsoft.Cci.PeReader.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -94,7 +94,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Collections.Immutable, Version=1.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+      <HintPath>..\packages\System.Collections.Immutable.1.3.1\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Core" />
@@ -112,20 +112,20 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Xml" />
-    <Reference Include="VL.Core, Version=0.61.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Core.0.61.15-g36250545f7\lib\net461\VL.Core.dll</HintPath>
+    <Reference Include="VL.Core, Version=0.72.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\VL.Core.0.72.8-g6b24b20a78\lib\net461\VL.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="VL.CoreLib, Version=0.61.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.CoreLib.0.61.15-g36250545f7\lib\net461\VL.CoreLib.dll</HintPath>
+    <Reference Include="VL.CoreLib, Version=0.72.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\VL.CoreLib.0.72.8-g6b24b20a78\lib\net461\VL.CoreLib.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="VL.DevLib, Version=0.61.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.DevLib.0.61.15-g36250545f7\lib\net461\VL.DevLib.dll</HintPath>
+    <Reference Include="VL.DevLib, Version=0.72.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\VL.DevLib.0.72.8-g6b24b20a78\lib\net461\VL.DevLib.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="VVVV.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.CoreLib.0.61.15-g36250545f7\lib\net461\VVVV.Utils.dll</HintPath>
+      <HintPath>..\packages\VL.CoreLib.0.72.8-g6b24b20a78\lib\net461\VVVV.Utils.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
