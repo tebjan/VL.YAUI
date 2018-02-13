@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug35.10.dtd" >
-   <PATCH nodename="C:\dev\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="210" scrolly="0" locked="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.10.dtd" >
+   <PATCH nodename="D:\REPOS\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="210" scrolly="0" locked="0">
    <BOUNDS type="Window" left="9730" top="791" width="9443" height="7889">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.9.0">
@@ -214,18 +214,18 @@
    </NODE>
    <LINK srcnodeid="4" srcpinname="Key Name" dstnodeid="148" dstpinname="Input String">
    </LINK>
-   <NODE id="152" systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden">
+   <NODE id="153" systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden">
    <BOUNDS type="Node" left="2460" top="2715" width="3735" height="270">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="118" srcpinname="Output 1" dstnodeid="152" dstpinname="Initialize">
+   <LINK srcnodeid="118" srcpinname="Output 1" dstnodeid="153" dstpinname="Initialize">
    </LINK>
-   <LINK srcnodeid="152" srcpinname="Draw Description Layer" dstnodeid="72" dstpinname="Input">
+   <LINK srcnodeid="153" srcpinname="Draw Description Layer" dstnodeid="72" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="152" dstpinname="UI ResolutionXY">
+   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="153" dstpinname="UI ResolutionXY">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Device" dstnodeid="152" dstpinname="Keyboard">
+   <LINK srcnodeid="4" srcpinname="Device" dstnodeid="153" dstpinname="Keyboard">
    </LINK>
-   <LINK srcnodeid="3" srcpinname="Device" dstnodeid="152" dstpinname="Mouse">
+   <LINK srcnodeid="3" srcpinname="Device" dstnodeid="153" dstpinname="Mouse">
    </LINK>
    </PATCH>

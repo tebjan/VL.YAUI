@@ -11,14 +11,16 @@ namespace VL.Lib.UI
             Func<MouseDownNotification, TResult> onMouseDown = null,
             Func<MouseMoveNotification, TResult> onMouseMove = null,
             Func<MouseUpNotification, TResult> onMouseUp = null,
+            Func<MouseWheelNotification, TResult> onMouseWheel = null,
             Func<KeyDownNotification, TResult> onKeyDown = null,
             Func<KeyUpNotification, TResult> onKeyUp = null,
             Func<KeyPressNotification, TResult> onKeyPress = null)
         {
             return NotificationHelpers.NotificationSwitch(eventArg, defaultResult,
-                mn => NotificationHelpers.MouseNotificationSwitch<TResult>(mn, defaultResult, onMouseDown, onMouseMove, onMouseUp, null, null, null),
+                mn => NotificationHelpers.MouseNotificationSwitch(mn, defaultResult, onMouseDown, onMouseMove, onMouseUp, null, onMouseWheel, null),
                 kn => NotificationHelpers.KeyNotificationSwitch(kn, defaultResult, onKeyDown, onKeyUp, onKeyPress));
         }
+
         public static IUIHandler DragMouseHandler(
                 Action<MouseDownNotification> onDragStart,
                 Action<MouseMoveNotification, Vector2> onDrag,

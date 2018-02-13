@@ -17,7 +17,7 @@ namespace VL.Lib.UI
         {
             FHandler = NotificationHelpers.NotificationSwitch(eventArgs, FHandler,
                 mn => NotificationHelpers.MouseNotificationSwitch(mn, null,
-                FHandler.MouseDown, FHandler.MouseMove, FHandler.MouseUp, FHandler.MouseClick));
+                FHandler.MouseDown, FHandler.MouseMove, FHandler.MouseUp, FHandler.MouseClick, FHandler.MouseWheel));
 
             return FHandler != null ? this : null;
         }
@@ -41,7 +41,7 @@ namespace VL.Lib.UI
         {
             FHandler = NotificationHelpers.NotificationSwitch(eventArgs, FHandler,
                 mn => NotificationHelpers.MouseNotificationSwitch(mn, null,
-                FHandler.MouseDown, FHandler.MouseMove, FHandler.MouseUp, FHandler.MouseClick),
+                FHandler.MouseDown, FHandler.MouseMove, FHandler.MouseUp, FHandler.MouseClick, FHandler.MouseWheel),
                 kn => NotificationHelpers.KeyNotificationSwitch(kn, null, 
                 FHandler.KeyDown, FHandler.KeyUp, FHandler.KeyPress, FHandler.DeviceLost));
 
@@ -89,6 +89,11 @@ namespace VL.Lib.UI
         public IMouseKeyboardHandler MouseClick(MouseClickNotification arg)
         {
             return FHandler.MouseClick(arg) ? this : null;
+        }
+
+        public IMouseKeyboardHandler MouseWheel(MouseWheelNotification arg)
+        {
+            return FHandler.MouseWheel(arg) ? this : null;
         }
 
         public IMouseKeyboardHandler KeyDown(KeyDownNotification arg)

@@ -71,6 +71,11 @@
             Creates a handler which will call the given continuation once a mouse click was observed.
             </summary>
         </member>
+        <member name="M:VL.Lib.UI.Handler.OnWheel(System.Func{VL.Lib.IO.Notifications.MouseWheelNotification,VL.Lib.UI.IMouseHandler})">
+            <summary>
+            Creates a handler which will call the given continuation once a mouse click was observed.
+            </summary>
+        </member>
         <member name="M:VL.Lib.UI.Handler.OnDoubleClick(System.Func{VL.Lib.IO.Notifications.MouseClickNotification,VL.Lib.UI.IMouseHandler})">
             <summary>
             Creates a handler which will call the given continuation once a mouse double click was observed.
