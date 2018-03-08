@@ -1,6 +1,7 @@
 ﻿using SharpDX;
 using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace VL.Lib.UI
         public IReadOnlyList<IUIElement> GetElements() => FElements;
         public IReadOnlyList<IUIElement> GetFocusedElements() => FFocusedElements;
         public IReadOnlyList<IUIElement> GetSelectedElements() => FSelectedElements;
+        public ImmutableDictionary<string, object> GetAllValues() => FAllValues;
 
         IUIHandler FFallbackHandler;
         IUIHandler FDefaultHandler;
@@ -81,7 +83,31 @@ namespace VL.Lib.UI
         {
             foreach (var elem in FElements)
             {
-                elem.Update();
+                //if(elem.GetDirty()) //wip
+                    elem.Update();
+            }
+
+            var builder = ImmutableDictionary.CreateBuilder<string, object>();
+            DoRecursive(FElements, elem => GetValue(elem, builder));
+            FAllValues = builder.ToImmutable();
+        }
+
+        ImmutableDictionary<string, object> FAllValues = ImmutableDictionary<string, object>.Empty;
+        void GetValue(IUIElement elem, ImmutableDictionary<string, object>.Builder builder)
+        {
+            builder[elem.GetId()] = elem.GetValue();
+        }
+
+        static void DoRecursive(IEnumerable<IUIElement> elements, Action<IUIElement> forEach)
+        {
+            foreach(var elem in elements)
+            {
+                forEach(elem);
+            }
+
+            foreach (var elem in elements)
+            {
+                DoRecursive(elem.GetChildren(), forEach);
             }
         }
 
@@ -100,18 +126,8 @@ namespace VL.Lib.UI
             FSelectionRect = null;
         }
 
-        bool CtrlKey;
-
         public void ProcessInput(object eventArgs)
         {
-            var kd = eventArgs as KeyDownNotification;
-            if (kd?.KeyCode == System.Windows.Forms.Keys.Control)
-                CtrlKey = true;
-
-            var ku = eventArgs as KeyUpNotification;
-            if (ku?.KeyCode == System.Windows.Forms.Keys.Control)
-                CtrlKey = false;
-
             if (FCurrentHandler == null)
             {
                 //get pick path 
@@ -136,7 +152,7 @@ namespace VL.Lib.UI
         void OnSelectionDown(MouseDownNotification mn)
         {
             //selection
-            if (!CtrlKey)
+            if (mn.CtrlKey)
             {
                 foreach (var elem in FSelectedElements)
                     elem.Deselect();
@@ -178,7 +194,7 @@ namespace VL.Lib.UI
                 leftovers.Remove(pick);
             }
 
-            if (!CtrlKey)
+            if (!mn.CtrlKey)
             {
                 foreach (var item in leftovers)
                 {
