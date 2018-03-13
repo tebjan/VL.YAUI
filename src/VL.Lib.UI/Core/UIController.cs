@@ -20,7 +20,7 @@ namespace VL.Lib.UI
         public IReadOnlyList<IUIElement> GetElements() => FElements;
         public IReadOnlyList<IUIElement> GetFocusedElements() => FFocusedElements;
         public IReadOnlyList<IUIElement> GetSelectedElements() => FSelectedElements;
-        public ImmutableDictionary<string, object> GetAllValues() => FAllValues;
+        public ImmutableDictionary<string, IUIElement> GetAllValues() => FAllUIElements;
 
         IUIHandler FFallbackHandler;
         IUIHandler FDefaultHandler;
@@ -28,9 +28,11 @@ namespace VL.Lib.UI
 
         RectangleF? FSelectionRect;
         public RectangleF? GetSelectionRect() => FSelectionRect;
+        readonly bool FIsUIRoot;
 
-        public UIController()
+        public UIController(bool isUIRoot)
         {
+            FIsUIRoot = isUIRoot;
             FFallbackHandler = new BasicUIHandler(this);
             FDefaultHandler = FFallbackHandler;           
         }  
@@ -87,15 +89,19 @@ namespace VL.Lib.UI
                     elem.Update();
             }
 
-            var builder = ImmutableDictionary.CreateBuilder<string, object>();
-            DoRecursive(FElements, elem => GetValue(elem, builder));
-            FAllValues = builder.ToImmutable();
+            if (FIsUIRoot)
+            {
+                FAllUIElementsBuilder.Clear();
+                DoRecursive(FElements, elem => GetValue(elem, FAllUIElementsBuilder));
+                FAllUIElements = FAllUIElementsBuilder.ToImmutable();
+            }
         }
 
-        ImmutableDictionary<string, object> FAllValues = ImmutableDictionary<string, object>.Empty;
-        void GetValue(IUIElement elem, ImmutableDictionary<string, object>.Builder builder)
+        ImmutableDictionary<string, IUIElement>.Builder FAllUIElementsBuilder = ImmutableDictionary.CreateBuilder<string, IUIElement>();
+        ImmutableDictionary<string, IUIElement> FAllUIElements = ImmutableDictionary<string, IUIElement>.Empty;
+        void GetValue(IUIElement elem, ImmutableDictionary<string, IUIElement>.Builder builder)
         {
-            builder[elem.GetId()] = elem.GetValue();
+            builder[elem.GetId()] = elem;
         }
 
         static void DoRecursive(IEnumerable<IUIElement> elements, Action<IUIElement> forEach)
@@ -311,6 +317,7 @@ namespace VL.Lib.UI
             }
         }
 
+        //inform ui elements about enter or leave
         void ViewsEnteredOrLeft(IEnumerable<IUIElement> enteredViews, IEnumerable<IUIElement> leftViews)
         {
             foreach (var elem in leftViews)
@@ -322,54 +329,6 @@ namespace VL.Lib.UI
             {
                 elem.Enter();
             }
-        }
-    }
-
-    public class BasicUIHandler : IUIHandler
-    {
-        readonly UIController FController;
-
-        public BasicUIHandler(UIController controller)
-        {
-            FController = controller;
-        }
-
-        public void SetElement<T>(T element) where T : IUIElement
-        {
-            throw new NotImplementedException();
-        }
-
-        public IUIHandler ProcessInput(object eventArgs)
-        {
-            var active = NotificationUtils.MouseKeyboardSwitch(eventArgs, this, OnMouseDown, OnMouseMove, OnMouseUp);
-
-            if (ActiveElement != null)
-                return ActiveElement.ProcessInput(eventArgs) ?? active;
-
-            return active;
-        }
-
-        IUIElement ActiveElement;
-
-        IUIHandler OnMouseDown(MouseDownNotification mn)
-        {
-            var activeLast = FController.GetFocusedElements().LastOrDefault();
-            if (activeLast != null)
-            {
-                ActiveElement = activeLast;
-            }
-
-            return this;
-        }
-
-        IUIHandler OnMouseMove(MouseMoveNotification mn)
-        {
-            return this;
-        }
-
-        IUIHandler OnMouseUp(MouseUpNotification mn)
-        {
-            return null;
         }
     }
 }

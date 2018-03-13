@@ -1000,13 +1000,14 @@
           </p:NodeReference>
           <Patch Id="PqKi6V6XFvCOFvquzXD6ky">
             <Canvas Id="PPqC1Kee97cO9xKCth3O9Z">
-              <Node Bounds="338,58,55,22" Id="SwQg9ymI6d8NKZkW4BLMic">
+              <Node Bounds="337,58,55,22" Id="SwQg9ymI6d8NKZkW4BLMic">
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="TypeFlag" Name="Controller" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
                 </p:NodeReference>
                 <Pin Id="R1tNxfCXsmUNoRTfEOlgaw" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="CfcaeTmcdROLseFcvJtwZs" Name="Is UIRoot" Kind="InputPin" />
               </Node>
               <Pad Id="T6cpmjlGEarLxRvmnRjM1e" SlotId="EmSKM4vVaCbPMFwQZLelnQ" Bounds="341,125" />
               <ControlPoint Id="KrleynXsNq5LmIqTAhjqxR" Bounds="333,978" />
@@ -1255,6 +1256,11 @@
                 <Pin Id="JrwskgGsMhdLoWH5oU8aq5" Name="Result" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="NtWfHqsEnUtQRoX9YrOPrt" Bounds="484,573" />
+              <Pad Id="CmjSLZWi0vjNHcfSlJ5hOc" Comment="Is UIRoot" Bounds="339,17,40,19" ShowValueBox="true" isIOBox="true" Value="true">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pad>
             </Canvas>
             <ProcessDefinition Id="Clc07B7MEVtMLtKpVkLS9H">
               <Fragment Id="Ml7ncaoOreEPrLcl8FIjXw" Patch="V2GjSVhGd8KLDEmMhB38U9" Enabled="true" />
@@ -1330,6 +1336,7 @@
             <Link Id="JW0URU06AlkMYj7uv2BSnI" Ids="CJH0iS1PG6SMqHoAATUmxL,LZfa0tXbl0hPs06fP2lt81" />
             <Link Id="GlQ6kVyH9hHMRPZdeX7FJP" Ids="JrwskgGsMhdLoWH5oU8aq5,NtWfHqsEnUtQRoX9YrOPrt" />
             <Link Id="PX3WSrPmQAlOle8a6ZNr8t" Ids="NtWfHqsEnUtQRoX9YrOPrt,Q5qWwWpO9QZMd47yVFCFTU" IsHidden="true" />
+            <Link Id="IsJcZ85AvZoLKL4G4cwgKE" Ids="CmjSLZWi0vjNHcfSlJ5hOc,CfcaeTmcdROLseFcvJtwZs" />
           </Patch>
         </Node>
         <!--
