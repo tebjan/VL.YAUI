@@ -7,6 +7,15 @@ using SharpDX;
 
 namespace VL.Lib.UI
 {
+    public interface IUILayer
+    {
+        //normal drawing
+        object GetLayer();
+
+        //overlay drawing
+        object GetOverlay();
+    }
+
     public interface IUIElement
     {
         //value handling
@@ -48,7 +57,7 @@ namespace VL.Lib.UI
         void SetChildren(IEnumerable<IUIElement> children);
         IEnumerable<IUIElement> GetChildren();
 
-        object GetLayer();
+        IUILayer GetLayer();
     }
 
     public static class IUElementExtensions
