@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.78">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.79">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <NugetDependency Id="Q18ZLENm9gzPhBnFnztPMP" Location="VL.Core" Version="0.35.21" />
@@ -868,14 +868,14 @@
     ************************ CreateSliderStyle ************************
 
 -->
-            <Node Name="CreateSliderStyle" Bounds="48,1193,905,777" Id="RyYrKnectm6Mkgdl4V7aFE">
+            <Node Name="CreateSliderStyle" Bounds="-28,1193,880,777" Id="RyYrKnectm6Mkgdl4V7aFE">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin" LastDependency="VVVV.2d.UITest.vl">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <Patch Id="CEyScWO5m7TLm5Uu2gL0Po">
                 <Node Bounds="171,1535,472,382" Id="H5LOviAlwdvOFxlGe65KVU">
-                  <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
-                    <Choice Kind="OperationCallFlag" Name="CreateStyleWithColors" />
+                  <p:NodeReference>
+                    <Choice Kind="OperationCallFlag" Name="CreateStyleWithColorsAndFontSettings" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
                   <Patch Id="JHroLfQ99u4Ml6tWHyfVB1" Name="Color Modifier" ManuallySortedPins="true">
@@ -953,6 +953,16 @@
                   <Pin Id="FMTa04Q4KgZOhIEaDVchic" Name="Font Size" Kind="InputPin" />
                   <Pin Id="TQjCsSWI3SpMLG3UNLDFLa" Name="Font Family Name" Kind="InputPin" />
                   <Pin Id="DxemKmqhLkEQFLP3WSkAvo" Name="Output" Kind="OutputPin" />
+                  <Pin Id="EAah881y4PKOqqMXadxnaK" Name="Weight" Kind="InputPin" />
+                  <Pin Id="HelMKux9hYNOCChQWSafeY" Name="Style" Kind="InputPin" />
+                  <Pin Id="SGD6oufqpgCOsgjF7jVFHo" Name="Horizontal Alignment" Kind="InputPin">
+                    <p:TypeAnnotation LastCategoryFullName="CraftLie" LastSymbolSource="CraftLie.vl">
+                      <Choice Kind="TypeFlag" Name="HorizontalTextAlignment" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="QO0zjfofsj2M7PAvY3t1sT" Name="Vertical Alignment" Kind="InputPin" />
+                  <Pin Id="NeBy68WsaglPDaDw24F10Y" Name="Width" Kind="InputPin" />
+                  <Pin Id="DEKyu0vRLTXNA2yA3CJ5HT" Name="Anchor Offset" Kind="InputPin" />
                 </Node>
                 <Pad Id="DH0ucpD03g3LOErrmoUCPK" Comment="Background Color" Bounds="168,1223,143,20" ShowValueBox="true" isIOBox="true" Value="{&quot;Red&quot;:0.25000003,&quot;Green&quot;:0.25000003,&quot;Blue&quot;:0.25000003,&quot;Alpha&quot;:1.0}">
                   <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="VL.CoreLib.vl">
@@ -974,7 +984,7 @@
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Pad Id="D5LPP5wDO6BO6ru1ITS4Fy" Comment="Font Family Name" Bounds="764,1456,74,24" ShowValueBox="true" isIOBox="true" Value="&quot;Tahoma&quot;">
+                <Pad Id="D5LPP5wDO6BO6ru1ITS4Fy" Comment="Font Family Name" Bounds="663,1452,74,24" ShowValueBox="true" isIOBox="true" Value="&quot;Tahoma&quot;">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -1057,14 +1067,14 @@
     ************************ CreateLabelStyle ************************
 
 -->
-            <Node Name="CreateLabelStyle" Bounds="1028,1278,820,605" Id="L0ZtipLlqqSQXe6l7ddmuO">
+            <Node Name="CreateLabelStyle" Bounds="1028,1288,792,595" Id="L0ZtipLlqqSQXe6l7ddmuO">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin" LastDependency="VVVV.2d.UITest.vl">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <Patch Id="P5FfubJwyHdONmGV6B0uOQ">
                 <Node Bounds="1150,1448,441,382" Id="HfFzu5lv1b0NotN11Ykho5">
-                  <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
-                    <Choice Kind="OperationCallFlag" Name="CreateStyleWithColors" />
+                  <p:NodeReference>
+                    <Choice Kind="OperationCallFlag" Name="CreateStyleWithColorsAndFontSettings" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
                   <Patch Id="UmGu8P9AdgdMtgS2I3r6uM" Name="Color Modifier" ManuallySortedPins="true">
@@ -1126,18 +1136,24 @@
                   <Pin Id="RkIbACiPBaKPEdrPd5QQbw" Name="Font Size" Kind="InputPin" />
                   <Pin Id="IsYSb48yzvjN7CBx0vEMax" Name="Font Family Name" Kind="InputPin" />
                   <Pin Id="BPeAINTLbTLNrqg2qiBjh8" Name="Output" Kind="OutputPin" />
+                  <Pin Id="Vvj1xIveBvlQLUyuMPCo1h" Name="Weight" Kind="InputPin" />
+                  <Pin Id="BHlqxKVPUt1N3ACmfj0xG8" Name="Style" Kind="InputPin" />
+                  <Pin Id="RGMNTDwhDSPPuD7eE5IU5i" Name="Horizontal Alignment" Kind="InputPin" />
+                  <Pin Id="HRtq8iwT0V1OSralSPQuLH" Name="Vertical Alignment" Kind="InputPin" />
+                  <Pin Id="StwVbyIMjXFQTqllFMbfCv" Name="Width" Kind="InputPin" />
+                  <Pin Id="Tn7O44TkOUrPIbIpi08r3w" Name="Anchor Offset" Kind="InputPin" />
                 </Node>
-                <Pad Id="TxptAUiOoEAOPfU2TlCjys" Comment="Outline Color" Bounds="1364,1308,143,20" ShowValueBox="true" isIOBox="true" Value="{&quot;Red&quot;:0.350000441,&quot;Green&quot;:0.350000441,&quot;Blue&quot;:0.350000441,&quot;Alpha&quot;:1.0}">
+                <Pad Id="TxptAUiOoEAOPfU2TlCjys" Comment="Outline Color" Bounds="1329,1318,143,20" ShowValueBox="true" isIOBox="true" Value="{&quot;Red&quot;:0.350000441,&quot;Green&quot;:0.350000441,&quot;Blue&quot;:0.350000441,&quot;Alpha&quot;:1.0}">
                   <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="RGBA" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Pad Id="O6n6Va0TFfMPXYIapxZHWU" Comment="Font Size" Bounds="1544,1368,43,20" ShowValueBox="true" isIOBox="true" Value="12.0">
+                <Pad Id="O6n6Va0TFfMPXYIapxZHWU" Comment="Font Size" Bounds="1525,1367,43,20" ShowValueBox="true" isIOBox="true" Value="12.0">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Pad Id="Txc2SrVizEnMjlOKp9IZ0y" Comment="Font Family Name" Bounds="1659,1399,102,24" ShowValueBox="true" isIOBox="true" Value="&quot;Tahoma&quot;">
+                <Pad Id="Txc2SrVizEnMjlOKp9IZ0y" Comment="Font Family Name" Bounds="1603,1403,102,24" ShowValueBox="true" isIOBox="true" Value="&quot;Tahoma&quot;">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -1172,7 +1188,7 @@
                 <Link Id="RkFgm2NreS4ODcxoxFho9h" Ids="BGL5l2QUGgWMh4VA93GY8v,CtXnpRUYsScMqR8YZJChEr" />
                 <Link Id="IdfGFIIkdqINoVCBDKAtUE" Ids="BGL5l2QUGgWMh4VA93GY8v,V3szF6hHi7lLbg9XJedtTD" />
                 <Link Id="EhubTb0eXj6LCpWTB30vuy" Ids="GxNpvXzJseENV7T4ekRS2i,Q7gv9ANVMl6P3cUJomdFNW" />
-                <ControlPoint Id="GxNpvXzJseENV7T4ekRS2i" Bounds="1448,1380" />
+                <ControlPoint Id="GxNpvXzJseENV7T4ekRS2i" Bounds="1422,1381" />
                 <Pin Id="G7UgIxDhf4wLbbBbKZMI0c" Name="Text Color" Kind="InputPin" Bounds="1459,1415" />
                 <Link Id="ApK5ZSDQF94QZ7EYgz3I0o" Ids="G7UgIxDhf4wLbbBbKZMI0c,GxNpvXzJseENV7T4ekRS2i" IsHidden="true" />
               </Patch>
@@ -1186,7 +1202,7 @@
               <Pin Id="M4kIu9EZ8pYOfCCRABmziv" Name="Output" Kind="StateOutputPin" />
               <Pin Id="DjB2kyzhNlzO2MwBx19xCe" Name="Text Color" Kind="InputPin" />
             </Node>
-            <Pad Id="G7KBCbE5RcfODAH6izXOKv" Comment="Background Color" Bounds="926,860,143,20" ShowValueBox="true" isIOBox="true" Value="{&quot;Red&quot;:1.0,&quot;Green&quot;:1.0,&quot;Blue&quot;:1.0,&quot;Alpha&quot;:0.0}">
+            <Pad Id="G7KBCbE5RcfODAH6izXOKv" Comment="Background Color" Bounds="924,814,143,20" ShowValueBox="true" isIOBox="true" Value="{&quot;Red&quot;:1.0,&quot;Green&quot;:1.0,&quot;Blue&quot;:1.0,&quot;Alpha&quot;:0.0}">
               <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="RGBA" />
               </p:TypeAnnotation>
@@ -1203,9 +1219,9 @@
               </p:NodeReference>
               <Patch Id="Mdx9S6FWNPPLM4EpHMlcW1">
                 <Node Bounds="2095,1461,553,382" Id="SdpxBrtyBsCOogqVkxlRRK">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                  <p:NodeReference>
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="CreateButtonStyleWithColors" />
+                    <Choice Kind="OperationCallFlag" Name="CreateButtonStyleWithColorsAndFontSettings" />
                   </p:NodeReference>
                   <Patch Id="JGo8vF9yxI2P7lk6gzY2oJ" Name="Color Modifier" ManuallySortedPins="true">
                     <Pin Id="KWUZYmED1jKLfIuoCW3oWr" Name="UI Colors" Kind="InputPin" />
@@ -1279,6 +1295,12 @@
                   <Pin Id="SsVU0YWY8HGPZPzL2VRDtP" Name="Font Size" Kind="InputPin" />
                   <Pin Id="GrERXr9AwsoPOh4kCpX5Dk" Name="Font Family Name" Kind="InputPin" />
                   <Pin Id="BONCfE3dXdlOQukd2wB4wF" Name="Output" Kind="OutputPin" />
+                  <Pin Id="Kq87hf404jsMt1hNuYN3FE" Name="Weight" Kind="InputPin" />
+                  <Pin Id="NpZEaI7lnPDMfmTsxgVpV5" Name="Style" Kind="InputPin" />
+                  <Pin Id="LLA62PypaBnME3mI4z5a2v" Name="Horizontal Alignment" Kind="InputPin" />
+                  <Pin Id="M74EnOPWTb2N4oMRHYMCbo" Name="Vertical Alignment" Kind="InputPin" />
+                  <Pin Id="GOkSmIgVsbzOVStSmT8QyU" Name="Width" Kind="InputPin" />
+                  <Pin Id="R3shoVVlR9xN1LD7ptTBBO" Name="Anchor Offset" Kind="InputPin" />
                 </Node>
                 <Pad Id="DdswkhUC3JtPPVNcsgZyId" Comment="Outline Color" Bounds="2319,1318,143,20" ShowValueBox="true" isIOBox="true" Value="{&quot;Red&quot;:0.350000441,&quot;Green&quot;:0.350000441,&quot;Blue&quot;:0.350000441,&quot;Alpha&quot;:1.0}">
                   <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="VL.CoreLib.vl">
@@ -1351,7 +1373,7 @@
                 <Choice Kind="TypeFlag" Name="RGBA" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="RsxKsO006nPL1pvgmg53dN" Comment="Text Color" Bounds="1019,894,143,20" ShowValueBox="true" isIOBox="true" Value="{&quot;Red&quot;:0.8000002,&quot;Green&quot;:0.8000002,&quot;Blue&quot;:0.8000002,&quot;Alpha&quot;:1.0}">
+            <Pad Id="RsxKsO006nPL1pvgmg53dN" Comment="Text Color" Bounds="1020,891,143,20" ShowValueBox="true" isIOBox="true" Value="{&quot;Red&quot;:0.8000002,&quot;Green&quot;:0.8000002,&quot;Blue&quot;:0.8000002,&quot;Alpha&quot;:1.0}">
               <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="RGBA" />
               </p:TypeAnnotation>
@@ -1367,7 +1389,7 @@
           </ProcessDefinition>
           <Link Id="EwgLc47SReeOJ32hxe50HO" Ids="A4i13hfZKL0OYJ4EKtuNYZ,PBeGBqTNSdsQVlPO8SWGJC" />
           <Link Id="LWWajQwNLoaPJiBVjOUxGx" Ids="PBeGBqTNSdsQVlPO8SWGJC,UoLrWgbvRPxO3esSXUgXNc" IsHidden="true" />
-          <Patch Id="Isyw0xByDswPwdPR5e5rj7" Name="CreateSliderStyle">
+          <Patch Id="Isyw0xByDswPwdPR5e5rj7" Name="CreateStyle">
             <Pin Id="UoLrWgbvRPxO3esSXUgXNc" Name="Slider Style 1" Kind="OutputPin" />
             <Pin Id="R7Cr2Gkd8TqQHLLMjJBXjS" MergeId="121788" Name="Slider Style 2" Kind="OutputPin" />
             <Pin Id="FdsxojU4wL4PZrTe4oI6lT" MergeId="146563" Name="Slider Style 3" Kind="OutputPin" />
@@ -3220,11 +3242,6 @@
             <Pin Id="VKEaGDMsDPUMu5ntwv9qq6" Name="Key" Kind="InputPin" Bounds="338,253" />
             <Pin Id="Qf8efH7d7C2ON240XsXxoU" Name="Result" Kind="OutputPin" Bounds="382,484" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="NTuLxssoGm2QVnAiChfjT2">
             <Fragment Id="MljE7lMRKsjQO4Kzcrk1e3" Patch="LjaanAYrdxROt9SvhrbHMv" Enabled="true" />
             <Fragment Id="VxkPGJob8PwOzKtfy10D9s" Patch="TGpjOLetR5dMPh7ZVukvYy" Enabled="true" />
