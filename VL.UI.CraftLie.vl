@@ -984,6 +984,16 @@
                 <Pin Id="RPaDOkenpzgMy9SYXGLRtj" Name="Transformation" Kind="InputPin" />
                 <Pin Id="QdBEwd7M3DCPDDoqzbLite" Name="Output" Kind="StateOutputPin" />
               </Node>
+              <Node Bounds="166,310,30,13" Id="LF2GjzVpKoGO6A8ALXARvp">
+                <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="VL.CoreLib.vl" LastDependency="VL.UI.CraftLie.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="AND" />
+                </p:NodeReference>
+                <Pin Id="MLf3cZxQjsdPNWLunF8LVH" Name="Input" Kind="StateInputPin" />
+                <Pin Id="MgZbvQGAbd2P1mPLEnUmRg" Name="Input 2" Kind="InputPin" />
+                <Pin Id="GHBa8Qo38rnLJH8QC8dkNr" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <ControlPoint Id="FJnmLFmvSpDMAhHVY1xS64" Bounds="390,174" />
             </Canvas>
             <ProcessDefinition Id="AczTxxVTtRdLDJastKByMy" HasStateOut="true">
               <Fragment Id="F7GJOItQyI7LApzKn6rFKJ" Patch="EtzVA0DCSDgNGLAKh6OQlO" Enabled="true" />
@@ -999,7 +1009,13 @@
             </ProcessDefinition>
             <Slot Id="G3FLapzKbt6MUAQydjP8fx" Name="Controller" />
             <Patch Id="EtzVA0DCSDgNGLAKh6OQlO" Name="Create" ParticipatingElements="LOVoAYZNZsZLOtUFgGM0MH" />
-            <Patch Id="QeEv60NVwccPSsFcp07L1L" Name="Update" />
+            <Patch Id="QeEv60NVwccPSsFcp07L1L" Name="Update">
+              <Pin Id="IqGdKdbcJ9mOmB5xu8zvsv" Name="Show Selection Rect" Kind="InputPin" Bounds="390,174" DefaultValue="false">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
             <Link Id="DirQl6r5Ml1MHBBmtSXiSI" Ids="KBHjIpUQVHdNXw3C2lVMr7,KOYaeXRMdjGPgVlUdQWlAf" IsHidden="true" />
             <Link Id="JIBEgQyEJM5MnrXD3LGOG0" Ids="N6sXUE1bmd2MHUXIMV8foq,EusB7WFtod2Nhqr3ImujHx" />
             <Link Id="F43Ob9NmmgpMMUOy32vJEs" Ids="EusB7WFtod2Nhqr3ImujHx,RQ7aDX8R27VNmxIgpGQmnC" />
@@ -1023,7 +1039,7 @@
             <Link Id="EwG2i9Ljbu9Pw1na7tzpBQ" Ids="LxK48yr22n8NDBdhmLnGXM,SoEjZSzYEFPNp8xMuoHPDc" />
             <Link Id="VYFr3VXFufpLX2Ou58blZ8" Ids="AT0a1Z3SHyMODnX6Hd0wpN,RbUOU2EWImgQHRpGOTwplt" />
             <Link Id="I8pbvOF2FMwMTs9eDDkkQi" Ids="Bz2yCZd3N4MNcuObWgwSun,E4fudfUgw1OMKlVWY4C7vl" />
-            <Link Id="Nikgm4Ktz84OXVJ63EIi8M" Ids="Ja7tktbhSi7OGY3MgTlwvv,ITqooXvkds3LfxgIBLSykz" />
+            <Link Id="Nikgm4Ktz84OXVJ63EIi8M" Ids="Ja7tktbhSi7OGY3MgTlwvv,MLf3cZxQjsdPNWLunF8LVH" />
             <Patch Id="KPHhoDBNLJqNkrStcXJJkg" Name="Layout" ParticipatingElements="NUYgxa9PlWGMgBPbyh4lce">
               <Pin Id="V764MUTGqQ4QEvgO7S6sce" Name="Scaling" Kind="InputPin" />
               <Pin Id="HVLzjIvUdiAO4HHRWmUYq4" Name="Offset" Kind="InputPin" />
@@ -1089,6 +1105,9 @@
             <Link Id="NHz78L5gZA5NE52GUG9p1Z" Ids="QdBEwd7M3DCPDDoqzbLite,NtDDFwxALRnNLI0NuhG7rt" />
             <Link Id="HWfDYa1ymn4LKHz6qWuHY0" Ids="Ds3gmQDEVq6MWZrlmIGcWu,RPaDOkenpzgMy9SYXGLRtj" />
             <Link Id="Tqn36NlrsqRNiYDHvlumC6" Ids="AsgaWChqABOQT6iasUhJYO,QgnKZLPb7aYLA2Nr3JNQHy" />
+            <Link Id="B2poxv1mlmBPfQHxezl2jN" Ids="GHBa8Qo38rnLJH8QC8dkNr,ITqooXvkds3LfxgIBLSykz" />
+            <Link Id="M8HR7dCtlNzMnIEMa7CpAs" Ids="FJnmLFmvSpDMAhHVY1xS64,MgZbvQGAbd2P1mPLEnUmRg" />
+            <Link Id="GhmDuhKCu2RObUa7v84omJ" Ids="IqGdKdbcJ9mOmB5xu8zvsv,FJnmLFmvSpDMAhHVY1xS64" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -1280,7 +1299,7 @@
                 <Pin Id="HNJlrVrj9ZNNq72QdN9LF4" Name="Instance Colors" Kind="InputPin" />
                 <Pin Id="Rz25VwrlHkwNb5AtLyUyDX" Name="Layer" Kind="OutputPin" />
               </Node>
-              <Node Bounds="399,726,134,13" Id="U7TSY6qNLAgNeXtOpMrIEZ">
+              <Node Bounds="400,718,134,13" Id="U7TSY6qNLAgNeXtOpMrIEZ">
                 <p:NodeReference LastCategoryFullName="2D.Rectangle" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="ToQuadTransformation" />
@@ -1414,6 +1433,16 @@
                   <Choice Kind="TypeFlag" Name="Vector3" />
                 </p:TypeAnnotation>
               </Pad>
+              <Node Bounds="438,749,30,13" Id="Ve3s5jke6l4QWZokOXNHkN">
+                <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="VL.CoreLib.vl" LastDependency="VL.UI.CraftLie.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="AND" />
+                </p:NodeReference>
+                <Pin Id="J4mxZOgkqDBMyw2LQ76rCE" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Ky1NC4hAMQnMlw83zsh6zy" Name="Input 2" Kind="InputPin" />
+                <Pin Id="ClLTA0DKYtgOdTepE3SeuX" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <ControlPoint Id="LyiLSWFiEwRLuEyTWtFN3H" Bounds="899,618" />
             </Canvas>
             <ProcessDefinition Id="Clc07B7MEVtMLtKpVkLS9H">
               <Fragment Id="Ml7ncaoOreEPrLcl8FIjXw" Patch="V2GjSVhGd8KLDEmMhB38U9" Enabled="true" />
@@ -1437,6 +1466,11 @@
               <Pin Id="A8PmbNxHOU4L1EFxPz0zTm" Name="Layer" Kind="InputPin" />
               <Pin Id="OPgADIcWxsFNqfHUswIAhg" Name="DIP Offset" Kind="InputPin" />
               <Pin Id="Q5qWwWpO9QZMd47yVFCFTU" Name="All Values" Kind="OutputPin" Bounds="484,573" />
+              <Pin Id="G3jmfmrAUiEP0gIWuMvrQj" Name="Show Selection Rect" Kind="InputPin" Bounds="918,613" DefaultValue="false">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
             </Patch>
             <Link Id="TF4RxuG9wVBQU56EvCRJxY" Ids="KrleynXsNq5LmIqTAhjqxR,VrcmiR4ows6NK2cJDBOcZg" IsHidden="true" />
             <Link Id="HYE91m1eJDMPAiu24Tr15T" Ids="TuyflDkhsMUPqdf7ZWoILd,F6AtsIZwE8gQGskNZKGZuf" />
@@ -1469,7 +1503,7 @@
             <Link Id="HQctERPv9OaQG9aGZiwVcp" Ids="PuWmfpgY235NvHRkpGbRby,LpNQFgNq1TXMAwWrJrg3HE" />
             <Link Id="EA5CZrHFsF9N6ca1qLMcEP" Ids="Il6Ao9eoIZXLOFc7q7ehg8,FJKY93QgWbHQUEibxHDpWC" />
             <Link Id="AXYHbvEs3E2OjF56pYOGwt" Ids="TUy2rqi8dVEMuYF2b1WdVu,QJg7Wxqh0lQPGj1KYFNBNv" />
-            <Link Id="DKvLtcPYLG9PCVO1Je0r6D" Ids="TMpct0uRDVLM6xBy4PBNYu,RBGxcTMHMvMQXEQq7lcnJo" />
+            <Link Id="DKvLtcPYLG9PCVO1Je0r6D" Ids="TMpct0uRDVLM6xBy4PBNYu,J4mxZOgkqDBMyw2LQ76rCE" />
             <Link Id="LWhMLfwiWM3PddUWhSG2AX" Ids="MttIGLVyZtkNLZ5ZyZBtEG,Rr4cwyiJDK4OQ6shaG9Swx" />
             <Link Id="RqCfT5YyARTNvSdZFdcl7O" Ids="A8PmbNxHOU4L1EFxPz0zTm,VWpYQL3tJSkOJFbTEVwD53" IsHidden="true" />
             <Link Id="EXDoGWk19lCP9QBdSPgZ5O" Ids="T6cpmjlGEarLxRvmnRjM1e,SO2GUXqlsQfPUNyzpI3zTZ" />
@@ -1497,6 +1531,9 @@
             <Link Id="GT2gLrp9d03P1jw43j9xKU" Ids="TKQDCjUZqrdQFoUgo8Wp8n,M5LcsgszlCQMfaMOB8KPPv" />
             <Link Id="G4cDd9Rqw0ROO3hJexz62X" Ids="Fo56hhibtyXPTyu19bb7qJ,FdeNw3S6dUINyDkkr5VPBG" />
             <Link Id="JrXRk10IoX3OJ6nDmIUs7J" Ids="Eg4k29J9MfTPIGE1PaQ84Z,MjGatE3AhKuMb5slPkJHyG" />
+            <Link Id="OmL5NRbVeI9K93GWW8KoAs" Ids="ClLTA0DKYtgOdTepE3SeuX,RBGxcTMHMvMQXEQq7lcnJo" />
+            <Link Id="ClXZl0vdIQFMlnUy6juzNq" Ids="LyiLSWFiEwRLuEyTWtFN3H,Ky1NC4hAMQnMlw83zsh6zy" />
+            <Link Id="MmoKiyAXrU7N4PeuIxmCEP" Ids="G3jmfmrAUiEP0gIWuMvrQj,LyiLSWFiEwRLuEyTWtFN3H" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -2755,6 +2792,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="UISubRoot" />
                 </p:NodeReference>
+                <Pin Id="DTEatjdL3EhOFT6on6hMdq" Name="Show Selection Rect" Kind="InputPin" />
                 <Pin Id="EQNUjGCnyv3NJZRVlfaAdr" Name="Update" Kind="ApplyPin" />
                 <Pin Id="Ow9s5XnwvJTO98KRgJq2Ut" Name="New Element" Kind="InputPin" />
                 <Pin Id="TpttmJHvUM2ONgpJTUqqg4" Name="Old Element" Kind="InputPin" />

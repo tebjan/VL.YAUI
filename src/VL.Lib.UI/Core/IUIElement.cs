@@ -22,7 +22,7 @@ namespace VL.Lib.UI
         string GetId();
         void SetValue(object value);
         object GetValue();
-        IObservable<object> ValueChanged { get; }
+        IObservable<KeyValuePair<string, object>> ValueChanged { get; }
 
         //structure
         void Layout(Vector2 offset);

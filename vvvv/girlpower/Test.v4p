@@ -90,7 +90,7 @@
    </NODE>
    <LINK srcnodeid="53" srcpinname="Bang" dstnodeid="118" dstpinname="Input 1">
    </LINK>
-   <PACK Name="dx11" Version="1.2">
+   <PACK Name="dx11" Version="1.0.5">
    </PACK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
@@ -222,7 +222,7 @@
    </LINK>
    <LINK srcnodeid="190" srcpinname="Transform Out" dstnodeid="2" dstpinname="Projection">
    </LINK>
-   <NODE id="72" systemname="Renderer (CraftLie)" filename="%VVVV%\packs\CraftLie.1.2.0\vvvv\nodes\modules\Renderer (CraftLie).v4p" nodename="Renderer (CraftLie)" componentmode="InAWindow">
+   <NODE id="72" systemname="Renderer (CraftLie)" filename="%VVVV%\packs\CraftLie.1.2.0\vvvv\nodes\modules\Renderer (CraftLie).v4p" nodename="Renderer (CraftLie)" componentmode="Hidden">
    <BOUNDS type="Node" left="5670" top="5235" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="510" top="5925" width="26955" height="13830">

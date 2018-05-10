@@ -96,6 +96,11 @@
               <Pin Id="VM3ipkTtdmTMGmV2agn0XI" Name="Resolution" Kind="InputPin" />
               <Pin Id="ARsac4N9232Mq5ckAFwQo3" Name="Output" Kind="OutputPin" />
               <Pin Id="AWmEdevHG5mPH319AuTYGg" Name="All Values" Kind="OutputPin" />
+              <Pin Id="HOBn0Gfu22aMaH6j9QhPoH" Name="Show Selection Rect" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
             </Node>
             <Node Bounds="45,612,67,13" Id="EMw0MBDF0rjMl6ULQ5PPhB">
               <p:NodeReference LastCategoryFullName="CraftLie" LastSymbolSource="CraftLie.vl">
@@ -107,8 +112,8 @@
               <Pin Id="IPvhzMoUCO7OBNkd1Av1MJ" Name="Draw Description Layer" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="FhSK0bk03dhLQKTU8QXOrL" Bounds="47,681" />
-            <ControlPoint Id="B5A132xBuMjMSPhBxol6rd" Bounds="213,405" />
-            <ControlPoint Id="JnKGlt9IfPBPKg4ZhbsHBX" Bounds="299,403" />
+            <ControlPoint Id="B5A132xBuMjMSPhBxol6rd" Bounds="192,405" />
+            <ControlPoint Id="JnKGlt9IfPBPKg4ZhbsHBX" Bounds="278,403" />
             <ControlPoint Id="SUZe9If9uNmQGZGitydFHE" Bounds="553,414" />
             <Pad Id="GZKNoHhULIUQNeVLb4jl1J" Comment="Scaling" Bounds="470,382,33,38" ShowValueBox="true" isIOBox="true" Value="new vec(1.0,1.0)">
               <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="VL.CoreLib.vl">
