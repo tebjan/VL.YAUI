@@ -385,6 +385,7 @@
               <Pin Id="He5gIZ3gSbeP3GEW2ot5Zu" Name="X" Kind="InputPin" />
               <Pin Id="PjR5IAsck3BNm01rfz8dXu" Name="Style" Kind="InputPin" />
               <Pin Id="JggTS6KZPSfPDzcIwq6EJE" Name="Output" Kind="OutputPin" />
+              <Pin Id="DFvmjxBpIHPNgworLjc8v6" Name="Events" Kind="OutputPin" />
             </Node>
             <Pad Id="TyZLKpXoeXrPLzezjyhfMD" Comment="Id" Bounds="825,-14,46,20" ShowValueBox="true" isIOBox="true" Value="&quot;Bang&quot;">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
@@ -742,7 +743,7 @@
                 <p:fontsize p:Type="Int32">9</p:fontsize>
                 <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
               </p:ValueBoxSettings>
-              <p:TypeAnnotation>
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
@@ -769,6 +770,19 @@
               <Pin Id="NUgicdGyljHNwYpgG9lKJV" Name="Input 2" Kind="InputPin" />
               <Pin Id="US2BroIt1VKP0nJhHvOBun" Name="Output" Kind="StateOutputPin" />
             </Node>
+            <Pad Id="GAb3tRAn8o6NwGhVWG1QGC" SlotId="CmjNMLSdpmdMXuJvj56Sdt" Bounds="928,272" />
+            <Node Bounds="922,344" Id="LP2gVihE7m2OJofDOjTX0v">
+              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl" LastDependency="VVVV.2d.UITest.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+              </p:NodeReference>
+              <Pin Id="S4l49lSpA09OU1fAm1UFCH" Name="Initial Result" Kind="InputPin" />
+              <Pin Id="IEBLPVRYjDPMwxvEqX2F6e" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="QRkEzO4uTL8NajsnM3yqJg" Name="Reset" Kind="InputPin" />
+              <Pin Id="RdKHrtCJ6xPP0MDM6MJOOF" Name="Value" Kind="OutputPin" />
+              <Pin Id="EBbg51zZ9V0LtDChugbwUF" Name="On Data" Kind="OutputPin" />
+            </Node>
+            <Pad Id="KPFzRk0iMGsMKZCc6th1gX" Comment="Value" Bounds="937,424,70,41" ShowValueBox="true" isIOBox="true" />
           </Canvas>
           <Link Id="Ibq3vRvDOItOR62yAFCIPU" Ids="IPvhzMoUCO7OBNkd1Av1MJ,FhSK0bk03dhLQKTU8QXOrL" />
           <Link Id="GzCfXsIXdJWQPSJE8socHs" Ids="FhSK0bk03dhLQKTU8QXOrL,HYo9zTtmW7jMR34lqRdQ9z" IsHidden="true" />
@@ -862,6 +876,10 @@
           <Link Id="JLgcDczhjzAOEyudnRL8qG" Ids="BYOWQOqjlH4LlwQCm1lWhx,FKPYAhFYEwsOqktLs17PmL" />
           <Link Id="NkbGvm6lmNXOdmZ7J1SioH" Ids="QXe3mbISjAsMtpUPPpkpMj,V4QeQG9by62PkCVwoVxyaM" />
           <Link Id="E0axPFrvpDZMyc8eYIXLQ6" Ids="CU9ZXBwDqKqQFn3Wx2pcfK,BLtKzZEN2lFNrcUM7LozVI" />
+          <Slot Id="CmjNMLSdpmdMXuJvj56Sdt" Name="Events" />
+          <Link Id="V4FJotLikd2NxCIwEQKvnz" Ids="DFvmjxBpIHPNgworLjc8v6,GAb3tRAn8o6NwGhVWG1QGC" />
+          <Link Id="ORNVkuWPmteOqsZBtO07Cl" Ids="GAb3tRAn8o6NwGhVWG1QGC,IEBLPVRYjDPMwxvEqX2F6e" />
+          <Link Id="JjGr0BNbNkLQVzNeTmdOEZ" Ids="RdKHrtCJ6xPP0MDM6MJOOF,KPFzRk0iMGsMKZCc6th1gX" />
         </Patch>
       </Node>
       <!--
@@ -2858,6 +2876,7 @@
                 </Node>
               </Patch>
               <ControlPoint Id="BP8OpbsGFf6Lga8d0AcYoB" Bounds="427,743" Alignment="Bottom" />
+              <ControlPoint Id="ATkrvXbLnpEOAKWTgn4J7q" Bounds="689,743" Alignment="Bottom" />
             </Node>
             <Node Bounds="425,781,54,13" Id="RNCEJK5OXHbMwG0wPuCIcv">
               <p:NodeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl" LastDependency="VVVV.2d.UITest.vl">
@@ -2877,6 +2896,16 @@
             <ControlPoint Id="Sd2n8REv8dpN6N45yLVH28" Bounds="311,435" />
             <ControlPoint Id="T2GJGxMb1jzNSCnZ6NJH6z" Bounds="1022,417" />
             <Pad Id="DtlH2jgW2viLNwyJFC28FW" Bounds="429,829" />
+            <Node Bounds="688,793" Id="F8vex19BjBdMeEiClaHnv6">
+              <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.DevLib.vl" LastDependency="VVVV.2d.UITest.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Merge (Spectral)" />
+              </p:NodeReference>
+              <Pin Id="RATEBK5InN4PIhGXRmOC3p" Name="Input" Kind="InputPin" />
+              <Pin Id="TwCwTZrwyG0Ppp4WrilOdC" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="OYYvJz59PMiLNjJkXMnZks" SlotId="CD3HY37CgrePNQcfZtsMDY" Bounds="682,850" />
+            <ControlPoint Id="Gn0Lu9KtCTGP8eO9w5rrcB" Bounds="685,891" />
           </Canvas>
           <Patch Id="UtKovD2BYI8MQBMQarfh3Z" Name="Create" ParticipatingElements="SXERkBetaEXLyEyeBQQDJ0">
             <Pin Id="EZnfdG8qI4vLnRrQUS6Nrs" Name="Style" Kind="InputPin" />
@@ -2889,6 +2918,7 @@
           </Patch>
           <Patch Id="TmdJHUdTf5LLZxqwyn2YHq" Name="Update">
             <Pin Id="Lyoqp2SyKMlPiybCk6pQcF" Name="Output" Kind="OutputPin" Bounds="431,863" />
+            <Pin Id="VO7jxGeGTysPCJhPZrlfYY" Name="Events" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="AziKCWuTi8zPtXbCylDolp">
             <Fragment Id="KWaxYWIS3sNPX0hFgxRyWD" Patch="UtKovD2BYI8MQBMQarfh3Z" Enabled="true" />
@@ -2917,6 +2947,12 @@
           <Link Id="Qk5YlkT89qUOOI9JZRwoZW" Ids="DtlH2jgW2viLNwyJFC28FW,POFnQnUzxdxNIOjIgchiOX" />
           <Link Id="IB1Wfmm5En0LoQIaVxyJcz" Ids="RWONtPXM53aOlntcP94maB,HRb3sNxFEWgMqVEYXxi9mg" />
           <Link Id="InWs4u7JZJTNF7Lbe8WfZ9" Ids="RWONtPXM53aOlntcP94maB,TLsHWzxY5m8P2Em7g9Xlbi" />
+          <Link Id="ROa5htcx1VMNEJPMNx2d5l" Ids="PtqRUWdaC3tPUugZB4zS1d,ATkrvXbLnpEOAKWTgn4J7q" />
+          <Link Id="NeFoqbGO1BfNzhyDPnU2hI" Ids="ATkrvXbLnpEOAKWTgn4J7q,RATEBK5InN4PIhGXRmOC3p" />
+          <Slot Id="CD3HY37CgrePNQcfZtsMDY" Name="Result" />
+          <Link Id="JHHKvf8bKu2MMEonoNX7mQ" Ids="TwCwTZrwyG0Ppp4WrilOdC,OYYvJz59PMiLNjJkXMnZks" />
+          <Link Id="AMOu2KHXP15PtHjqEWcawk" Ids="OYYvJz59PMiLNjJkXMnZks,Gn0Lu9KtCTGP8eO9w5rrcB" />
+          <Link Id="GhHGsqJ5905LAyGCOesStU" Ids="Gn0Lu9KtCTGP8eO9w5rrcB,VO7jxGeGTysPCJhPZrlfYY" IsHidden="true" />
         </Patch>
       </Node>
       <!--

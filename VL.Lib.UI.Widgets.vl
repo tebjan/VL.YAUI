@@ -23001,7 +23001,11 @@
                   <Pin Id="KJUcJc6M2F0QRcIP9RanVj" Name="Input" Kind="StateInputPin" />
                   <Pin Id="ASUbyFnx9UwL94Pmld39nW" Name="Value" Kind="InputPin" />
                   <Pin Id="SdXdrKl1VRrMId1umttuad" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="ROy4z2qljRtL5FHiH2xwP4" Name="Apply" Kind="ApplyPin" />
+                  <Pin Id="ROy4z2qljRtL5FHiH2xwP4" Name="Apply" Kind="ApplyPin">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
                 </Node>
                 <Pad Id="TnRratXbXg3QUE5vgBYwsI" SlotId="BfF8xb5lDtNPjoZ55nFERg" Bounds="672,135">
                   <p:ValueBoxSettings />
@@ -25908,7 +25912,11 @@
                     <Choice Kind="TypeFlag" Name="Object" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="IDs0GTLcJyfOPG6Z30iQQH" Name="Apply" Kind="InputPin" />
+                <Pin Id="IDs0GTLcJyfOPG6Z30iQQH" Name="Apply" Kind="InputPin" DefaultValue="true">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Boolean" />
+                  </p:TypeAnnotation>
+                </Pin>
               </Patch>
               <Link Id="K2fNQjfcg8VLuWWDIKvTyX" Ids="G7zqBW8bHwcOmX4fSVjmPj,VGJ9hdlOC6vO2zunZZ7LsC" />
               <Link Id="AdieYunu7liO33GxCJmaq1" Ids="RP6NiyjjuLOQNYYbAVLxn9,G7zqBW8bHwcOmX4fSVjmPj" IsHidden="true" />
