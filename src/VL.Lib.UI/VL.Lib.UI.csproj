@@ -22,6 +22,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>..\..\lib\VL.Lib.UI.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ExCSS, Version=2.0.6.0, Culture=neutral, processorArchitecture=MSIL">
@@ -170,8 +172,8 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Xml" />
-    <Reference Include="VL.Core, Version=0.95.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Core.0.95.101-g8599766fac\lib\netstandard2.0\VL.Core.dll</HintPath>
+    <Reference Include="VL.Core, Version=2019.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\VL.Core.2019.1.0-0344-gd5eabf23a7\lib\netstandard2.0\VL.Core.dll</HintPath>
     </Reference>
     <Reference Include="VL.UI.Core, Version=0.95.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\VL.UI.Core.0.95.101-g8599766fac\lib\net472\VL.UI.Core.dll</HintPath>
