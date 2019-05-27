@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,74 +37,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ExCSS, Version=2.0.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.UI.Core.0.95.101-g8599766fac\lib\net472\ExCSS.dll</HintPath>
+      <HintPath>..\packages\VL.UI.Core.2019.1.0-0344-gd5eabf23a7\lib\net472\ExCSS.dll</HintPath>
     </Reference>
     <Reference Include="MathNet.Numerics, Version=3.20.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MathNet.Numerics.3.20.0\lib\net40\MathNet.Numerics.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.Cci.Analysis.AnalysisUtilities, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.Analysis.AnalysisUtilities.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.Analysis.ControlAndDataFlowGraph, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.Analysis.ControlAndDataFlowGraph.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.AstsProjectedAsCodeModel, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.AstsProjectedAsCodeModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.CodeModel, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.CodeModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.CodeModelToIL, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.CodeModelToIL.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.ContractExtractor, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.ContractExtractor.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.CSharpSourceEmitter, Version=1.0.13.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.CSharpSourceEmitter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.ILGenerator, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.ILGenerator.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.MetadataHelper, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.MetadataHelper.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.MetadataModel, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.MetadataModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.MutableCodeModel, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.MutableCodeModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.MutableMetadataModel, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.MutableMetadataModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.NewILToCodeModel, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.NewILToCodeModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.PdbReader, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.PdbReader.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.PdbWriter, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.PdbWriter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.PeReader, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.PeReader.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.PeWriter, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.PeWriter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.ReflectionEmitter, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.ReflectionEmitter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.ReflectionImporter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.ReflectionImporter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.SourceEmitter, Version=1.0.13.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.SourceEmitter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.SourceModel, Version=1.0.13.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.Microsoft.Cci.0.94.50-gf563f1b382\lib\net46\Microsoft.Cci.SourceModel.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -113,6 +52,12 @@
     </Reference>
     <Reference Include="SharpDX.Mathematics, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpDX.Mathematics.4.0.1\lib\net45\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp, Version=1.68.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\SkiaSharp.1.68.0\lib\net45\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Extended.Svg, Version=1.60.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\SkiaSharp.Svg.1.60.0\lib\netstandard2.0\SkiaSharp.Extended.Svg.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -175,12 +120,8 @@
     <Reference Include="VL.Core, Version=2019.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\VL.Core.2019.1.0-0344-gd5eabf23a7\lib\netstandard2.0\VL.Core.dll</HintPath>
     </Reference>
-    <Reference Include="VL.UI.Core, Version=0.95.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.UI.Core.0.95.101-g8599766fac\lib\net472\VL.UI.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="VVVV.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VL.CoreLib.0.72.8-g6b24b20a78\lib\net461\VVVV.Utils.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="VL.UI.Core, Version=2019.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\VL.UI.Core.2019.1.0-0344-gd5eabf23a7\lib\net472\VL.UI.Core.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
@@ -203,6 +144,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\SkiaSharp.1.68.0\build\net45\SkiaSharp.targets" Condition="Exists('..\packages\SkiaSharp.1.68.0\build\net45\SkiaSharp.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\SkiaSharp.1.68.0\build\net45\SkiaSharp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.1.68.0\build\net45\SkiaSharp.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
