@@ -86,26 +86,26 @@
             Creates a handler which will call the given continuation once the start of a mouse drag was observed.
             </summary>
         </member>
-        <member name="M:VL.Lib.UI.Handler.Drag(System.Action{VL.Lib.IO.Notifications.MouseMoveNotification,SharpDX.Vector2})">
+        <member name="M:VL.Lib.UI.Handler.Drag(System.Action{VL.Lib.IO.Notifications.MouseMoveNotification,Xenko.Core.Mathematics.Vector2})">
             <summary>
             Creates a handler which will call the given action as long as the mouse moves. 
             Use together with OnDragStart and EndWith in order to setup proper initialization and finalization code.
             </summary>
         </member>
-        <member name="M:VL.Lib.UI.Handler.Select(VL.Lib.IO.Notifications.MouseDownNotification,System.Action{VL.Lib.IO.Notifications.MouseMoveNotification,SharpDX.RectangleF})">
+        <member name="M:VL.Lib.UI.Handler.Select(VL.Lib.IO.Notifications.MouseDownNotification,System.Action{VL.Lib.IO.Notifications.MouseMoveNotification,Xenko.Core.Mathematics.RectangleF})">
             <summary>
             Creates a handler which will call the given action as long as the mouse moves.
             Use together with OnDragStart and EndWith in order to setup proper initialization and finalization code.
             </summary>
         </member>
-        <member name="M:VL.Lib.UI.RectangleExtensions.GetUnitRect(SharpDX.Vector2)">
+        <member name="M:VL.Lib.UI.RectangleExtensions.GetUnitRect(Xenko.Core.Mathematics.Vector2)">
             <summary>
             Gets a unit rect from a center position.
             </summary>
             <param name="center">The center.</param>
             <returns></returns>
         </member>
-        <member name="M:VL.Lib.UI.RectangleExtensions.GetRect(SharpDX.Vector2,SharpDX.Vector2)">
+        <member name="M:VL.Lib.UI.RectangleExtensions.GetRect(Xenko.Core.Mathematics.Vector2,Xenko.Core.Mathematics.Vector2)">
             <summary>
             Gets a rect with from given center and size
             </summary>
