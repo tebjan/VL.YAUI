@@ -9226,6 +9226,7 @@
                 <Pad Id="ThqBMtzXcrbMNR7QlUszmx" Bounds="264,1022" />
                 <ControlPoint Id="OKgryjqlx3UPkaEReJyP5V" Bounds="451,1002" />
                 <Pad Id="BEImxYCCl3OOCHZ7ttjhXP" Bounds="449,1028" />
+                <ControlPoint Id="DCA9E0kFC2TOWQWPJV6dGn" Bounds="970,154" />
               </Canvas>
               <Patch Id="EkmVboFrdnsLZKINjkKo1q" Name="Create" ParticipatingElements="HvWBi107dtoPa0GaLKvZSs,FokfUltbv8lNc9T4HZdGrc">
                 <Pin Id="JxB7DKjlGIzNxOs8UFKNpg" Name="Initial Value" Kind="InputPin" />
@@ -9262,6 +9263,7 @@
                 <Fragment Id="PC1SyDUBgeyOKqffVSWZWb" Patch="DoC8XKyZpXyMwbrHet8oqD" />
                 <Fragment Id="FoJbrWVzgXAOhJrP4M8yDN" Patch="SFu6s9BdlyMNJpSI7mTt7v" Enabled="true" />
                 <Fragment Id="JWToXRQiBsJP2u81lJozTy" Patch="Nt9uaeE1UXPOCX2luBf634" />
+                <Fragment Id="OGkhLdNI8ZcLgKzevPok7I" Patch="CpepXpWMewWNkS4PTZ5p4l" Enabled="true" />
               </ProcessDefinition>
               <Patch Id="VLwpuocSkW0Melm0z0sg9I" Name="Unfocus" />
               <Patch Id="NwfKSxhatcnN3CbIdtBGHK" Name="GetChildren">
@@ -9477,6 +9479,11 @@
               <Link Id="Ey2gmhzBXvHM81gnNh4jaz" Ids="OKgryjqlx3UPkaEReJyP5V,BEImxYCCl3OOCHZ7ttjhXP" />
               <Link Id="GdDJzWbS8HFLF0p0ehCQJW" Ids="VzMjfRp4rbcPWXdEv2K859,OKgryjqlx3UPkaEReJyP5V" IsHidden="true" />
               <Link Id="FumUUcbBRw2OAEUWDuSFYa" Ids="BEImxYCCl3OOCHZ7ttjhXP,SVuifFkOPdRN7G3wCsDvBm" />
+              <Link Id="CFZp3AWNgKiOGgt0qJ2hT5" Ids="DTjNeJ2zv5WNp1fusYBETJ,DCA9E0kFC2TOWQWPJV6dGn" />
+              <Link Id="CRIkqwdysYPOjFRF0Vmlgs" Ids="DCA9E0kFC2TOWQWPJV6dGn,PMA4IuUdyD0K9VypNgFnF5" IsHidden="true" />
+              <Patch Id="CpepXpWMewWNkS4PTZ5p4l" Name="GetStyle">
+                <Pin Id="PMA4IuUdyD0K9VypNgFnF5" Name="Style" Kind="OutputPin" />
+              </Patch>
             </Patch>
           </Node>
           <!--
@@ -14665,6 +14672,7 @@
                   <Pin Id="SmCJjrdVVH4OJ66ymMZVwS" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="LM2Wv4gkEKvQIfpF1WSGxY" Name="Value Changed" Kind="OutputPin" />
                   <Pin Id="MqlJ26S5GdYNjlDQqDWSru" Name="Result" Kind="OutputPin" />
+                  <Pin Id="IlYpZreS10lMHnkFd0NtGT" Name="Style" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="487,392,85,19" Id="RFldkllBYoQNGADx2laigN">
                   <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl">
@@ -14693,6 +14701,7 @@
                   <Pin Id="PIG4yuEyHHCM1slDaHKK2c" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="UksNhLkeahqNvtelGBONqb" Name="Value Changed" Kind="OutputPin" />
                   <Pin Id="Cp2lo3CWQpIP0FCqUI4trT" Name="Result" Kind="OutputPin" />
+                  <Pin Id="BDFlsaAS3LXQAPBkFsg8ZI" Name="Style" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="723,429,105,19" Id="MB3CL1Dd99gMBe3thpYVCO">
                   <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl">
@@ -14710,16 +14719,6 @@
                   <Pin Id="EUutPsw5T97QDUxkBLylnO" Name="Value Changed" Kind="OutputPin" />
                   <Pin Id="BTCkl3C0rb5MxsxpuXHQZ3" Name="Result" Kind="OutputPin" />
                   <Pin Id="AUDQefkIHCOPVLvc4Clwa4" Name="State" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="909,360,57,26" Id="L30QAtdxKCBMvT3gz7557b">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements.ButtonStyle" LastSymbolSource="VL.Lib.UI.Widgets.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="ClassType" Name="ButtonStyle" />
-                    <Choice Kind="OperationCallFlag" Name="GetStyle" />
-                  </p:NodeReference>
-                  <Pin Id="RMvCSfTP8MVOOLS2c5bNaM" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="KTJwpItYiF9M1k6vodtu8R" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="HcisWm16brzMPHuwmpXrQE" Name="Style" Kind="OutputPin" />
                 </Node>
                 <ControlPoint Id="Sc3VcBv8bF8L3DZIkYtUDt" Bounds="911,333" />
                 <ControlPoint Id="So9YAafAgAZPFmP6j2cMyV" Bounds="49,294" />
@@ -14755,7 +14754,7 @@
                 <ControlPoint Id="EIJ1u7hKwRFLOpvhs7DIQk" Bounds="763,302" />
                 <ControlPoint Id="PdSYmrN8VYON2HZZ6QDoqm" Bounds="725,251" />
                 <ControlPoint Id="BzBjQZ7Rz9zLD8IRRmt2W0" Bounds="255,331" />
-                <ControlPoint Id="SocKJts9d7NOYQchKdSTmR" Bounds="556,348" />
+                <ControlPoint Id="SocKJts9d7NOYQchKdSTmR" Bounds="573,335" />
                 <ControlPoint Id="JV7Kbi5suowP9odBjDZHZo" Bounds="568,-12" />
                 <ControlPoint Id="Sc9fVh5AJYrPNfVEk2n71R" Bounds="747,270" />
                 <ControlPoint Id="ANsbz2mTJ9aNxcgeadiTB5" Bounds="860,521" />
@@ -15043,6 +15042,7 @@
                 <Pin Id="IqPx4JAuHyaMOhNTapR4IP" Name="Options" Kind="InputPin" />
                 <Pin Id="AAktdGxoMeEOOGT4e2BqH5" Name="Bounds" Kind="InputPin" Bounds="810,345" />
                 <Pin Id="Etx7iGW6jk3P62QBvTMXEZ" Name="Initial Value" Kind="InputPin" Bounds="746,328" />
+                <Pin Id="TFI2yLA1jRsNpPnhrIN755" Name="Button Style" Kind="InputPin" />
               </Patch>
               <Patch Id="QAMKvbhcHv5P1dskB7UwiD" Name="Update">
                 <Pin Id="CR24liLMOXpMoD7YWtedc7" Name="Output" Kind="OutputPin" />
@@ -15052,8 +15052,6 @@
                 <Fragment Id="GXxlSHDFqzlLuUT5RF4z01" Patch="QAMKvbhcHv5P1dskB7UwiD" Enabled="true" />
                 <Fragment Id="UdHceIjN3EtLFpP5mYB5iA" Patch="UkjBaoEXbNzNVE0DfEq90b" Enabled="true" />
               </ProcessDefinition>
-              <Link Id="FNXMnz5CPdqLylWjQX5kbL" Ids="HcisWm16brzMPHuwmpXrQE,J5sAZacEg6gLzkjPoOxz7W" />
-              <Link Id="Pots7jwcop8Mvo8C8WTF2u" Ids="Sc3VcBv8bF8L3DZIkYtUDt,RMvCSfTP8MVOOLS2c5bNaM" />
               <Link Id="PhGVAIMKJ6tPwekfx0DoMQ" Ids="NXLO1wN7u3FLi0hJH3IRBq,Sc3VcBv8bF8L3DZIkYtUDt" IsHidden="true" />
               <Link Id="NtEutZ0Hg4OO4Cbqp0TP1a" Ids="So9YAafAgAZPFmP6j2cMyV,E0rlLQCUYdeMUqlf0Km6Y9" />
               <Link Id="A9ZlkLjw40GNBop8i97GkA" Ids="O0hGJGhsE15PnQbzMknJDN,So9YAafAgAZPFmP6j2cMyV" IsHidden="true" />
@@ -15066,9 +15064,7 @@
               <Link Id="NiQZq5p4VFRMDEZp9PS37Z" Ids="O0hGJGhsE15PnQbzMknJDN,EIJ1u7hKwRFLOpvhs7DIQk" IsHidden="true" />
               <Link Id="PRJV1yrWuhUOGo6DQ9bcmO" Ids="EIJ1u7hKwRFLOpvhs7DIQk,RJiZxw3SICTM2EvOO9obpJ" />
               <Link Id="ID0lOJZ3C3uMXWKikxxo9s" Ids="IqPx4JAuHyaMOhNTapR4IP,PdSYmrN8VYON2HZZ6QDoqm" IsHidden="true" />
-              <Link Id="HdiklyW6QvZPaf4PLhsUG4" Ids="NXLO1wN7u3FLi0hJH3IRBq,BzBjQZ7Rz9zLD8IRRmt2W0" IsHidden="true" />
               <Link Id="HpuX5tGV4jVQUYRd7VLmVp" Ids="BzBjQZ7Rz9zLD8IRRmt2W0,QseWVAbx4QYQZAJR4wKgod" />
-              <Link Id="M8Baq53C8vwQZ6CcKYQXUD" Ids="NXLO1wN7u3FLi0hJH3IRBq,SocKJts9d7NOYQchKdSTmR" IsHidden="true" />
               <Link Id="TAsYcYNZYL4P5WgtYKT5PW" Ids="SocKJts9d7NOYQchKdSTmR,HXwEGKZJWSRMhu2Jt5tz6e" />
               <Link Id="DLo58R6NGv2NPA103ZT2Qt" Ids="AAktdGxoMeEOOGT4e2BqH5,JV7Kbi5suowP9odBjDZHZo" IsHidden="true" />
               <Link Id="OafUjPlPZVYMEEFitrXb5H" Ids="Sc9fVh5AJYrPNfVEk2n71R,VosLk74R3mZMizTH3FqkvQ" />
@@ -15116,6 +15112,9 @@
               <Link Id="T7ohPiRia9gLUPmJIeQ3fn" Ids="Re5KopKMqKWPUPCMYH8EOr,HWiMynbIMhHM3ASatRGc0h" />
               <Link Id="Kid5QAAqApiLAFNEho5IUs" Ids="PIG4yuEyHHCM1slDaHKK2c,MOChpzYgvwHN3PLkI8HFBT" />
               <Link Id="LPXHkwj7ShuPPCctc9Pgrj" Ids="SmCJjrdVVH4OJ66ymMZVwS,Ifava5wiahNNpf68EuZ0r5" />
+              <Link Id="GJmneHpAZycONAGF1AkdGy" Ids="TFI2yLA1jRsNpPnhrIN755,BzBjQZ7Rz9zLD8IRRmt2W0" IsHidden="true" />
+              <Link Id="EXi0Wlv5YH0OgT2U1aQac9" Ids="TFI2yLA1jRsNpPnhrIN755,SocKJts9d7NOYQchKdSTmR" IsHidden="true" />
+              <Link Id="EMGD86FvEhhOF8k6rHEMRK" Ids="Sc3VcBv8bF8L3DZIkYtUDt,J5sAZacEg6gLzkjPoOxz7W" />
             </Patch>
           </Node>
           <!--
