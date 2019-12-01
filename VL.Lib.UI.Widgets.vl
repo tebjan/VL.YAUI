@@ -14755,7 +14755,7 @@
                 <ControlPoint Id="PdSYmrN8VYON2HZZ6QDoqm" Bounds="725,251" />
                 <ControlPoint Id="BzBjQZ7Rz9zLD8IRRmt2W0" Bounds="255,331" />
                 <ControlPoint Id="SocKJts9d7NOYQchKdSTmR" Bounds="573,335" />
-                <ControlPoint Id="JV7Kbi5suowP9odBjDZHZo" Bounds="531,-49" />
+                <ControlPoint Id="JV7Kbi5suowP9odBjDZHZo" Bounds="570,-68" />
                 <ControlPoint Id="Sc9fVh5AJYrPNfVEk2n71R" Bounds="747,270" />
                 <ControlPoint Id="ANsbz2mTJ9aNxcgeadiTB5" Bounds="860,521" />
                 <Node Bounds="300,629,245,315" Id="QpnDy2FILTxPdsDX7gy49G">
@@ -14929,7 +14929,7 @@
                   <Pin Id="KFh3V34PX5xMsbddkDnKXU" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <ControlPoint Id="IIZHeBH2fyMONWeKt5sH1V" Bounds="407,590" />
-                <Node Bounds="529,-21,66,19" Id="EwWgKjFAlNcLBk9O2hbg6M">
+                <Node Bounds="568,-40,66,19" Id="EwWgKjFAlNcLBk9O2hbg6M">
                   <p:NodeReference LastCategoryFullName="UI.Rectangle" LastSymbolSource="VL.Lib.UI.Widgets.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SubdivideY (Rectangle)" />
@@ -14947,7 +14947,7 @@
                   </Pin>
                   <Pin Id="MjYLltHFbexO92iOdROpwf" Name="Rectangles" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="561,17,52,26" Id="P0sCOp8UmI7OLsnOVGXfzq">
+                <Node Bounds="600,-2,52,26" Id="P0sCOp8UmI7OLsnOVGXfzq">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -14962,7 +14962,7 @@
                   </Pin>
                   <Pin Id="VW4RmqY695TMiTvFfNLSHX" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="501,17,52,26" Id="Km3XgDcVLYZOok4JXrCUIL">
+                <Node Bounds="540,-2,52,26" Id="Km3XgDcVLYZOok4JXrCUIL">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -14977,7 +14977,7 @@
                   </Pin>
                   <Pin Id="N6Ns8ZfWCEnNLnGeBO4An3" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="373,89,66,19" Id="LwECEKcwQdIObIek7ZRDwn">
+                <Node Bounds="405,104,66,19" Id="LwECEKcwQdIObIek7ZRDwn">
                   <p:NodeReference LastCategoryFullName="UI.Rectangle" LastSymbolSource="VL.Lib.UI.Widgets.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SubdivideX (Rectangle)" />
@@ -15042,6 +15042,39 @@
                   </p:NodeReference>
                   <Pin Id="HWiMynbIMhHM3ASatRGc0h" Name="Input" Kind="StateInputPin" />
                   <Pin Id="GUmYzjMk13dL98U2e8KEqz" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="405,33,66,19" Id="DOUqPyr0HCbP9qNwOox2K8">
+                  <p:NodeReference LastCategoryFullName="UI.Rectangle" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SubdivideX (Rectangle)" />
+                  </p:NodeReference>
+                  <Pin Id="CkNUelbI9YyNp4SYdIQlgN" Name="Rectangles" Kind="InputPin" />
+                  <Pin Id="M7b71QRbbHsLnPUix1yuJL" Name="Spacing" Kind="InputPin" DefaultValue="0">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="VLvDsJsYy2PMFVaedfkLgB" Name="Count" Kind="InputPin" DefaultValue="2">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="OOs0I2yygUmOGIJGN9ZzCF" Name="Rectangles" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="405,66,52,26" Id="PDNBYNuRLP6QbI7ni71OJy">
+                  <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="GetSlice" />
+                    <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="TzFPXOnuYiuP6o8izCCAu6" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="OXgbP8cvO1rLwjwwq2nLIo" Name="Default Value" Kind="InputPin" />
+                  <Pin Id="C3OAxFsOhslPUBr01Eb60x" Name="Index" Kind="InputPin" DefaultValue="1">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="CvrsYipUhlhN50i5aFLjHV" Name="Result" Kind="OutputPin" />
                 </Node>
               </Canvas>
               <Patch Id="K4HnG5XaJwHPdibrCfKKYu" Name="Create" ParticipatingElements="LBb5mTnEDVzQcOMhdVAY6D,EDvPtb14vCmLKuoT5N33u4,BX5cHnzGLRbODboILSK7oS,LPXHkwj7ShuPPCctc9Pgrj">
@@ -15111,7 +15144,6 @@
               <Link Id="M1UgztE4qYrMycfz61tcFv" Ids="MjYLltHFbexO92iOdROpwf,HJVcPX0y1xJOii98DUAXZt" />
               <Link Id="Fuv2NlKNhDrOs2oorAlW9c" Ids="VW4RmqY695TMiTvFfNLSHX,P6nt21gY3wmL2g5BLIpecT" />
               <Link Id="RdsYatVp0ngLH5l87nRTI4" Ids="MjYLltHFbexO92iOdROpwf,GlTzzXFuvugMXBwv9i3YOY" />
-              <Link Id="UtZqBoIHPShLTi6TD4wPrP" Ids="N6Ns8ZfWCEnNLnGeBO4An3,U12TK3PCWcqQcatwj8Bgbi" />
               <Link Id="JgNXxJhnIwVQA8ehoOhs9l" Ids="SKdyJOnzXrsPJsMAv5DPIs,NKv5wrOdlbOLkoIdJqaMXN" />
               <Link Id="CUgEtjSZUXrQaNaxbNyCgs" Ids="SKdyJOnzXrsPJsMAv5DPIs,KseioO13OyjPsK6uZbS4JR" />
               <Link Id="JbVaxQebm7WP9pO9AqaKhE" Ids="UwM0aN25DsbM8TkhRocLEJ,JJIhWCk2Sj4PANhebuOsMk" />
@@ -15123,6 +15155,9 @@
               <Link Id="GJmneHpAZycONAGF1AkdGy" Ids="TFI2yLA1jRsNpPnhrIN755,BzBjQZ7Rz9zLD8IRRmt2W0" IsHidden="true" />
               <Link Id="EXi0Wlv5YH0OgT2U1aQac9" Ids="TFI2yLA1jRsNpPnhrIN755,SocKJts9d7NOYQchKdSTmR" IsHidden="true" />
               <Link Id="EMGD86FvEhhOF8k6rHEMRK" Ids="Sc3VcBv8bF8L3DZIkYtUDt,J5sAZacEg6gLzkjPoOxz7W" />
+              <Link Id="EIxtZjnyy2vOHksgMnk5e4" Ids="N6Ns8ZfWCEnNLnGeBO4An3,CkNUelbI9YyNp4SYdIQlgN" />
+              <Link Id="UGFPeZpBliWM46Kw4mCibG" Ids="OOs0I2yygUmOGIJGN9ZzCF,TzFPXOnuYiuP6o8izCCAu6" />
+              <Link Id="E0kcyH3FqHCNXRqMTSMk71" Ids="CvrsYipUhlhN50i5aFLjHV,U12TK3PCWcqQcatwj8Bgbi" />
             </Patch>
           </Node>
           <!--
