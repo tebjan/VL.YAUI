@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="EKLGVpIeN3MNQFDSU2rkh0" LanguageVersion="2019.1.0-0661-gd43aa25618" Version="0.128">
+<Document xmlns:p="property" Id="EKLGVpIeN3MNQFDSU2rkh0" LanguageVersion="2019.1.0-0959-g3a31ab0c51" Version="0.128">
   <Patch Id="SO1YgH3N6RaNuxOOTRV9Tf">
     <Canvas Id="Gvn6Kwgu0BtNBxwgsCgaEj" CanvasType="FullCategory">
       <Canvas Id="KOgWEEsT5buLPterInXbrw" Name="UI" Position="475,385">
@@ -14758,7 +14758,7 @@
                 <ControlPoint Id="JV7Kbi5suowP9odBjDZHZo" Bounds="570,-68" />
                 <ControlPoint Id="Sc9fVh5AJYrPNfVEk2n71R" Bounds="747,270" />
                 <ControlPoint Id="ANsbz2mTJ9aNxcgeadiTB5" Bounds="860,521" />
-                <Node Bounds="300,629,245,315" Id="QpnDy2FILTxPdsDX7gy49G">
+                <Node Bounds="303,629,237,315" Id="QpnDy2FILTxPdsDX7gy49G">
                   <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
                     <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" />
                     <Choice Kind="OperationCallFlag" Name="Do" />
@@ -14810,16 +14810,6 @@
                       <Pin Id="Fmo66skEMtXQPdowIY2ceV" Name="Options" Kind="OutputPin" />
                       <Pin Id="T97yeF7YOFJPb1z5hWULB6" Name="Value" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="454,756,79,26" Id="P2ZhVWPvwQ2L9HDcWdAAFl">
-                      <p:NodeReference LastCategoryFullName="UI.UIElements.DropDownOption" LastSymbolSource="VL.Lib.UI.Widgets.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="RecordType" Name="DropDownOption" />
-                        <Choice Kind="OperationCallFlag" Name="Split" />
-                      </p:NodeReference>
-                      <Pin Id="PnTxFnbnY8NLYZykmGb93A" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="VpnFj2WANVhPV6kQTJ9VOh" Name="Value" Kind="OutputPin" />
-                      <Pin Id="V4tW3IjWNLwOO9n8nSF3oz" Name="Index" Kind="OutputPin" />
-                    </Node>
                     <Node Bounds="386,898,72,26" Id="OJ20fOqfKSZM6bKHO4wvnV">
                       <p:NodeReference LastCategoryFullName="UI.UIElements.DropDownState" LastSymbolSource="VL.Lib.UI.Widgets.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -14831,9 +14821,19 @@
                       <Pin Id="Pp4Dgz3mJ4yOuclO4ZbJf9" Name="Value" Kind="InputPin" />
                       <Pin Id="FSdYP1g0hyoL2wRqqJFwux" Name="Output" Kind="StateOutputPin" />
                     </Node>
+                    <Node Bounds="460,775,52,26" Id="QusOALW8PQIPN9Z3zBIIzZ">
+                      <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="IndexOf" />
+                        <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="GIiPUiLH9KqPxMWSPh6mdk" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="PB0H1Em96wBMec6fPF6IKo" Name="Item" Kind="InputPin" />
+                      <Pin Id="OTY9783iSYQQB4n1DMvslW" Name="Result" Kind="OutputPin" />
+                    </Node>
                   </Patch>
                 </Node>
-                <Node Bounds="592,626,243,322" Id="UFcewJwBc1pNRn7jF5E67L">
+                <Node Bounds="592,626,238,322" Id="UFcewJwBc1pNRn7jF5E67L">
                   <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
                     <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" />
                     <Choice Kind="OperationCallFlag" Name="Do" />
@@ -14896,15 +14896,15 @@
                       <Pin Id="Rx63wPh2EJFPLfTSvQuWej" Name="Options" Kind="OutputPin" />
                       <Pin Id="IbsmU5lk3JyMAOrf0oS5An" Name="Value" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="744,756,79,26" Id="O1rIMZmHJddQXFUHG3ZIdP">
-                      <p:NodeReference LastCategoryFullName="UI.UIElements.DropDownOption" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                    <Node Bounds="738,766,52,26" Id="GjNNPo2WswMMElUs5cKNiW">
+                      <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="RecordType" Name="DropDownOption" />
-                        <Choice Kind="OperationCallFlag" Name="Split" />
+                        <Choice Kind="OperationCallFlag" Name="IndexOf" />
+                        <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
-                      <Pin Id="UfGtz3qMC0BN8c3HuJNBCt" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="JpnLNQtBcBYQT2jqxiESoN" Name="Value" Kind="OutputPin" />
-                      <Pin Id="PKS1jdqYCbwOw5k8nBOWcG" Name="Index" Kind="OutputPin" />
+                      <Pin Id="CBnhgPkdkLcOrEKUjMxBlJ" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="JWhJn8VcY4nPrcAgISujpA" Name="Item" Kind="InputPin" />
+                      <Pin Id="Tzejq3u3omoMChk3xP9ccg" Name="Result" Kind="OutputPin" />
                     </Node>
                   </Patch>
                 </Node>
@@ -15122,15 +15122,11 @@
               <Link Id="O6YlWElDugbO0KZEDGcj6r" Ids="ONQsx4dqdASLViDCmN6A5O,OOjqgTJ7MwkMmc4ajlg64W" />
               <Link Id="ARWMO9rdS3HNPsfq0hRkae" Ids="LWRrgbtEcAPNY5K9HmLHZG,O0GY8UVAdUqNtKhVRTT5G5" />
               <Link Id="KXpLJa99uI6PMDO4MW1hYC" Ids="Fmo66skEMtXQPdowIY2ceV,MdChbWg9fmHM8fx83cj9le" />
-              <Link Id="RTUtSEMY8cROvEE8XJJXjD" Ids="V4tW3IjWNLwOO9n8nSF3oz,GiJgIs9UfhhOmJCG3eMbrS" />
-              <Link Id="QBrLiMlwxAxOSw2Cr55qma" Ids="T97yeF7YOFJPb1z5hWULB6,PnTxFnbnY8NLYZykmGb93A" />
               <Link Id="M7383ugVOwfOt4dcyIAIJk" Ids="SXTge4D8AF7N3sNuHbSkr7,KPqKQ1pdABGP8Mj8R8dq4d" IsHidden="true" />
               <Link Id="OvWX4ELjHndPQpg2HMAg3s" Ids="HIo3lJ8lxFaNjql9PxPe1Q,BldQpdbpd06MkCaDObiCk9" />
               <Link Id="JIHCmSa6QD9OGsggyy2C8y" Ids="QUBql7SzuyLPbxFWEP8Huu,HLKDrHL0BokNr1UClz5T0K" />
               <Link Id="OPEO5mPUt84OucFxB9EZ2l" Ids="NG7VxvIopvaNM9rFfod5fX,KVDxAq8jFV0MbuDqlFvyCp" />
               <Link Id="UQjbdG3evQyO3smpCfNnDh" Ids="Rx63wPh2EJFPLfTSvQuWej,N63ZBEyU8vzLC2t6FGtaKA" />
-              <Link Id="MdfolqwbFY0OgDWUqmXayJ" Ids="PKS1jdqYCbwOw5k8nBOWcG,SoCZeBA4kfSMf5YcXdpDJb" />
-              <Link Id="DQimGAWI1LsL4iFrptCza4" Ids="IbsmU5lk3JyMAOrf0oS5An,UfGtz3qMC0BN8c3HuJNBCt" />
               <Link Id="PnXN4XfccuINJ3T7GEXvWp" Ids="ONQsx4dqdASLViDCmN6A5O,SM3fuZpbqxoOHaUUEl1ppP" />
               <Link Id="EDvPtb14vCmLKuoT5N33u4" Ids="UksNhLkeahqNvtelGBONqb,SZug82rJFGfOkw5s68WnEE" />
               <Link Id="QB5cXbvw730PydN5sTvNUj" Ids="GIyYxVFdX1KOgwMJDZqQ1u,ID7t9aGZoGhNl94EXvdv7u" />
@@ -15158,6 +15154,12 @@
               <Link Id="EIxtZjnyy2vOHksgMnk5e4" Ids="N6Ns8ZfWCEnNLnGeBO4An3,CkNUelbI9YyNp4SYdIQlgN" />
               <Link Id="UGFPeZpBliWM46Kw4mCibG" Ids="OOs0I2yygUmOGIJGN9ZzCF,TzFPXOnuYiuP6o8izCCAu6" />
               <Link Id="E0kcyH3FqHCNXRqMTSMk71" Ids="CvrsYipUhlhN50i5aFLjHV,U12TK3PCWcqQcatwj8Bgbi" />
+              <Link Id="GVwQkCKmwR2PCeDie4dc35" Ids="Rx63wPh2EJFPLfTSvQuWej,CBnhgPkdkLcOrEKUjMxBlJ" />
+              <Link Id="D36FtHAFnk0PYjS4SiF71Q" Ids="IbsmU5lk3JyMAOrf0oS5An,JWhJn8VcY4nPrcAgISujpA" />
+              <Link Id="FC72aMd9JVjNXbStN2VIlY" Ids="Tzejq3u3omoMChk3xP9ccg,SoCZeBA4kfSMf5YcXdpDJb" />
+              <Link Id="ByBUYGJ7yrcPRaDDYFVsIL" Ids="Fmo66skEMtXQPdowIY2ceV,GIiPUiLH9KqPxMWSPh6mdk" />
+              <Link Id="DcpWEWRfS8gNiAuSHKB38k" Ids="T97yeF7YOFJPb1z5hWULB6,PB0H1Em96wBMec6fPF6IKo" />
+              <Link Id="BOeqbMCEUsPPICk52MWtrw" Ids="OTY9783iSYQQB4n1DMvslW,GiJgIs9UfhhOmJCG3eMbrS" />
             </Patch>
           </Node>
           <!--
