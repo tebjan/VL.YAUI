@@ -1,5 +1,5 @@
 ﻿using System;
-using SharpDX;
+using Xenko.Core.Mathematics;
 
 namespace VL.Lib.UI
 {
@@ -28,7 +28,7 @@ namespace VL.Lib.UI
 
         public static RectangleF FromLTRB(float left, float top, float right, float bottom)
         {
-            return new RectangleF() { Left = left, Right = right, Top = top, Bottom = bottom };
+            return new RectangleF(left, top, right - left, bottom - top);
         }
 
         public static void GetNullableValue<T>(this T? input, T defaultValue, out bool success, out T value)
