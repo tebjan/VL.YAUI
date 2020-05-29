@@ -306,7 +306,7 @@
    </PACK>
    <LINK srcnodeid="202" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
    </LINK>
-   <NODE id="234" systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <NODE id="234" systemname="UITest (Value)" filename="vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="1965" top="2850" width="3735" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="0" width="2400" height="1800">
