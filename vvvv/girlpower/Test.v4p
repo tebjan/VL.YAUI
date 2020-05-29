@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="C:\Users\SPACEMUSIC\Desktop\SpaceMusic Releases\SpaceMusic\Program\Patches\vl\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="28" scrolly="0" locked="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
+   <PATCH nodename="H:\JHH_SpaceMusic\SpaceMusic\SpaceMusic\Program\Patches\vl\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" systemname="Test" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\Test.v4p" scrollx="45" scrolly="0" locked="0">
    <BOUNDS type="Window" left="875" top="5621" width="11403" height="11410">
    </BOUNDS>
-   <PACK Name="addonpack" Version="38.1.0">
+   <PACK Name="addonpack" Version="39.0.0">
    </PACK>
    <NODE id="19" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Input Value" visible="1" pintype="Output">
@@ -101,7 +101,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4789" top="6633" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="1386" top="574" width="18921" height="9583">
+   <BOUNDS type="Window" left="8040" top="465" width="20415" height="8295">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -164,18 +164,6 @@
    <PIN pinname="Far Plane" slicecount="1" values="10">
    </PIN>
    </NODE>
-   <NODE id="192" systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="1965" top="2850" width="3735" height="270">
-   </BOUNDS>
-   <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="118" srcpinname="Output 1" dstnodeid="192" dstpinname="Initialize">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="192" dstpinname="UI ResolutionXY">
-   </LINK>
    <LINK srcnodeid="2" srcpinname="Actual BackBuffer SizeXY" dstnodeid="18" dstpinname="Input Value">
    </LINK>
    <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="200">
@@ -186,8 +174,6 @@
    <PIN pinname="Device" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="200" srcpinname="Device" dstnodeid="192" dstpinname="Mouse">
-   </LINK>
    <NODE systemname="Keyboard (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Window)" componentmode="Hidden" id="201">
    <BOUNDS type="Node" left="3588" top="1838" width="100" height="100">
    </BOUNDS>
@@ -196,26 +182,28 @@
    <PIN pinname="Device" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="201" srcpinname="Device" dstnodeid="192" dstpinname="Keyboard">
-   </LINK>
    <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
    <BOUNDS type="Node" left="2850" top="900" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Maximum Foreground FPS" visible="1">
    </PIN>
+   <PIN pinname="Maximum Background FPS" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="202">
-   <BOUNDS type="Box" left="2850" top="360" width="795" height="240">
+   <BOUNDS type="Box" left="2670" top="6015" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2850" top="360" width="0" height="0">
+   <BOUNDS type="Node" left="2670" top="6015" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="60">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="15">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="202" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
@@ -316,4 +304,40 @@
    </PACK>
    <PACK Name="VVVV.Packs.Image" Version="0.2.0">
    </PACK>
+   <LINK srcnodeid="202" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
+   </LINK>
+   <NODE id="234" systemname="UITest (Value)" filename="C:\vvvv\PROJECTS\2017\13_VL_UI\VL.UI.CraftLie\vvvv\girlpower\vl\VVVV.2d.UITest.vl" nodename="UITestLayer (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="1965" top="2850" width="3735" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mouse" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Keyboard" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="UI ResolutionXY" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Initialize" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="118" srcpinname="Output 1" dstnodeid="234" dstpinname="Initialize">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="234" dstpinname="UI ResolutionXY">
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="Device" dstnodeid="234" dstpinname="Mouse">
+   </LINK>
+   <LINK srcnodeid="201" srcpinname="Device" dstnodeid="234" dstpinname="Keyboard">
+   </LINK>
    </PATCH>
