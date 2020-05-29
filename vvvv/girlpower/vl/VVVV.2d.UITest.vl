@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0661-gd43aa25618" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0959-g3a31ab0c51" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <DocumentDependency Id="JGGbSqtLN9OOZP219YsDvc" Location="../../../VL.UI.CraftLie.vl" />
@@ -765,7 +765,7 @@
                   <Pin Id="ARsac4N9232Mq5ckAFwQo3" Name="Output" Kind="OutputPin" />
                   <Pin Id="AWmEdevHG5mPH319AuTYGg" Name="All Values" Kind="OutputPin" />
                 </Node>
-                <Pad Id="GZKNoHhULIUQNeVLb4jl1J" Comment="Scaling" Bounds="180,508,33,38" ShowValueBox="true" isIOBox="true" Value="2, 2">
+                <Pad Id="GZKNoHhULIUQNeVLb4jl1J" Comment="Scaling" Bounds="180,508,33,38" ShowValueBox="true" isIOBox="true" Value="1, 1">
                   <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Vector2" />
                   </p:TypeAnnotation>
@@ -775,7 +775,7 @@
                     <Choice Kind="TypeFlag" Name="Vector2" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Pad Id="Cb5Enu3xcDyMK5tC4wVmlU" Comment="Offset" Bounds="92,449,51,38" ShowValueBox="true" isIOBox="true" Value="0, 0">
+                <Pad Id="Cb5Enu3xcDyMK5tC4wVmlU" Comment="Offset" Bounds="92,449,51,38" ShowValueBox="true" isIOBox="true" Value="-300, 0">
                   <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Vector2" />
                   </p:TypeAnnotation>
@@ -1206,7 +1206,7 @@
               <Pin Id="G7DIbJmBY9tPYBQOzpVWPC" Name="Foreground Color" Kind="InputPin" />
               <Pin Id="MpUqxkKfEPxMnbMDwi4QR2" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="QwA2fFFByVFOmu8bu1xBP3" Comment="Foreground Color" Bounds="331,793,143,26" ShowValueBox="true" isIOBox="true" Value="0.7000001, 0.5600001, 0.350000441, 1">
+            <Pad Id="QwA2fFFByVFOmu8bu1xBP3" Comment="Foreground Color" Bounds="331,793,143,26" ShowValueBox="true" isIOBox="true" Value="0.6000001, 0.6000001, 0.6000001, 1">
               <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="RGBA" />
               </p:TypeAnnotation>
@@ -1679,7 +1679,7 @@
               <Pin Id="E0Qrh1QYhzQM6bIZA4lGKK" Name="Text Color" Kind="InputPin" />
               <Pin Id="AKANYv4NOeSMNiggmHFsy7" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="PgILY8NI6HXMcU0kJXnUZI" Comment="Background Color" Bounds="1524,830,143,20" ShowValueBox="true" isIOBox="true" Value="0, 0.2359992, 0.59, 1">
+            <Pad Id="PgILY8NI6HXMcU0kJXnUZI" Comment="Background Color" Bounds="1524,830,143,20" ShowValueBox="true" isIOBox="true" Value="0, 0.1691997, 0.1799999, 1">
               <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="RGBA" />
               </p:TypeAnnotation>
@@ -1902,7 +1902,7 @@
                 </Node>
               </Patch>
             </Node>
-            <Pad Id="MOqo7TqYwytOMzkNt8PBPt" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="50">
+            <Pad Id="MOqo7TqYwytOMzkNt8PBPt" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="10">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -2884,7 +2884,7 @@
               <Pin Id="OeQKvWFU1whMAXBs23a6w6" Name="Children" Kind="InputPin" />
               <Pin Id="UfbTfvjKP04QJvro5dQCsl" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="MTk1hSFZ0F1M2Tu1rWGtjY" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="50">
+            <Pad Id="MTk1hSFZ0F1M2Tu1rWGtjY" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="10">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -3066,7 +3066,7 @@
               <Pin Id="OTrNgNlgEAOM6Sm9JvLWSu" Name="Children" Kind="InputPin" />
               <Pin Id="UH4k7QW1LbXOGc4BVcgWA6" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="NCP3pzHBax1PCISECyDDnu" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="50">
+            <Pad Id="NCP3pzHBax1PCISECyDDnu" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="10">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -3252,7 +3252,7 @@
               <Pin Id="ASrl2Q33qQOOGALP6USdvk" Name="Children" Kind="InputPin" />
               <Pin Id="VpOTYmmA4BNNwCCI9rxsZ6" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="IpKvCN9nlsVLt4oZiu8Bmf" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="50">
+            <Pad Id="IpKvCN9nlsVLt4oZiu8Bmf" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="10">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -3357,6 +3357,7 @@
                   <Pin Id="N28mDy7UJ8QPKsRua52YAr" Name="Id" Kind="InputPin" />
                   <Pin Id="ECNNUZrxT3pMC65xr220I7" Name="Bounds" Kind="InputPin" />
                   <Pin Id="FyaPGdnhUqJOUn4xwOQhL7" Name="Style" Kind="InputPin" />
+                  <Pin Id="TKKUxJmUGqlNuExefRSpNi" Name="Title" Kind="InputPin" />
                   <Pin Id="PNusl4Z0dCuLlmHCFgW2f2" Name="RaiseEvent" Kind="InputPin" />
                   <Pin Id="DWjqQCVtEfKOB3F0vusRhw" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="Of0hlr3RgviQbXuG5CdUD6" Name="Value Changed" Kind="OutputPin" />
@@ -3453,7 +3454,7 @@
               <Pin Id="JGw6o12Sbn2QXAOC8185MD" Name="Children" Kind="InputPin" />
               <Pin Id="QtErGmFVQVOMYVPgReP22h" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="LKk3rzQ5zzJP0CWjw3w1dr" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="2">
+            <Pad Id="LKk3rzQ5zzJP0CWjw3w1dr" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="10">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -3766,7 +3767,7 @@
               <Pin Id="HKISAlxYJnELgAWB0neWNa" Name="Children" Kind="InputPin" />
               <Pin Id="GYR61VP89GxO9PSinVMY8A" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="MAjHFz33qnPNu6PaDVTnEj" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="50">
+            <Pad Id="MAjHFz33qnPNu6PaDVTnEj" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="10">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -3856,6 +3857,7 @@
                   <Pin Id="BwP9Zr06gxhOvCTvR1Mp1j" Name="Options" Kind="InputPin" />
                   <Pin Id="TAtiJfppF38Myilwy8x3wO" Name="Initial Value" Kind="InputPin" />
                   <Pin Id="Bpv5YTtZPkvO7kmlYpRgmA" Name="Style" Kind="InputPin" />
+                  <Pin Id="OMpTqon5gNBM7Nw7M3F7KV" Name="Title" Kind="InputPin" />
                   <Pin Id="UAuHYdOQEEHPCvAClBSdc0" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="RS7TLI0w63PPFE3aGL9nL7" Name="Value Changed" Kind="OutputPin" />
                 </Node>
@@ -3950,6 +3952,11 @@
                   </Pin>
                   <Pin Id="TKpTp12wtjdNGAhhPuulMv" Name="Output" Kind="OutputPin" />
                 </Node>
+                <Pad Id="UyKpas7NtT1O7k3eP3QFnc" Comment="Title" Bounds="908,601,75,14" ShowValueBox="true" isIOBox="true" Value="Select By">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
               </Patch>
               <ControlPoint Id="QFq2s4pmCYXPXaxn1SK5w5" Bounds="427,820" Alignment="Bottom" />
               <ControlPoint Id="CAtr1EDlPb9OMub0aDOUhQ" Bounds="692,820" Alignment="Bottom" />
@@ -3962,7 +3969,7 @@
               <Pin Id="DwyRgqcdqSvPXCoBWFWPl9" Name="Children" Kind="InputPin" />
               <Pin Id="JyQg3SZ2wl2MpwxSWKXupw" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="GmfrDRcSWK6OEOxjBGTLlH" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="25">
+            <Pad Id="GmfrDRcSWK6OEOxjBGTLlH" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="10">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -3982,7 +3989,7 @@
               <Pin Id="J4Qgp6gjmoTLPW1IOBPmZE" Name="Options" Kind="InputPin" />
               <Pin Id="TMldvk0eP97MniwMluQOpb" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="Beq7jbiuwMSMMwjSCD8zae" Comment="" Bounds="804,66,163,20" ShowValueBox="true" isIOBox="true" Value="unit;Foo;Bar;VL;VVVV;Cool;UI">
+            <Pad Id="Beq7jbiuwMSMMwjSCD8zae" Comment="" Bounds="804,66,163,20" ShowValueBox="true" isIOBox="true" Value="Unit;Foo;Bar;VL;VVVV;Cool;UI">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -4091,6 +4098,7 @@
           <Link Id="NnHiXcIOLTwNo6pThgxr24" Ids="TKpTp12wtjdNGAhhPuulMv,Pgok1Hq2NDEPDmGNt3vQdt" />
           <Link Id="IKuFrQnAUZ5NM1QbqsJHsr" Ids="PrPIUGSHULoMqXnAG4STi8,Jf11LGCVvGaQQuFFKGvVjD" />
           <Link Id="DDmuMRgC7roNLWuzhOELBq" Ids="SymAX7V1RcvLJKOulnqiOC,PrPIUGSHULoMqXnAG4STi8" IsHidden="true" />
+          <Link Id="Tjwa0S97jc9PLxp6WTEPyP" Ids="UyKpas7NtT1O7k3eP3QFnc,OMpTqon5gNBM7Nw7M3F7KV" />
         </Patch>
       </Node>
       <!--
@@ -4230,7 +4238,7 @@
               <Pin Id="ExfyKvCktg0NyJeM87mv1s" Name="Children" Kind="InputPin" />
               <Pin Id="VuWL0WhN7UcPM2rrkWC4tt" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="JCJfCoVrlb5Neqljy0mTOl" Comment="Iteration Count" Bounds="360,318,24,19" ShowValueBox="true" isIOBox="true" Value="50">
+            <Pad Id="JCJfCoVrlb5Neqljy0mTOl" Comment="Iteration Count" Bounds="360,318,29,19" ShowValueBox="true" isIOBox="true" Value="10">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -4250,7 +4258,7 @@
               <Pin Id="JQhLUVfAU2QOEUoXGkaHuH" Name="Options" Kind="InputPin" />
               <Pin Id="UJdkB69kjQmOKVqPweTKba" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="SdnH4L7CAGTMYugdd11ujX" Comment="" Bounds="804,66,163,20" ShowValueBox="true" isIOBox="true" Value="unit;VL;VVVV;Cool;UI">
+            <Pad Id="SdnH4L7CAGTMYugdd11ujX" Comment="" Bounds="804,66,163,20" ShowValueBox="true" isIOBox="true" Value="Unit;VL;VVVV;Cool;UI">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
