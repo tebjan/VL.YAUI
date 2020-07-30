@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="MZmd92n0x8tLLBfKYOnxOx" LanguageVersion="2019.1.0-0661-gd43aa25618" Version="0.128">
+<Document xmlns:p="property" Id="MZmd92n0x8tLLBfKYOnxOx" LanguageVersion="2020.1.6.171" Version="0.128">
   <Patch Id="AXcrkz7wtuiLTLQMfXYFvQ">
     <Canvas Id="UNxfqzqFZ0sNZX8LT3rUat" CanvasType="FullCategory">
       <Canvas Id="PgouWSs0fSJLX5ikOVnKO2" Name="UI" Position="180,274">
@@ -46,9 +46,7 @@
                 <Pin Id="PCbhQHyDgEsNvQwTTAEAh4" Name="Offset" Kind="InputPin" />
                 <Pin Id="IuTWH4qOXpUM9DHiNe746l" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="JHHCZdEev4FP9mhVQCZy6k" SlotId="NTVn1A2ozjkMJGhD3Bsfka" Bounds="1001,491">
-                <p:ValueBoxSettings />
-              </Pad>
+              <Pad Id="JHHCZdEev4FP9mhVQCZy6k" SlotId="NTVn1A2ozjkMJGhD3Bsfka" Bounds="1001,491" />
               <Node Bounds="999,533,83,22" Id="S2yWfqTs7lWLhh8S1x91ep">
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -71,9 +69,7 @@
                 <Pin Id="CIvkuY9frBDMZVevPIRk8z" Name="Elements" Kind="InputPin" />
                 <Pin Id="QnioxPV7tTkPD8xIwucymm" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="JxsDtnY690pN2pr3T61RfD" SlotId="NTVn1A2ozjkMJGhD3Bsfka" Bounds="1000,307">
-                <p:ValueBoxSettings />
-              </Pad>
+              <Pad Id="JxsDtnY690pN2pr3T61RfD" SlotId="NTVn1A2ozjkMJGhD3Bsfka" Bounds="1000,307" />
               <ControlPoint Id="GiGPgxbKs9SPxAVcL6qTDs" Bounds="1077,309" />
               <Node Bounds="499,585,56,19" Id="OKvzKnqKxxyOvC3tyqhqSB">
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
@@ -721,13 +717,9 @@
                 <Pin Id="HwBQxA1Mrq5MVHjtPg2OfU" Name="Element" Kind="InputPin" />
                 <Pin Id="Q0sdZ4kuQ3mLkSZsmA5U9U" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="Oqy0YAxbXPUQBQQQMrhWSB" SlotId="G3FLapzKbt6MUAQydjP8fx" Bounds="524,-30">
-                <p:ValueBoxSettings />
-              </Pad>
+              <Pad Id="Oqy0YAxbXPUQBQQQMrhWSB" SlotId="G3FLapzKbt6MUAQydjP8fx" Bounds="524,-30" />
               <ControlPoint Id="V8chd2rWloIPlzptceYnzC" Bounds="599,-30" />
-              <Pad Id="EOY3ZBkwMoPNtPhyrB10Ak" SlotId="G3FLapzKbt6MUAQydjP8fx" Bounds="522,106">
-                <p:ValueBoxSettings />
-              </Pad>
+              <Pad Id="EOY3ZBkwMoPNtPhyrB10Ak" SlotId="G3FLapzKbt6MUAQydjP8fx" Bounds="522,106" />
               <Node Bounds="520,152,99,22" Id="OMRnHWrrfMKN5cTcdESr3B">
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -840,9 +832,7 @@
                 <Pin Id="HqYF5G3T9rYLdl8t3VWE0V" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="Nk71keCeGBJOmsKikJbRyg" Name="Result" Kind="OutputPin" />
               </Node>
-              <Pad Id="E64bcnTk1gDLQUCedNcjUd" SlotId="G3FLapzKbt6MUAQydjP8fx" Bounds="529,277">
-                <p:ValueBoxSettings />
-              </Pad>
+              <Pad Id="E64bcnTk1gDLQUCedNcjUd" SlotId="G3FLapzKbt6MUAQydjP8fx" Bounds="529,277" />
               <ControlPoint Id="BZGUQmqHBO5NHiTRpNiaX9" Bounds="589,358" />
               <Node Bounds="238,52,85,22" Id="LoS6lqFOkP5QTX9zg2WErw">
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
@@ -876,9 +866,7 @@
                 <Pin Id="HG4lqbCBYuSNrWPraXqNs4" Name="Elements" Kind="InputPin" />
                 <Pin Id="ObYMKZQtDyoQdcgjByv1c3" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="TTo0Bw7uwtdQcee5bWlnuI" SlotId="G3FLapzKbt6MUAQydjP8fx" Bounds="765,-34">
-                <p:ValueBoxSettings />
-              </Pad>
+              <Pad Id="TTo0Bw7uwtdQcee5bWlnuI" SlotId="G3FLapzKbt6MUAQydjP8fx" Bounds="765,-34" />
               <ControlPoint Id="E8XUcC1YApLLTs2Sh5zhaK" Bounds="842,-32" />
               <Node Bounds="2,204,86,22" Id="LIEzMMTXbSFMFWkoPDLQ7l">
                 <p:NodeReference LastCategoryFullName="UI.Controller" LastSymbolSource="VL.UI.CraftLie.vl">
@@ -1983,7 +1971,6 @@
                 <p:TypeAnnotation LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
                   <Choice Kind="TypeFlag" Name="UILayerCraftLie" />
                 </p:TypeAnnotation>
-                <p:ValueBoxSettings />
               </Pad>
               <ControlPoint Id="MyamzvBrEK5QZI8C61xZp2" Bounds="1091,-13" />
               <ControlPoint Id="L7LTVJ7z9r4ORXvDWrcDCy" Bounds="1092,94" />
@@ -3088,6 +3075,6 @@
     </Node>
   </Patch>
   <PlatformDependency Id="L4EJZbpUy2ZNd81lH87LuR" Location="./lib/VL.Lib.UI.dll" />
-  <NugetDependency Id="PPbh2AtviWXLfCFe27H4H5" Location="VL.CoreLib" Version="0.61.9-g682f86826f" />
-  <NugetDependency Id="JiFgJ9xCCbdMYLhl68fRLZ" Location="CraftLie" Version="1.1.0" />
+  <NugetDependency Id="PPbh2AtviWXLfCFe27H4H5" Location="VL.CoreLib" Version="2020.1.6" />
+  <NugetDependency Id="JiFgJ9xCCbdMYLhl68fRLZ" Location="CraftLie" Version="1.5.1" />
 </Document>
