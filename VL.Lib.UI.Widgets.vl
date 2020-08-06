@@ -990,6 +990,9 @@
               <TypeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
                 <Choice Kind="MutableInterfaceType" Name="IUIElement" />
               </TypeReference>
+              <TypeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="IRCPSettings" />
+              </TypeReference>
             </p:Interfaces>
             <Patch Id="GPFicvEJpfGQafKU3VDlLD">
               <Canvas Id="CnxhY4NGK98MTGWWbvDC9U" CanvasType="Group">
@@ -2371,6 +2374,9 @@
               <TypeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
                 <Choice Kind="MutableInterfaceType" Name="IUIElement" />
               </TypeReference>
+              <TypeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="IRCPSettings" />
+              </TypeReference>
             </p:Interfaces>
             <Patch Id="IN5bbUhaqwCLjn0577I48w">
               <Canvas Id="S5LWBKsuUwMPhm9HDlMnDF" CanvasType="Group">
@@ -2743,6 +2749,9 @@
                 </Node>
                 <Pad Id="Oxkp7K9bjsiPw7Yq3qpgFT" SlotId="MOgEyXrgZOzPdoW2QK5cjh" Bounds="-40,158" />
                 <ControlPoint Id="Sh4re0jjdFHODUr9gFkksv" Bounds="-41,76" />
+                <Pad Id="Lu7FYxCTBBePxaEHFg0bTb" SlotId="PPfP6CevqGHPzpiOAToalt" Bounds="1360,154" />
+                <ControlPoint Id="NBYrP8MpZ4aOYjJWiNrQ6u" Bounds="1356,64" />
+                <ControlPoint Id="L1SY5SCTxMWMTNJZNB6IJR" Bounds="1361,207" />
               </Canvas>
               <Patch Id="VQ1QeewdftTN7AnOnVo8wn" Name="Create" ParticipatingElements="VS24lErFnmpL7lG2UzLlIq,CfZZOz4LIFvNPDVyv5qxac">
                 <Pin Id="DjIDLQdvz1SLPjLHwe5BQ0" Name="Initial Value" Kind="InputPin" />
@@ -2750,6 +2759,7 @@
                 <Pin Id="Q3P5LMvG79RLlO4S1QlWTs" Name="Bounds" Kind="InputPin" />
                 <Pin Id="Akk7J3s0PIVPhKFSurn7bq" Name="Style" Kind="InputPin" />
                 <Pin Id="K29fZYItSM6LsTMQ47VwMC" Name="Text" Kind="InputPin" />
+                <Pin Id="QjA6L537J5kPgmPxzM3jny" Name="RCP Settings" Kind="InputPin" Bounds="2428,24" />
               </Patch>
               <Patch Id="KXo27YibdTwPix8dmNh9B9" Name="Update" />
               <ProcessDefinition Id="IIocuzGyjgNMXNk8F5lGkV" HasStateOut="true">
@@ -2776,6 +2786,7 @@
                 <Fragment Id="UblAlMbAcaePNzCDTjLDjY" Patch="Ns7PT4L0VsBOZJ3sECDiU1" />
                 <Fragment Id="E2umzCV71KVMUtPd6fY0v4" Patch="RozKm80o1KHO6bZiNh1YK7" />
                 <Fragment Id="N0ZaR8lKXyXOiRT1EemwbO" Patch="Cr3PF8KPrmGOfpgTyjpk2a" Enabled="true" />
+                <Fragment Id="LFblOkd1vL2P4eScggSYnU" Patch="JBPBczlpnOiPKWJcPQC96U" />
               </ProcessDefinition>
               <Patch Id="B7QIeZ8j1zXL2ya13HWB37" Name="Unfocus" />
               <Patch Id="GyhXKkfP2GILzp4e3P18WF" Name="GetChildren">
@@ -2976,6 +2987,18 @@
               <Link Id="HpVIzppNvTjMIrrTWOWtwR" Ids="DjIDLQdvz1SLPjLHwe5BQ0,Sh4re0jjdFHODUr9gFkksv" IsHidden="true" />
               <Link Id="U7K1rS11kIbOZr0mXoGO8N" Ids="EvLCQ25ztaUOrhKAzBqg7T,EuK8ayY9PFBMCaBCsDkBvi" />
               <Link Id="QrbSxld85HaO7arUFSQ0SD" Ids="MGiJRbky765O413aytu7OF,G2hm35zSLUGM1R2RWL1BXx" />
+              <Slot Id="PPfP6CevqGHPzpiOAToalt" Name="RCP Settings">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="RCPSettings" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Patch Id="JBPBczlpnOiPKWJcPQC96U" Name="GetRCPSettings">
+                <Pin Id="QlVLgi5pfucNnE5hPIcKQ9" MergeId="141834" Name="RCP Settings" Kind="OutputPin" />
+              </Patch>
+              <Link Id="N3SBvBB7yEwLCyrleHRJLi" Ids="NBYrP8MpZ4aOYjJWiNrQ6u,Lu7FYxCTBBePxaEHFg0bTb" />
+              <Link Id="L05g6loT58YMfVqMz7QXy7" Ids="QjA6L537J5kPgmPxzM3jny,NBYrP8MpZ4aOYjJWiNrQ6u" IsHidden="true" />
+              <Link Id="HvZblY13Ak9Mkv0MrZPePG" Ids="Lu7FYxCTBBePxaEHFg0bTb,L1SY5SCTxMWMTNJZNB6IJR" />
+              <Link Id="BiM1mVCw27eMBf76deBdCY" Ids="L1SY5SCTxMWMTNJZNB6IJR,QlVLgi5pfucNnE5hPIcKQ9" IsHidden="true" />
             </Patch>
           </Node>
           <!--
@@ -8265,6 +8288,9 @@
               <TypeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
                 <Choice Kind="MutableInterfaceType" Name="IUIElement" />
               </TypeReference>
+              <TypeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="IRCPSettings" />
+              </TypeReference>
             </p:Interfaces>
             <Patch Id="PEtyY11k25LOwfXSgTE7Zj">
               <Canvas Id="H8lhOI3MFAfNgLn27QKN1h" CanvasType="Group">
@@ -8723,6 +8749,9 @@
                 <ControlPoint Id="OKgryjqlx3UPkaEReJyP5V" Bounds="456,965" />
                 <Pad Id="BEImxYCCl3OOCHZ7ttjhXP" Bounds="454,991" />
                 <ControlPoint Id="DCA9E0kFC2TOWQWPJV6dGn" Bounds="970,154" />
+                <Pad Id="S2BB7nbSHG5Of23lKqJsju" SlotId="QfNKdFXMjAGN9Qjk9gi05F" Bounds="1308,106" />
+                <ControlPoint Id="BzCyOG6tm4tOHQnKLchpRn" Bounds="1304,16" />
+                <ControlPoint Id="V3wEZCOWZwbLDLYN4iXgNb" Bounds="1309,159" />
               </Canvas>
               <Patch Id="EkmVboFrdnsLZKINjkKo1q" Name="Create" ParticipatingElements="HvWBi107dtoPa0GaLKvZSs,FokfUltbv8lNc9T4HZdGrc">
                 <Pin Id="JxB7DKjlGIzNxOs8UFKNpg" Name="Initial Value" Kind="InputPin" />
@@ -8732,6 +8761,7 @@
                 <Pin Id="PfcxUJF7MNcMCzqmZdplPB" Name="Text" Kind="InputPin" />
                 <Pin Id="ONqxE3kDB7qM0fxJG86uOy" Name="Show Arrow" Kind="InputPin" />
                 <Pin Id="VzMjfRp4rbcPWXdEv2K859" Name="Is Right Arrow" Kind="InputPin" Bounds="451,1001" />
+                <Pin Id="LSBO7xDGOSZMQzd2ZqX3Dx" Name="RCP Settings" Kind="InputPin" Bounds="2428,24" />
               </Patch>
               <Patch Id="AlMoDzWvnJzNgTUpCyqwsm" Name="Update" />
               <ProcessDefinition Id="ILdvs7J22B3ONcvLjOm5wx" HasStateOut="true">
@@ -8759,6 +8789,7 @@
                 <Fragment Id="PC1SyDUBgeyOKqffVSWZWb" Patch="DoC8XKyZpXyMwbrHet8oqD" />
                 <Fragment Id="FoJbrWVzgXAOhJrP4M8yDN" Patch="SFu6s9BdlyMNJpSI7mTt7v" Enabled="true" />
                 <Fragment Id="OGkhLdNI8ZcLgKzevPok7I" Patch="CpepXpWMewWNkS4PTZ5p4l" Enabled="true" />
+                <Fragment Id="IJf6pfZnSNcOQALPDT7L1K" Patch="A7NApqNKlydNaDYGQmoyOw" />
               </ProcessDefinition>
               <Patch Id="VLwpuocSkW0Melm0z0sg9I" Name="Unfocus" />
               <Patch Id="NwfKSxhatcnN3CbIdtBGHK" Name="GetChildren">
@@ -8980,6 +9011,18 @@
               </Patch>
               <Link Id="GdaJXaOanCdOCRcHE8GKrn" Ids="CNZszY0WkikNkaJLkI7Jj2,JzyWsqZvf5nQKkT5HsjzG6" />
               <Link Id="SuopzG1U5hzLCXqT0bEYgQ" Ids="P1oYTqlQOXvPe4NraK35kr,RpsvwZne6nPMrHHHR7h2Nb" />
+              <Slot Id="QfNKdFXMjAGN9Qjk9gi05F" Name="RCP Settings">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="RCPSettings" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Patch Id="A7NApqNKlydNaDYGQmoyOw" Name="GetRCPSettings">
+                <Pin Id="Me9aQ4Dc9MaMzEQpV5iaQ6" MergeId="141834" Name="RCP Settings" Kind="OutputPin" />
+              </Patch>
+              <Link Id="HzTHzaZNKIOOWkbyGIXIg9" Ids="BzCyOG6tm4tOHQnKLchpRn,S2BB7nbSHG5Of23lKqJsju" />
+              <Link Id="GJcs7kevXmUPIT3SMVaCt7" Ids="LSBO7xDGOSZMQzd2ZqX3Dx,BzCyOG6tm4tOHQnKLchpRn" IsHidden="true" />
+              <Link Id="KHm0Q5Z7BTXMdHHZ2k9AZG" Ids="S2BB7nbSHG5Of23lKqJsju,V3wEZCOWZwbLDLYN4iXgNb" />
+              <Link Id="Kp6aap7F14DO9vaTW50sYg" Ids="V3wEZCOWZwbLDLYN4iXgNb,Me9aQ4Dc9MaMzEQpV5iaQ6" IsHidden="true" />
             </Patch>
           </Node>
           <!--
@@ -9264,6 +9307,9 @@
             <p:Interfaces>
               <TypeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
                 <Choice Kind="MutableInterfaceType" Name="IUIElement" />
+              </TypeReference>
+              <TypeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="IRCPSettings" />
               </TypeReference>
             </p:Interfaces>
             <Patch Id="BiK122lChRnMYwyGJzcYwr">
@@ -10441,6 +10487,9 @@
                     <Choice Kind="TypeFlag" Name="Vector2" />
                   </p:TypeAnnotation>
                 </Pad>
+                <Pad Id="KDGyCedCbJuL77d5du7Bev" SlotId="DVxljd7FYHUPCoBIBtOKhD" Bounds="1546,161" />
+                <ControlPoint Id="CtbCAYq1HuMOvil0AINeRL" Bounds="1542,71" />
+                <ControlPoint Id="U3N2dJgr1CsNe3HTvoEvvm" Bounds="1547,214" />
               </Canvas>
               <Patch Id="L5uii6yum4qQOciBJcs7lB" Name="Create" ParticipatingElements="EBwo0qnIjTrQLImPH2O6sQ,JpvPpzVbQFAM74Xsj3MeX3">
                 <Pin Id="R7HTUITZBFmN7rNhVPVFFE" Name="Options" Kind="InputPin" Bounds="1077,36" />
@@ -10449,6 +10498,7 @@
                 <Pin Id="U7PSYM1s5cpMWxeGbdYSyh" Name="Bounds" Kind="InputPin" />
                 <Pin Id="JCyIA8ymWCAMXnI4qwd1q2" Name="Style" Kind="InputPin" />
                 <Pin Id="DNIXapmkIMeNQhQnGSSWLE" Name="Title" Kind="InputPin" />
+                <Pin Id="KC4TQGFMG74LOhjVZcE7ND" Name="RCP Settings" Kind="InputPin" Bounds="2428,24" />
               </Patch>
               <Patch Id="NEnYY1J3gKrMIOteVfsEe2" Name="Update" />
               <ProcessDefinition Id="EcLckBKpTgKPvDC74MrXpu" HasStateOut="true">
@@ -10479,6 +10529,7 @@
                 <Fragment Id="Cs4hebLtC3LLfR9QpTm8TJ" Patch="HxPPKqp22X3LbaMi62Bk3P" Enabled="true" />
                 <Fragment Id="PdRON67boYDMsHHaVhZCr8" Patch="FDckA69MQL1MEklPt498g9" Enabled="true" />
                 <Fragment Id="Nat4iciCkjyPaGywnaTdiW" Patch="JWnqY4UD6d4OGCt4rLFJSH" />
+                <Fragment Id="LWzMNdvXQdiLZjfhXokPA3" Patch="RALvnznhoSGPxlQKWU30h0" />
               </ProcessDefinition>
               <Patch Id="RGWO1U88MrUN23IYYF3Z7W" Name="Unfocus" />
               <Patch Id="DkXU5WJzNffN0mpAxI5GYT" Name="GetChildren">
@@ -10774,6 +10825,18 @@
               <Link Id="Fr8yNdTImIwLpWvSiu3kHj" Ids="UQQFjuxfRWYOWFJkhaAiO9,QkBubTBkbjSO09aznnbWFX" />
               <Link Id="ALNOtDSHQmRPAFFf7NP4MP" Ids="Pu0zEQylRKgQVXW9Hnby96,CR2o5YZ5rbEPYqeTa12SYU" />
               <Link Id="LDBVVRxE41GNFeTbUBI6yu" Ids="AWOPs2dcy09N3RfVtO7HyN,PrMUa7NoMirMejm8S3SUlg" />
+              <Slot Id="DVxljd7FYHUPCoBIBtOKhD" Name="RCP Settings">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="RCPSettings" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Patch Id="RALvnznhoSGPxlQKWU30h0" Name="GetRCPSettings">
+                <Pin Id="DxoXVarL9e5L6bM34sO0bg" MergeId="146148" Name="RCP Settings" Kind="OutputPin" />
+              </Patch>
+              <Link Id="LVpqMnmPHt7NLgFBVHFJmJ" Ids="CtbCAYq1HuMOvil0AINeRL,KDGyCedCbJuL77d5du7Bev" />
+              <Link Id="VbGixA98Y8xOUa0q9ubnIV" Ids="KC4TQGFMG74LOhjVZcE7ND,CtbCAYq1HuMOvil0AINeRL" IsHidden="true" />
+              <Link Id="QMi6yBFN6pqNhypBJkMwgb" Ids="KDGyCedCbJuL77d5du7Bev,U3N2dJgr1CsNe3HTvoEvvm" />
+              <Link Id="GM7s4hHSFWjMs68tOid2VL" Ids="U3N2dJgr1CsNe3HTvoEvvm,DxoXVarL9e5L6bM34sO0bg" IsHidden="true" />
             </Patch>
           </Node>
           <!--
@@ -13579,6 +13642,7 @@
                       <Choice Kind="TypeFlag" Name="String" />
                     </p:TypeAnnotation>
                   </Pin>
+                  <Pin Id="VH8gDNH5QqNLXRNRnKWv66" Name="RCP Settings" Kind="InputPin" />
                   <Pin Id="SmCJjrdVVH4OJ66ymMZVwS" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="LM2Wv4gkEKvQIfpF1WSGxY" Name="Value Changed" Kind="OutputPin" />
                   <Pin Id="MqlJ26S5GdYNjlDQqDWSru" Name="Result" Kind="OutputPin" />
@@ -13608,6 +13672,7 @@
                       <Choice Kind="TypeFlag" Name="String" />
                     </p:TypeAnnotation>
                   </Pin>
+                  <Pin Id="LovGaGJF7yeOI4onCn0OTz" Name="RCP Settings" Kind="InputPin" />
                   <Pin Id="PIG4yuEyHHCM1slDaHKK2c" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="UksNhLkeahqNvtelGBONqb" Name="Value Changed" Kind="OutputPin" />
                   <Pin Id="Cp2lo3CWQpIP0FCqUI4trT" Name="Result" Kind="OutputPin" />
@@ -13625,6 +13690,7 @@
                   <Pin Id="P6nt21gY3wmL2g5BLIpecT" Name="Bounds" Kind="InputPin" />
                   <Pin Id="J5sAZacEg6gLzkjPoOxz7W" Name="Style" Kind="InputPin" />
                   <Pin Id="LLmQbNOOjZYONnKlL2DMrx" Name="Title" Kind="InputPin" />
+                  <Pin Id="JcCWKtpWtPvOP0hvfRT3CF" Name="RCP Settings" Kind="InputPin" />
                   <Pin Id="SdDNNu3LdPaLiMmLAdXiah" Name="RaiseEvent" Kind="ApplyPin" />
                   <Pin Id="ONQsx4dqdASLViDCmN6A5O" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="EUutPsw5T97QDUxkBLylnO" Name="Value Changed" Kind="OutputPin" />
@@ -16943,6 +17009,32 @@
               <Link Id="VXHxUgVjSNiL9UEZmVUAJw" Ids="OQHiByJrjztMarUn9rSGUf,HiILYWzvD85NYDFetI33B9" />
               <Link Id="SBzMka8LKIHLIciWI3UsJb" Ids="BUaGIiTM2DhN2Bz4pSuMGF,NeR4e6Knxs0LHKWbOgGHpU" IsHidden="true" />
               <Link Id="NCwiWbaUTQBNe0RpII6byk" Ids="HiILYWzvD85NYDFetI33B9,BUaGIiTM2DhN2Bz4pSuMGF" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ IRCPSettings ************************
+
+-->
+          <Node Name="IRCPSettings" Bounds="1307,599" Id="GnizY9CPOjUOigvSNKCYIn">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+              <Choice Kind="InterfaceDefinition" Name="Interface" />
+            </p:NodeReference>
+            <Patch Id="F1X2K30PUSxPub3vFTZB1O">
+              <Canvas Id="ViKarDSIXoAQb1JfPXdjW8" CanvasType="Group">
+                <ControlPoint Id="BNZVxU8aOP3P3FxM0cO56R" Bounds="828,435" />
+              </Canvas>
+              <ProcessDefinition Id="G147c4UOS8kMZcd1COoGx9" IsHidden="true">
+                <Fragment Id="MViZqJPAvDGOA016WKVPlJ" Patch="Lf1P2924P6BLI6rgufMdyM" />
+              </ProcessDefinition>
+              <Patch Id="Lf1P2924P6BLI6rgufMdyM" Name="GetRCPSettings">
+                <Pin Id="GaguKenbnmdMKRrIiRkoqv" MergeId="141834" Name="RCP Settings" Kind="OutputPin">
+                  <p:TypeAnnotation>
+                    <Choice Kind="TypeFlag" Name="RCPSettings" />
+                  </p:TypeAnnotation>
+                </Pin>
+              </Patch>
+              <Link Id="BECVv2fW40XMANfSp0uMGB" Ids="BNZVxU8aOP3P3FxM0cO56R,GaguKenbnmdMKRrIiRkoqv" IsHidden="true" />
             </Patch>
           </Node>
         </Canvas>
@@ -24798,5 +24890,5 @@
   <PlatformDependency Id="TeLZkEVuXdCLnfndRD4MfX" Location="mscorlib" />
   <DocumentDependency Id="GGpWmVOQ9ZGOjIvjgHp1oj" Location="./Typewriter.vl" />
   <NugetDependency Id="Riv0eojVKVJLW9Ple69mtz" Location="VL.RCP" Version="0.2.2-alpha" />
-  <NugetDependency Id="K1rolAGLjF7PKVgZgHgpSV" Location="RCPSharp" Version="0.2.5-alpha" />
+  <NugetDependency Id="K1rolAGLjF7PKVgZgHgpSV" Location="RCPSharp" Version="0.2.11-alpha" />
 </Document>
