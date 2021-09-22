@@ -1147,6 +1147,9 @@
                 <Pin Id="PjmEAMUCl57OXCLnWAnTqO" Name="Scalar" Kind="InputPin" />
                 <Pin Id="OeMpjKi0c3CQCEcrkPbzIr" Name="Output" Kind="OutputPin" />
               </Node>
+              <Pad Id="VdJfhygpCtcOSvGLwT8xO7" Comment="" Bounds="594,368,190,132" ShowValueBox="true" isIOBox="true">
+                <p:Value />
+              </Pad>
             </Canvas>
             <ProcessDefinition Id="Clc07B7MEVtMLtKpVkLS9H">
               <Fragment Id="Ml7ncaoOreEPrLcl8FIjXw" Patch="V2GjSVhGd8KLDEmMhB38U9" Enabled="true" />
@@ -1208,6 +1211,7 @@
             </Patch>
             <Patch Id="LTlBqaccNGFOBuGQtMzjng" Name="AddElement" />
             <Patch Id="VGA7ISTD1IpPUrJXwUpg9S" Name="RemoveElement" />
+            <Link Id="BKNYvpvbuDdOk93zq7roI5" Ids="VPsTGlvxfpUMvUBKQu0E6N,VdJfhygpCtcOSvGLwT8xO7" />
           </Patch>
         </Node>
         <!--
