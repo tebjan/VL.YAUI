@@ -4,7 +4,7 @@
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <DocumentDependency Id="JGGbSqtLN9OOZP219YsDvc" Location="../../../VL.UI.CraftLie.vl" />
   <NugetDependency Id="HB3KsA0VJfPMJQjS8l6rnu" Location="CraftLie" Version="1.0.2" />
-  <DocumentDependency Id="NXeRtIqN3rNNsj8kxlOOP4" Location="../../../VL.Lib.UI.Widgets.vl" />
+  <DocumentDependency Id="NXeRtIqN3rNNsj8kxlOOP4" Location="../../../VL.YAUI.Widgets.vl" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Value" CanvasType="FullCategory">
       <!--
@@ -576,7 +576,7 @@
                 <ControlPoint Id="GrWgqALSSzMPPsifnkm2B3" Bounds="1511,173" />
                 <ControlPoint Id="QIoiC3s85QCPCADapkUb9o" Bounds="1512,572" />
                 <Node Bounds="1509,208,148,22" Id="BOaiWRxNcLmOPK4x977ATn">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements.UISubject" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                  <p:NodeReference LastCategoryFullName="UI.UIElements.UISubject" LastSymbolSource="VL.YAUI.Widgets.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SplitUINotificationCast" />
                   </p:NodeReference>
@@ -614,7 +614,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="1510,436,80,96" Id="T5JB5zlnCgKOkYgoejjCEC">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements.Slider" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                  <p:NodeReference LastCategoryFullName="UI.UIElements.Slider" LastSymbolSource="VL.YAUI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
                     <CategoryReference Kind="ClassType" Name="Slider" />
                     <Choice Kind="OperationCallFlag" Name="SetValueToDisplayString" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -662,7 +662,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="1656,327,72,22" Id="D54Z9MzSvr7LZSNzzbn2d8">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements.DropDownOption" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                  <p:NodeReference LastCategoryFullName="UI.UIElements.DropDownOption" LastSymbolSource="VL.YAUI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="DropDownOption" />
                     <Choice Kind="OperationCallFlag" Name="GetValue" />
@@ -937,7 +937,7 @@
               </p:NodeReference>
               <Patch Id="CEyScWO5m7TLm5Uu2gL0Po">
                 <Node Bounds="171,1535,472,382" Id="H5LOviAlwdvOFxlGe65KVU">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.YAUI.Widgets.vl">
                     <Choice Kind="OperationCallFlag" Name="CreateStyleWithColorsAndFontSettings" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
@@ -953,7 +953,7 @@
                     <ControlPoint Id="Mh8t0DDk1NXOhFwNRuL6C0" Bounds="580,1549" />
                     <ControlPoint Id="CEqPJOS4qJRPY1CsMfW5tS" Bounds="202,1908" />
                     <Node Bounds="193,1585,119,22" Id="TKjyZJuaWDGOh0vyfCauuv">
-                      <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements.UIColors" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                      <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements.UIColors" LastSymbolSource="VL.YAUI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="RecordType" Name="UIColors" />
                         <Choice Kind="OperationCallFlag" Name="Split" />
@@ -965,7 +965,7 @@
                       <Pin Id="O0RTg0KMsJkOs1dW2Ifb9z" Name="Text Color" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="200,1854,121,22" Id="SclD839IqrEQLHM8Z7Hdnn">
-                      <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements.UIColors" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                      <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements.UIColors" LastSymbolSource="VL.YAUI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="RecordType" Name="UIColors" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
@@ -1112,7 +1112,7 @@
               </p:NodeReference>
               <Patch Id="P5FfubJwyHdONmGV6B0uOQ">
                 <Node Bounds="1150,1448,441,382" Id="HfFzu5lv1b0NotN11Ykho5">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.YAUI.Widgets.vl">
                     <Choice Kind="OperationCallFlag" Name="CreateStyleWithColorsAndFontSettings" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
@@ -1128,7 +1128,7 @@
                     <ControlPoint Id="NeNbnTJ4g2ELbKiUQZps8m" Bounds="1542,1465" />
                     <ControlPoint Id="QpQptBG8fPQQaQCtdD5XrJ" Bounds="1171,1821" />
                     <Node Bounds="1162,1498,119,22" Id="DIOSjio8ZwrN1ECr1DmzIG">
-                      <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements.UIColors" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                      <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements.UIColors" LastSymbolSource="VL.YAUI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="RecordType" Name="UIColors" />
                         <Choice Kind="OperationCallFlag" Name="Split" />
@@ -1140,7 +1140,7 @@
                       <Pin Id="QRrCdLkIHyuOLhFOthbzjY" Name="Text Color" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1169,1767,121,22" Id="VUFcQ0aP9n3OuotVmvpFQH">
-                      <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements.UIColors" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                      <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements.UIColors" LastSymbolSource="VL.YAUI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="RecordType" Name="UIColors" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
@@ -1284,7 +1284,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="2234,1509,470,398" Id="Js5wWtoU2HBMAddCEMPNHQ">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.YAUI.Widgets.vl">
                     <Choice Kind="OperationCallFlag" Name="CreateButtonStyleWithColorsAndFontSettings" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
@@ -1319,7 +1319,7 @@
                     <ControlPoint Id="C0Gjm8QxioTNPCwkP6lmgn" Bounds="2249,1900" />
                     <ControlPoint Id="V2ZMIpLve8oQD2N8aQRoAi" Bounds="2350,1569" />
                     <Node Bounds="2267,1602,119,26" Id="DqDyitiDn0pLP1P232WXvm">
-                      <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements.UIColors" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                      <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements.UIColors" LastSymbolSource="VL.YAUI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="RecordType" Name="UIColors" />
                         <Choice Kind="OperationCallFlag" Name="Split" />
@@ -1331,7 +1331,7 @@
                       <Pin Id="VCygdaPN4s4NYZc2ycHT0o" Name="Text Color" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="2261,1813,121,26" Id="HwbsRU4vWZbOX4TdjElerh">
-                      <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements.UIColors" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                      <p:NodeReference LastCategoryFullName="Kairos.UI.UIElements.UIColors" LastSymbolSource="VL.YAUI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="RecordType" Name="UIColors" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
@@ -1485,7 +1485,7 @@
                 <Patch Id="HcPdnXpMldjQTrFMDhMCq0" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="HB3Jo6nAWRaNX2ZsWjVVHF" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="425,661,526,13" Id="CxOsfFtciXcPTurjWQ0Zcm">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.YAUI.Widgets.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Slider" />
                   </p:NodeReference>
@@ -2511,7 +2511,7 @@
                 <Patch Id="Ua5Nuebji1XMp6QxNwksiI" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="G5ZKMm4UAhtM9OwpGpom7g" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="425,661,526,13" Id="KQYWQ3F9Q3qMOta1dvXy8z">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl">
+                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.YAUI.Widgets.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Label" />
                   </p:NodeReference>
@@ -2691,7 +2691,7 @@
                 <Patch Id="SqkiEIS0J8dM3PrHCq6cJZ" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="SPCZ9FhH4OGLFr1QEdqWXn" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="425,661,526,13" Id="D49D4gyRT1LLg0P4MtMHYs">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.YAUI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="UIElements" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessNode" Name="ToggleButton" />
@@ -2873,7 +2873,7 @@
                 <Patch Id="RM9Ik7c9G0kM7WprnfZKPJ" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="AdCecN9Fd0xPf8CC34ZJ5a" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="425,661,526,13" Id="VqQucPaU4iNNLnPyGfyiCV">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.YAUI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="UIElements" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessAppFlag" Name="BangButton" />
@@ -3073,7 +3073,7 @@
                 <Patch Id="BdVInGSiuSeMKgRRw8lclV" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="C94z722sU7uP95QRDUwSrx" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="425,651,526,13" Id="NX5i6yhfBH7NUMyLHW5dB0">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                  <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.YAUI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="UIElements" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessAppFlag" Name="DropDown" />
@@ -3223,7 +3223,7 @@
                 <Patch Id="HpMBlI9tlvsOYiACMg6Jrl" Name="Dispose" ManuallySortedPins="true" />
                 <ControlPoint Id="QNGI58JNNhrNcTKfHHZEej" Bounds="875,209" />
                 <Node Bounds="808,240,72,22" Id="RrTda3JCotjM8At8Mm54Wt">
-                  <p:NodeReference LastCategoryFullName="UI.UIElements.DropDownOption" LastSymbolSource="VL.Lib.UI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
+                  <p:NodeReference LastCategoryFullName="UI.UIElements.DropDownOption" LastSymbolSource="VL.YAUI.Widgets.vl" LastDependency="VVVV.2d.UITest.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="DropDownOption" />
                     <Choice Kind="OperationCallFlag" Name="Create" />

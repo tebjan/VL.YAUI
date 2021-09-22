@@ -1,11 +1,11 @@
-﻿using Xenko.Core.Mathematics;
+﻿using Stride.Core.Mathematics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VL.Lib.UI.Utils
+namespace VL.YAUI.Utils
 {
     public static class PointSizeAndVector2Utils
     {

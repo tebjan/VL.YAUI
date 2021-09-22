@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Ll7bDF91PFQMjxWOgoCvuL" LanguageVersion="2021.4.0.406" Version="0.128">
+  <Patch Id="AXcrkz7wtuiLTLQMfXYFvQ">
+    <Canvas Id="UNxfqzqFZ0sNZX8LT3rUat" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="EgqEAAkg8x7P8YC1jtAaeJ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Ae7MJtS1sa4OQ0pcn77rUD">
+        <Canvas Id="SWfBvfK4Vj3OD1tJx3ejLu" CanvasType="Group" />
+        <Patch Id="HmyZeT7WWuqM3Zl2ba7XeT" Name="Create" />
+        <Patch Id="UqSweS29BGZP5S0EmLJDeA" Name="Update" />
+        <ProcessDefinition Id="Fshh019M2EhL599mtKwQ1U">
+          <Fragment Id="KQEzzutfHLwQH8iYbIPzQF" Patch="HmyZeT7WWuqM3Zl2ba7XeT" Enabled="true" />
+          <Fragment Id="LNo71QnkvKQMiDKBHHkYW6" Patch="UqSweS29BGZP5S0EmLJDeA" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="PPbh2AtviWXLfCFe27H4H5" Location="VL.CoreLib" Version="2021.4.0-0406-g88de5ca43d" />
+  <NugetDependency Id="EE71DFvTERhMNWITjs66Wy" Location="VL.Skia" Version="2021.4.0-0406-g88de5ca43d" />
+  <DocumentDependency Id="L7WWerw2BgSNfhrXUHhXkd" Location="./VL.YAUI.Core.vl" IsForward="true" />
+  <DocumentDependency Id="EFjQZyoeaJbPPrtT5ggqiT" Location="./VL.YAUI.Widgets.vl" IsForward="true" />
+</Document>
