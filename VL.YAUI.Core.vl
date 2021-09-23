@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="ItUgbG3DFosOzS26s7RkAr" LanguageVersion="2021.4.0.406" Version="0.128">
+<Document xmlns:p="property" Id="ItUgbG3DFosOzS26s7RkAr" LanguageVersion="2021.4.0.413" Version="0.128">
   <Patch Id="AXcrkz7wtuiLTLQMfXYFvQ">
     <Canvas Id="UNxfqzqFZ0sNZX8LT3rUat" CanvasType="FullCategory">
       <Canvas Id="PgouWSs0fSJLX5ikOVnKO2" Name="UI" Position="180,274">
@@ -2749,6 +2749,6 @@
     </Node>
   </Patch>
   <PlatformDependency Id="L4EJZbpUy2ZNd81lH87LuR" Location="./lib/VL.YAUI.dll" />
-  <NugetDependency Id="PPbh2AtviWXLfCFe27H4H5" Location="VL.CoreLib" Version="2021.4.0-0406-g88de5ca43d" />
-  <NugetDependency Id="EE71DFvTERhMNWITjs66Wy" Location="VL.Skia" Version="2021.4.0-0406-g88de5ca43d" />
+  <NugetDependency Id="PPbh2AtviWXLfCFe27H4H5" Location="VL.CoreLib" Version="2021.4.0-0413-gaf9ffdce60" />
+  <NugetDependency Id="EE71DFvTERhMNWITjs66Wy" Location="VL.Skia" Version="2021.4.0-0413-gaf9ffdce60" />
 </Document>
