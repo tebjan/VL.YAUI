@@ -9,6 +9,9 @@ namespace VL.YAUI
 {
     public interface IUILayer
     {
+        //background drawing
+        object GetBackground();
+
         //normal drawing
         object GetLayer();
 

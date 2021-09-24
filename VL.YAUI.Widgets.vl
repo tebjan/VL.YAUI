@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="EKLGVpIeN3MNQFDSU2rkh0" LanguageVersion="2021.4.0.413" Version="0.128">
+<Document xmlns:p="property" Id="EKLGVpIeN3MNQFDSU2rkh0" LanguageVersion="2021.4.0.420" Version="0.128">
   <Patch Id="SO1YgH3N6RaNuxOOTRV9Tf">
     <Canvas Id="Gvn6Kwgu0BtNBxwgsCgaEj" CanvasType="FullCategory">
       <Canvas Id="KOgWEEsT5buLPterInXbrw" Name="UI" Position="475,385">
@@ -1580,12 +1580,14 @@
                   <Pin Id="BasmTRsos3iLNxxgdoykgh" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="-97,1486,85,19" Id="IIlqlzakCQFPKRMV4npMZM">
-                  <p:NodeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
+                  <p:NodeReference>
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessNode" Name="UILayerCraftLie" />
+                    <Choice Kind="ProcessNode" Name="UILayerSkia" />
                   </p:NodeReference>
+                  <Pin Id="VxgFppLSw0yMq3eDZHIQid" Name="Background" Kind="InputPin" />
                   <Pin Id="OvXsL4ysQW0LPCs8e6LVZq" Name="Layer" Kind="InputPin" />
                   <Pin Id="TBf88FalmHhPzWiMqibBun" Name="Overlay" Kind="InputPin" />
+                  <Pin Id="MfJPwt6SUpVNzIBjQ9sFgm" Name="New Background" Kind="InputPin" />
                   <Pin Id="QE32UJDWI9DPPdMJ527EI6" Name="New Layer" Kind="InputPin" />
                   <Pin Id="JxyzGkBHrBELAbfFJqBYAM" Name="New Overlay" Kind="InputPin" />
                   <Pin Id="AEBJCW2sMsuOtPZnBXaid9" Name="Output" Kind="StateOutputPin" />
@@ -2785,12 +2787,14 @@
                 <Pad Id="EPMFfV2Jkc9PzNsVp5PNZY" SlotId="LvpJjnq4lKKP9U90Pr4xzS" Bounds="1063,124" />
                 <ControlPoint Id="RSZACQAusSlPOxQNsrszyb" Bounds="1062,55" />
                 <Node Bounds="228,1281,65,13" Id="DPqQB4wfFYZObVTYssKAeF">
-                  <p:NodeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
+                  <p:NodeReference>
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessNode" Name="UILayerCraftLie" />
+                    <Choice Kind="ProcessNode" Name="UILayerSkia" />
                   </p:NodeReference>
+                  <Pin Id="BgL66eFczmXM0DKllceMEy" Name="Background" Kind="InputPin" />
                   <Pin Id="UjMHTJW3eMeMB9MzNvt7bi" Name="Layer" Kind="InputPin" />
                   <Pin Id="C6uZ4iX800POiGngSPpC6w" Name="Overlay" Kind="InputPin" />
+                  <Pin Id="BRm1Hn7oi5dPvQat5jzXI2" Name="New Background" Kind="InputPin" />
                   <Pin Id="BIHsrEynCEiOHneJSqibns" Name="New Layer" Kind="InputPin" />
                   <Pin Id="T9iY9OVGpc0PhZQDT2tTBG" Name="New Overlay" Kind="InputPin" />
                   <Pin Id="FzhbaNL0RS2MbkHoCzsIdT" Name="Output" Kind="StateOutputPin" />
@@ -4203,12 +4207,14 @@
                   <Pin Id="KKnZLT58gh8NHpAjZjS0jU" Name="String" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="12,943,65,13" Id="D0DVIgTNMPwLoBZRVBLo56">
-                  <p:NodeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
+                  <p:NodeReference>
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessNode" Name="UILayerCraftLie" />
+                    <Choice Kind="ProcessNode" Name="UILayerSkia" />
                   </p:NodeReference>
+                  <Pin Id="Efit25Y8wUsQE70pO2UL7V" Name="Background" Kind="InputPin" />
                   <Pin Id="Pfy3ogKT7PvQT2izRhafZm" Name="Layer" Kind="InputPin" />
                   <Pin Id="EGbdR9lwDRnLjdRh3zWdh3" Name="Overlay" Kind="InputPin" />
+                  <Pin Id="RqjUZzjr7G1MFzY1e5JvlY" Name="New Background" Kind="InputPin" />
                   <Pin Id="IWCU8rcJcseNm1e2oDsZif" Name="New Layer" Kind="InputPin" />
                   <Pin Id="FsUX0pMt6XcPPJfDKslHGi" Name="New Overlay" Kind="InputPin" />
                   <Pin Id="KyYTCuIP4pxM4OYgLJbyvu" Name="Output" Kind="StateOutputPin" />
@@ -8621,8 +8627,8 @@
                   <Pin Id="KCQfVarPIF8MdN15Yvl5q0" Name="Value" Kind="OutputPin" />
                   <Pin Id="CRzVK62CvjFMnmTFWf7wjx" Name="Inverse Output" Kind="OutputPin" />
                 </Node>
-                <Pad Id="IHj29gPb6QtM5iOecGY3DT" SlotId="PRGzsl5Tho8M9f2MTG91WM" Bounds="1045,969" />
-                <Pad Id="PDTA0SuGaB5OD7tYVj4noE" SlotId="Q8fnXywNL31Nmvyx8WxQl8" Bounds="707,978" />
+                <Pad Id="IHj29gPb6QtM5iOecGY3DT" SlotId="PRGzsl5Tho8M9f2MTG91WM" Bounds="1059,984" />
+                <Pad Id="PDTA0SuGaB5OD7tYVj4noE" SlotId="Q8fnXywNL31Nmvyx8WxQl8" Bounds="723,969" />
                 <Node Bounds="665,1017,99,13" Id="VdmrmaPCz1NP9gFqHnpw2I">
                   <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -8632,7 +8638,7 @@
                   <Pin Id="OxEffybhEXDOc2piTtEt6C" Name="Input" Kind="StateInputPin" />
                   <Pin Id="VKzq3amCuC8QIcJnFtvcVt" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="694,1094,239,81" Id="ECVy3bpOjucPDhU6xJq0PK">
+                <Node Bounds="694,1094,253,82" Id="ECVy3bpOjucPDhU6xJq0PK">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                     <FullNameCategoryReference ID="Primitive" />
@@ -8643,7 +8649,7 @@
                   <Patch Id="IRrNKSCJZR0NYs8GpAiIZ8" ManuallySortedPins="true">
                     <Patch Id="TOL2VcckZjRNA0og3i958U" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="Mt4Y8n7QOXoMrBc37O6QMn" Name="Then" ManuallySortedPins="true" />
-                    <Node Bounds="709,1127,212,19" Id="DlTtCNABa33PRe5ec2w79a">
+                    <Node Bounds="723,1123,212,19" Id="DlTtCNABa33PRe5ec2w79a">
                       <p:NodeReference LastCategoryFullName="UI.UIElements" LastSymbolSource="VL.YAUI.Widgets.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="UIText" />
@@ -8672,12 +8678,14 @@
                 <Pad Id="LNVMkfZ6OqHMavJbQEyI4y" SlotId="Q8fnXywNL31Nmvyx8WxQl8" Bounds="1043,121" />
                 <ControlPoint Id="UDnkQz7G8qQMSqfknIzhYT" Bounds="1042,60" />
                 <Node Bounds="228,1515,65,19" Id="QDzhA6Dj6UtLXzF3jTYdKo">
-                  <p:NodeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
+                  <p:NodeReference>
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessNode" Name="UILayerCraftLie" />
+                    <Choice Kind="ProcessNode" Name="UILayerSkia" />
                   </p:NodeReference>
+                  <Pin Id="Ti2xT0IkfjvO9xhc68F5Es" Name="Background" Kind="InputPin" />
                   <Pin Id="NsVgJ9xnv6EOaJkUgTjE0X" Name="Layer" Kind="InputPin" />
                   <Pin Id="GeSjPJkfYfALvxwCOjIAED" Name="Overlay" Kind="InputPin" />
+                  <Pin Id="P9sC2j9XKUPLpfEgtquVe5" Name="New Background" Kind="InputPin" />
                   <Pin Id="JOOAGNsgUqkNDbxCUUTlV6" Name="New Layer" Kind="InputPin" />
                   <Pin Id="HYpu5xI67KgP8sns1Gb0T8" Name="New Overlay" Kind="InputPin" />
                   <Pin Id="Izi5NnGvq5NQCSqw0B8T7K" Name="Output" Kind="StateOutputPin" />
@@ -8708,7 +8716,7 @@
                 </Node>
                 <Pad Id="VpYdgzQc4JAOGe5RQV9Rzc" SlotId="DwlXBuTmIt7Mft3LeVmqRf" Bounds="-47,126" />
                 <ControlPoint Id="B2fyMbrVJzpND1c6fXyG4v" Bounds="-47,49" />
-                <Node Bounds="246,1013,286,208" Id="EUF6JLhbANFNVjyNApoXYU">
+                <Node Bounds="246,1013,302,208" Id="EUF6JLhbANFNVjyNApoXYU">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -8730,7 +8738,7 @@
                       <Pin Id="Fgby4boE4SJMQ68It2yaVK" Name="Scale Factor" Kind="InputPin" />
                       <Pin Id="VGVq5WFfgtFLhBGX9Z2ZK9" Name="Output" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="475,1072,39,19" Id="QphEaweyLJcP6A6chY6PWI">
+                    <Node Bounds="497,1075,39,19" Id="QphEaweyLJcP6A6chY6PWI">
                       <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Cons" />
@@ -8777,7 +8785,7 @@
                   </p:NodeReference>
                   <Pin Id="TLn3IsAkqb4MBnVMT6DgRD" Name="Bounds" Kind="InputPin" />
                   <Pin Id="V5kT6UB5YyENaXpwCBU5UJ" Name="Paint" Kind="InputPin" />
-                  <Pin Id="S5YGTvZsZX6P7VZuvns4WC" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="S5YGTvZsZX6P7VZuvns4WC" Name="Enabled" Kind="InputPin" DefaultValue="True" />
                   <Pin Id="AKfidrmFjTNMXMimDvrdhZ" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="326,1285" Id="B6IkuYCFA9NNrRuYpw8E5Q">
@@ -9619,12 +9627,14 @@
                 <Pad Id="PWFvJ2JXNNWPzKs4xLTyhZ" SlotId="EwxOmJgV70KP3DHNOxJ03Y" Bounds="494,430" />
                 <Pad Id="VsoBryuuXGLOROdUTmCIAr" SlotId="IKVWtOPZTeWPMxb1BMj7HP" Bounds="1066,1152" />
                 <Node Bounds="167,1453,96,13" Id="AblRByh60oNLRefLtEcBfT">
-                  <p:NodeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
+                  <p:NodeReference>
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessNode" Name="UILayerCraftLie" />
+                    <Choice Kind="ProcessNode" Name="UILayerSkia" />
                   </p:NodeReference>
+                  <Pin Id="Ur19H65cAbONaN5y1RJW5p" Name="Background" Kind="InputPin" />
                   <Pin Id="VUlHzsxNpVjN1igxO9Oht3" Name="Layer" Kind="InputPin" />
                   <Pin Id="P2cqorZb3dKOpfTqtTOaO8" Name="Overlay" Kind="InputPin" />
+                  <Pin Id="Se3qcKaLxe7MtPaI4QE8ce" Name="New Background" Kind="InputPin" />
                   <Pin Id="VNuOZZBzvtKM87bk7ijN08" Name="New Layer" Kind="InputPin" />
                   <Pin Id="MVaBiidaLu4LL1V55I9s9z" Name="New Overlay" Kind="InputPin" />
                   <Pin Id="C69LX5nfgZaLPplc1pdhGb" Name="Output" Kind="StateOutputPin" />
@@ -11534,7 +11544,7 @@
                   </p:NodeReference>
                   <Pin Id="HQOVwgS35nDM0sFyT8ftnS" Name="Position" Kind="InputPin" />
                   <Pin Id="BwwPwtTpYdaQJvxHFTAFGH" Name="Size" Kind="InputPin" />
-                  <Pin Id="P8yphwd9o1wOD6i2omVg2H" Name="Anchor" Kind="InputPin" />
+                  <Pin Id="P8yphwd9o1wOD6i2omVg2H" Name="Anchor" Kind="InputPin" DefaultValue="Center" />
                   <Pin Id="Hzd8umOi5TyPOQYJLqXu15" Name="Text" Kind="InputPin" />
                   <Pin Id="TyarUJ7cpe1PMOJ2EBnLCR" Name="Paint" Kind="InputPin" />
                   <Pin Id="UQdO6HXwslTPThjUV3nKO0" Name="Enabled" Kind="InputPin" DefaultValue="True" />
@@ -12388,12 +12398,14 @@
                   <Pin Id="NgviEPmC1AFL22J5HjV2gA" Name="String" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="-52,1105,85,19" Id="JFw4f0gBnarNqQEAOtvT5U">
-                  <p:NodeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
+                  <p:NodeReference>
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessNode" Name="UILayerCraftLie" />
+                    <Choice Kind="ProcessNode" Name="UILayerSkia" />
                   </p:NodeReference>
+                  <Pin Id="U0dNCz2n9jQPn9OBOWFLaE" Name="Background" Kind="InputPin" />
                   <Pin Id="EXI1TJZ7zGpMCeJTtdwaZq" Name="Layer" Kind="InputPin" />
                   <Pin Id="TMgMN3N7j7gOw6mWv1Dt1F" Name="Overlay" Kind="InputPin" />
+                  <Pin Id="GsuXxqNRlciMyflB0eoma2" Name="New Background" Kind="InputPin" />
                   <Pin Id="TzyQNzFO50KOSlfcR4deCG" Name="New Layer" Kind="InputPin" />
                   <Pin Id="HeSKb2ATqE4NBrUMt205QR" Name="New Overlay" Kind="InputPin" />
                   <Pin Id="Go3MzzAkpekNZFEdHfu7sr" Name="Output" Kind="StateOutputPin" />
@@ -14407,12 +14419,14 @@
                 </Node>
                 <Pad Id="ALHGxCKjNjKNsi8ljkUuVB" SlotId="K9o99p5DDAfOJWXzc4hk7a" Bounds="494,430" />
                 <Node Bounds="167,1453,96,13" Id="R000HvVuZAiQbCmsFMii5A">
-                  <p:NodeReference LastCategoryFullName="UI" LastSymbolSource="VL.UI.CraftLie.vl">
+                  <p:NodeReference>
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessNode" Name="UILayerCraftLie" />
+                    <Choice Kind="ProcessNode" Name="UILayerSkia" />
                   </p:NodeReference>
+                  <Pin Id="KkwtG9moaR7LmCHoKYa1l5" Name="Background" Kind="InputPin" />
                   <Pin Id="Fy9E8nUZJS2P0DinnnHTQ7" Name="Layer" Kind="InputPin" />
                   <Pin Id="MuuI1nyVtoFPDND0JQFcaL" Name="Overlay" Kind="InputPin" />
+                  <Pin Id="TuxiSUnjV0APrVxskIrfwl" Name="New Background" Kind="InputPin" />
                   <Pin Id="Bszhj2tKKt9MkNcPE3BsjO" Name="New Layer" Kind="InputPin" />
                   <Pin Id="DOQgbQI7kV0N5fgc91otGS" Name="New Overlay" Kind="InputPin" />
                   <Pin Id="MEnS6Oi3krjMBnpmi0ubny" Name="Output" Kind="StateOutputPin" />
@@ -24948,13 +24962,13 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="EtaCCGljOQwNpasiKWqUk9" Location="VL.CoreLib" Version="2021.4.0-0413-gaf9ffdce60" />
+  <NugetDependency Id="EtaCCGljOQwNpasiKWqUk9" Location="VL.CoreLib" Version="2021.4.0-0420-gcb9a13e158" />
   <PlatformDependency Id="GL68UuxTFrKPE2GLu6U4ne" Location="./lib/VL.YAUI.dll" />
   <PlatformDependency Id="QazfSiglbFUNVGvxnqatPo" Location="System.Windows.Forms.dll" />
   <PlatformDependency Id="TeLZkEVuXdCLnfndRD4MfX" Location="mscorlib" />
   <DocumentDependency Id="GGpWmVOQ9ZGOjIvjgHp1oj" Location="./Typewriter.vl" />
   <NugetDependency Id="Riv0eojVKVJLW9Ple69mtz" Location="VL.RCP" Version="0.2.3-alpha" />
   <NugetDependency Id="K1rolAGLjF7PKVgZgHgpSV" Location="RCPSharp" Version="0.2.17-alpha" />
-  <NugetDependency Id="UHvNwIQHy2qQaahGGD6wZt" Location="VL.Skia" Version="2021.4.0-0413-gaf9ffdce60" />
+  <NugetDependency Id="UHvNwIQHy2qQaahGGD6wZt" Location="VL.Skia" Version="2021.4.0-0420-gcb9a13e158" />
   <DocumentDependency Id="P4ReRift4QDOs8CxLPhJ91" Location="./VL.YAUI.Core.vl" />
 </Document>
