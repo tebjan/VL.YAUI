@@ -15,6 +15,9 @@ namespace VL.YAUI
         //normal drawing
         object GetLayer();
 
+        //normal text drawing
+        object GetTextLayer();
+
         //overlay drawing
         object GetOverlay();
     }
