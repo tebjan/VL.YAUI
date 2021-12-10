@@ -8,6 +8,7 @@
     <TargetFramework>net472</TargetFramework>
     <OutputPath>..\..\lib\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>..\..\lib\VL.YAUI.xml</DocumentationFile>
